@@ -1,5 +1,5 @@
 {
-  "name": "wz-excavating",
+  "name": "zuse-testing-grounds",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -37,6 +37,6 @@
     "express": "^4.17.1",
     "http-proxy": "^1.18.1",
     "if-env": "^1.0.4",
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.1.7"
   }
 }
