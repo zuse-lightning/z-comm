@@ -3,6 +3,14 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { v4: uuidv4 } = require("uuid");
 const sendEmail = require("../../utils/sendEmail");
+const {
+    getUserByEmail,
+    getUserById,
+    getUserIds,
+    setUserData,
+    getUser,
+    resetUserPassword
+} = require("../../models/users");
 
 module.exports = {
     register: (req, res) => {
