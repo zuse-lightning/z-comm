@@ -1,6 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
+import Home from "../../pages/Home";
+import Register from "../../pages/Register";
+import Login from "../../pages/Login";
+import ForgotPassword from "../../pages/ForgotPassword";
+import ResetPassword from "../../pages/ResetPassword";
+import Reviews from "../../pages/Reviews";
+import Review from "../../pages/Review";
+import Write from "../../pages/Write";
+import Edit from "../../pages/Edit";
 
 import "./style.css";
 
