@@ -8,6 +8,7 @@ import "./style.css";
 const Register = (props) => {
 
     const { currentUser, alreadyLoggedIn } = props.auth;
+    console.log(props);
     const [inputs, setInputs] = useState({
         first_name: "",
         last_name: "",

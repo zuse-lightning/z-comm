@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter as Router } from "react-router-dom";
+import { AuthContextProvider } from "./context/authContext";
 import App from "./containers/App";
 import reportWebVitals from "./reportWebVitals";
 
@@ -10,7 +11,9 @@ const helmetContext = {};
 root.render(
   <HelmetProvider context={helmetContext}>
     <Router>
-      <App />
+      <AuthContextProvider>
+        <App />
+      </AuthContextProvider>
     </Router>
   </HelmetProvider>
 );
