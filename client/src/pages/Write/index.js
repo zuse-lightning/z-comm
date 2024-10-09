@@ -39,7 +39,7 @@ const Write = (props) => {
         e.preventDefault();
         const imgUrl = await upload();
         try {
-            const res = await axios.post(`${site}/reviews`, {
+            const res = await axios.post(`/reviews`, {
                 rating: rating,
                 text: text,
                 date: moment().format("YYYY-MM-DD"),
