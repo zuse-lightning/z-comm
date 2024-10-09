@@ -22,7 +22,7 @@ const App = () => {
     return (
         <>
             <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route exact path="/" element={<Home auth={auth} />} />
                 <Route exact path="/register" element={<Register auth={auth} />} />
                 <Route exact path="/login" element={<Login auth={auth} />} />
                 <Route exact path="/forgot" element={<ForgotPassword auth={auth} />} />
