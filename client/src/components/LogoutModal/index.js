@@ -5,7 +5,6 @@ const LogoutModal = (props) => {
 
     const { logout } = props.auth;
     const [open, setOpen] = useState(false);
-    console.log(logout);
 
     const handleLogout = () => {
         logout();
