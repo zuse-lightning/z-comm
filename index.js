@@ -29,6 +29,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors({ credentials: true, origin: ["http://localhost:3000", "https://www.zusetestinggrounds.com"] }));
+app.options("*", cors());
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(helmet({
@@ -68,7 +69,7 @@ app.post("/upload", upload.single("image"), (req, res) => {
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
-  app.get("/", (req, res) => {
+  app.get("*", (req, res) => {
     return res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
 };
