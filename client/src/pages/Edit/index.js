@@ -47,8 +47,9 @@ const Edit = (props) => {
                 rating: rating,
                 text: text,
                 date: moment().format("YYYY-MM-DD"),
-                image: image
+                image: image.url
             }, { withCredentials: true });
+            navigate(`/review/${reviewId}`);
         } catch (err) {
             console.log(err);
         };
@@ -65,12 +66,13 @@ const Edit = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/reviews/${reviewId}`);
+                const res = await axios.get(`/reviews/${reviewId}`);
                 setReview(res.data);
             } catch (err) {
                 console.log(err);
             };
         };
+        fetchData();
     }, [reviewId]);
 
     useEffect(() => {

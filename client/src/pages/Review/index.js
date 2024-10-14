@@ -20,7 +20,7 @@ const Review = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/reviews/${reviewId}`);
+                const res = await axios.get(`/reviews/${reviewId}`);
                 setReview(res.data);
             } catch (err) {
                 console.log(err);
@@ -41,7 +41,7 @@ const Review = (props) => {
         try {
             console.log(currentUser.id, review.uid);
             if (currentUser.id !== review.uid) alert("You are not authorized to delete this review.");
-            await axios.delete(`http://localhost:5000/api/reviews/${reviewId}`);
+            await axios.delete(`/reviews/${reviewId}`);
             navigate("/reviews");
         } catch (err) {
             console.log(err);

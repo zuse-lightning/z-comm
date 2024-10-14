@@ -78,8 +78,10 @@ module.exports = {
             const values = [req.body.text, req.body.rating, req.body.image];
 
             console.log("updating review with id " + reviewId + " and uid " + userInfo.id);
+            console.log(values);
 
             db.query(updateUserReview, [...values, reviewId, userInfo.id], (err, data) => {
+                console.log(updateUserReview);
                 if (err) return res.status(500).json(err);
                 return res.json("Review updated");
             });
