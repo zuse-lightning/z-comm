@@ -1,7 +1,11 @@
 const db = require("../../config");
 const jwt = require("jsonwebtoken");
 const {
-
+    getAllReviews,
+    getReviewById,
+    addUserReview,
+    deleteUserReview,
+    updateUserReview
 } = require("../../models/reviews");
 
 module.exports = {
@@ -14,9 +18,9 @@ module.exports = {
     },
     getReview: (req, res) => {
         console.log("getting review by id");
-
         db.query(getReviewById, [req.params.id], (err, data) => {
             if (err) return res.status(500).json(err);
+            console.log(req.params.id);
             return res.status(200).json(data[0]);
         });
     },

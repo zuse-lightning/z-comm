@@ -15,6 +15,7 @@ const Review = (props) => {
     const location = useLocation();
     const navigate = useNavigate();
     const reviewId = location.pathname.split("/")[2];
+    console.log(reviewId);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,8 +25,8 @@ const Review = (props) => {
             } catch (err) {
                 console.log(err);
             };
-            fetchData();
         };
+        fetchData();
     }, [reviewId]);
 
     const handleAccess = async () => {
@@ -38,6 +39,7 @@ const Review = (props) => {
 
     const handleDelete = async () => {
         try {
+            console.log(currentUser.id, review.uid);
             if (currentUser.id !== review.uid) alert("You are not authorized to delete this review.");
             await axios.delete(`http://localhost:5000/api/reviews/${reviewId}`);
             navigate("/reviews");

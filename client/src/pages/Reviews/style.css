@@ -74,6 +74,10 @@
     color: black;
 }
 
+.review-card-image {
+    width: 40%!important;
+};
+
 .review-card-image,
 .review-card-rating {
     margin: 2% 0;
