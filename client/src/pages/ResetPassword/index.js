@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Header, Button, Message } from "semantic-ui-react";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import { axiosInstance } from "../../utils";
 
 import "./style.css";
 
@@ -26,7 +26,7 @@ const ResetPassword = (props) => {
                 setError("Passwords do not match.");
                 return;
             }
-            await axios.post(`http://localhost:5000/api/auth/reset/${id}/${token}`, inputs, { withCredentials: true });
+            await axiosInstance.post(`http://localhost:5000/api/auth/reset/${id}/${token}`, inputs, { withCredentials: true });
             setSubmitted(true);
         } catch (err) {
             setError(err.response.data);

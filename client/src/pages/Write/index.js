@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Header, Rating } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { axiosInstance } from "../../utils";
 import moment from "moment";
 
 import "./style.css";
@@ -19,7 +19,7 @@ const Write = (props) => {
         try {
             const formData = new FormData();
             formData.append("image", file);
-            const res = await axios.post("http://localhost:5000/upload", formData);
+            const res = await axiosInstance.post("https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/upload", formData);
             return res.data;
         } catch (err) {
             console.log(err);
@@ -39,7 +39,7 @@ const Write = (props) => {
         e.preventDefault();
         const imgUrl = await upload();
         try {
-            const res = await axios.post(`/reviews`, {
+            const res = await axiosInstance.post(`/reviews`, {
                 rating: rating,
                 text: text,
                 date: moment().format("YYYY-MM-DD"),
