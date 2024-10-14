@@ -68,7 +68,7 @@ app.post("/upload", upload.single("image"), (req, res) => {
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
+  app.get("/", (req, res) => {
     return res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
 };
