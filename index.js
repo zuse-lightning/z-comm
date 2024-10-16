@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 5000;
 //Middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors({ credentials: true, origin: "https://www.zusetestinggrounds.com" }));
+app.use(cors({ credentials: true, origin: ["https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/", "https://www.zusetestinggrounds.com"] }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(helmet({
