@@ -1,17 +1,10 @@
 const mysql = require("mysql");
 
-let db;
-
-if (process.env.JAWSDB_URL) {
-    db = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-    db = mysql.createConnection({
-        host: "localhost",
-        port: process.env.DB_PORT,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME
-    });
-};
+const db = mysql.createConnection({
+    host: "us-cluster-east-01.k8s.cleardb.net",
+    user: "bc51a916588941",
+    password: "fe45ab45",
+    database: "heroku_66448cb84867580"
+});
 
 module.exports = db;
