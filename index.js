@@ -53,7 +53,7 @@ const upload = multer({
   })
 });
 
-app.use(routes);
+// app.use(routes);
 
 app.post("/upload", upload.single("image"), (req, res) => {
   console.log(req.file);
