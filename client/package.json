@@ -42,5 +42,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "options": {
+    "allowedHosts": [
+      "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/",
+      "https://zusetestinggrounds.com/"
+    ],
+    "proxy": "http://localhost:5000/api"
   }
 }
