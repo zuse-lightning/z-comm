@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LogoutModal from "../../components/LogoutModal";
+const { axiosInstance } = require("../../utils");
 
 const Home = (props) => {
 
     const { auth } = props;
-    console.log(auth);
+    
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await axiosInstance.get("/auth/test", { withCredentials: true });
+                console.log(res.data);
+            } catch (err) {
+                console.log(err);
+            };
+        };
+        fetchData();
+    }, []);
+
     return (
         <div>
             <h1>Home</h1>

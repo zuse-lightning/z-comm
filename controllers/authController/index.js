@@ -118,5 +118,13 @@ module.exports = {
         } catch (err) {
             console.log(err);
         };
+    },
+    test: (req, res) => {
+        try {
+            console.log("Test route is working");
+            res.json("Test route");
+        } catch (err) {
+            console.log(err);
+        };
     }
 };
