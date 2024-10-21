@@ -48,6 +48,6 @@
       "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/",
       "https://www.zusetestinggrounds.com/"
     ],
-    "proxy": "https://www.zusetestinggrounds.com/api"
+    "proxy": "http://localhost:3001/api"
   }
 }
