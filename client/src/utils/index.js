@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "http://localhost:3001/api/"
+    baseURL: "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/api/"
 });
