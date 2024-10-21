@@ -46,7 +46,7 @@
   "options": {
     "allowedHosts": [
       "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/",
-      "https://zusetestinggrounds.com/"
+      "https://www.zusetestinggrounds.com/"
     ],
     "proxy": "http://localhost:3001/api"
   }
