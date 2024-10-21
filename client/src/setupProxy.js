@@ -4,7 +4,7 @@ module.exports = function(app) {
     app.use(
         "/api",
         createProxyMiddleware({
-            target: "https://www.zusetestinggrounds.com",
+            target: "http://localhost:3001",
             changeOrigin: true
         })
     );
