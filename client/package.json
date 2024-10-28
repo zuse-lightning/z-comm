@@ -43,9 +43,11 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001/api",
-  "allowedHosts": [
-    "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/",
-    "https://www.zusetestinggrounds.com/"
-  ]
+  "options": {
+    "proxy": "http://localhost:3001/api",
+    "allowedHosts": [
+      "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/",
+      "https://www.zusetestinggrounds.com/"
+    ]
+  }
 }
