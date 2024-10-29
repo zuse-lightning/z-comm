@@ -122,7 +122,7 @@ module.exports = {
     test: (req, res) => {
         try {
             console.log("Test route is working");
-            res.json("Test route");
+            res.json("Test route works on heroku too");
         } catch (err) {
             console.log(err);
         };
