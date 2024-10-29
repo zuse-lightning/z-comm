@@ -26,6 +26,9 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
+  "devDependencies": {
+    "react-app-rewired": "^2.2.1"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,8 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001/api",
-  "devDependencies": {
-    "react-app-rewired": "^2.2.1"
-  }
+  "proxy": "http://localhost:3001/api"
 }
