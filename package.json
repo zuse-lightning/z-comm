@@ -14,7 +14,7 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -53,6 +53,7 @@
     "mysql": "^2.18.1",
     "nodemailer": "^6.9.14",
     "nodemon": "^3.1.4",
+    "react-app-rewired": "^2.2.1",
     "uuid": "^10.0.0"
   },
   "repository": {
@@ -60,7 +61,7 @@
     "url": "git+https://github.com/zuse-lightning/zuse-testing-grounds.git"
   },
   "bugs": {
-    "url": "https://github.com/zuse-lightning/zuse-testing-grounds/issues" 
+    "url": "https://github.com/zuse-lightning/zuse-testing-grounds/issues"
   },
   "homepage": "https://github.com/zuse-lightning/zuse-testing-grounds#readme"
 }
