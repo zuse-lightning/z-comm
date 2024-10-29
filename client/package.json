@@ -43,5 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001/api"
+  "proxy": "http://localhost:3001/api",
+  "devDependencies": {
+    "react-app-rewired": "^2.2.1"
+  }
 }
