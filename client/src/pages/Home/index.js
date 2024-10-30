@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import LogoutModal from "../../components/LogoutModal";
 import axios from "axios";
 
@@ -24,6 +25,15 @@ const Home = (props) => {
             <LogoutModal auth={auth} />
         </div>
     );
+};
+
+Home.propTypes = {
+    auth: PropTypes.shape({
+        currentUser: PropTypes.object,
+        logout: PropTypes.func,
+        notAuthorized: PropTypes.func,
+        alreadyLoggedIn: PropTypes.func,
+    }).isRequired,
 };
 
 export default Home;

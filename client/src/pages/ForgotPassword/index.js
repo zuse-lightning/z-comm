@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { Header, Button, Message } from "semantic-ui-react";
 import { axiosInstance } from "../../utils";
 
@@ -12,7 +13,7 @@ const ForgotPassword = (props) => {
     const [err, setError] = useState(null);
 
     const handleChange = (e) => {
-        setInputs(prev => ({ ...prev, [e.target.name]: e.target.value}));
+        setInputs(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
     const handleSubmit = async (e) => {
@@ -43,7 +44,14 @@ const ForgotPassword = (props) => {
             <Header as="h1" id="forgot-header">Forgot Password</Header>
             <form onSubmit={handleSubmit} id="forgot-form">
                 <div className="forgot-form-col">
-                    <input id="forgot-email-input" required onChange={handleChange} value={inputs.email} name="email" type="email" placeholder="Email" />
+                    <input
+                        id="forgot-email-input"
+                        required onChange={handleChange}
+                        value={inputs.email}
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                    />
                 </div>
                 <div className="forgot-form-col">
                     <Button id="forgot-submit-btn" fluid type="submit">Send Reset Link</Button>
@@ -51,9 +59,16 @@ const ForgotPassword = (props) => {
                 <div className="forgot-form-col">
                     {err ? <Message id="err-msg" error>{err}</Message> : null}
                 </div>
-            </form> 
+            </form>
         </div>
     );
+};
+
+ForgotPassword.propTypes = {
+    auth: PropTypes.shape({
+        currentUser: PropTypes.object.isRequired,
+        alreadyLoggedIn: PropTypes.func.isRequired,
+    }).isRequired,
 };
 
 export default ForgotPassword;
