@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Header, Button, Message } from "semantic-ui-react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { axiosInstance } from "../../utils";
 
 import "./style.css";
 
-const ResetPassword = (props) => {
-
-    const { currentUser, notAuthorized } = props.auth;
+const ResetPassword = () => {
 
     const [inputs, setInputs] = useState({ newPassword: "", confirmPassword: "" });
     const [submitted, setSubmitted] = useState(false);
     const [err, setError] = useState(null);
-    const navigate = useNavigate();
     const { id, token } = useParams();
 
     const handleChange = (e) => {
@@ -32,10 +29,6 @@ const ResetPassword = (props) => {
             setError(err.response.data);
         };
     };
-
-    // useEffect(() => {
-    //     notAuthorized();
-    // }, [currentUser]);
 
     if (submitted) {
         return (

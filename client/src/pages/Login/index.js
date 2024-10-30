@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Link, useNavigate } from "react-router-dom";
 import { Button, Header, Message } from "semantic-ui-react";
 
@@ -44,7 +45,7 @@ const Login = (props) => {
                 </div>
                 <div className="login-form-col">
                     <Message id="reg-msg">
-                        Don't have an account? <Link to="/register">Register here</Link>
+                        Don&apos;t have an account? <Link to="/register">Register here</Link>
                     </Message>
                 </div>
                 <div className="login-form-col">
@@ -53,6 +54,14 @@ const Login = (props) => {
             </form>
         </div>
     );
+};
+
+Login.propTypes = {
+    auth: PropTypes.shape({
+        currentUser: PropTypes.object,
+        alreadyLoggedIn: PropTypes.func.isRequired,
+        login: PropTypes.func.isRequired,
+    }).isRequired,
 };
 
 export default Login;

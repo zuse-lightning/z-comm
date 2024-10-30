@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Link, useNavigate } from "react-router-dom";
 import { Header, Button, Message } from "semantic-ui-react";
 import { axiosInstance } from "../../utils";
@@ -66,6 +67,13 @@ const Register = (props) => {
             </form>
         </div>
     );
+};
+
+Register.propTypes = {
+    auth: PropTypes.shape({
+        currentUser: PropTypes.object,
+        alreadyLoggedIn: PropTypes.func.isRequired,
+    }).isRequired,
 };
 
 export default Register;
