@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import LogoutModal from "../../components/LogoutModal";
 import axios from "axios";
-const { axiosInstance } = require("../../utils");
 
 const Home = (props) => {
 

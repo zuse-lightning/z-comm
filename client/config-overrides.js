@@ -1,5 +1,3 @@
-const { override } = require('customize-cra');
-
 module.exports = (config, env) => {
     console.log(config);
     if (env === "development") {

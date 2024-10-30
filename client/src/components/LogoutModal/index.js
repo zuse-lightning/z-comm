@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Button, Header, Modal } from "semantic-ui-react";
+import PropTypes from "prop-types";
 
 const LogoutModal = (props) => {
-
     const { logout } = props.auth;
     const [open, setOpen] = useState(false);
 
@@ -38,6 +38,12 @@ const LogoutModal = (props) => {
             </Modal.Actions>
         </Modal>
     );
+};
+
+LogoutModal.propTypes = {
+    auth: PropTypes.shape({
+        logout: PropTypes.func.isRequired,
+    }).isRequired,
 };
 
 export default LogoutModal;

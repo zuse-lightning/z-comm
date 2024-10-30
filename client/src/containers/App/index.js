@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import Home from "../../pages/Home";

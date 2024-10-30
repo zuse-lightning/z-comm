@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Header, Modal, Icon } from "semantic-ui-react";
+import PropTypes from "prop-types";
 
 const DeleteReviewModal = (props) => {
 
@@ -37,6 +38,10 @@ const DeleteReviewModal = (props) => {
             </Modal.Actions>
         </Modal>
     );
+};
+
+DeleteReviewModal.propTypes = {
+    handleDelete: PropTypes.func.isRequired,
 };
 
 export default DeleteReviewModal;

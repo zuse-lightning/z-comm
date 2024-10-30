@@ -29,7 +29,7 @@ export default [
   },
   {
     rules: {
-      "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }], // Optional
+      "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }], // Keep unused arguments that start with _
     },
   },
 ];

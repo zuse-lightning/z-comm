@@ -1,7 +1,7 @@
-import { createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 import axios from "axios";
-import { axiosInstance } from "../utils";
 
 export const AuthContext = createContext();
 
@@ -41,4 +41,8 @@ export const AuthContextProvider = ({ children }) => {
             {children}
         </AuthContext.Provider>
     );
+};
+
+AuthContextProvider.propTypes = {
+    children: PropTypes.node.isRequired,
 };
