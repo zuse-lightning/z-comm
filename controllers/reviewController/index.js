@@ -42,7 +42,7 @@ module.exports = {
             
             console.log("adding review with " + values);
 
-            db.query(addUserReview, [values], (err, data) => {
+            db.query(addUserReview, [values], (err) => {
                 if (err) return res.status(500).json(err);
                 return res.json("Review added");
             });
@@ -60,7 +60,7 @@ module.exports = {
 
             console.log("deleting review with id " + reviewId + " and user id " + userInfo.id);
 
-            db.query(deleteUserReview, [reviewId, userInfo.id], (err, data) => {
+            db.query(deleteUserReview, [reviewId, userInfo.id], (err) => {
                 if (err) return res.status(500).json("You can only delete your own reviews!");
                 return res.json("Review deleted");
             });
@@ -80,7 +80,7 @@ module.exports = {
             console.log("updating review with id " + reviewId + " and uid " + userInfo.id);
             console.log(values);
 
-            db.query(updateUserReview, [...values, reviewId, userInfo.id], (err, data) => {
+            db.query(updateUserReview, [...values, reviewId, userInfo.id], (err) => {
                 console.log(updateUserReview);
                 if (err) return res.status(500).json(err);
                 return res.json("Review updated");

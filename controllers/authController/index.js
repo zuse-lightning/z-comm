@@ -40,7 +40,7 @@ module.exports = {
 
                 console.log(values);
 
-                db.query(setUserData, [values], (err, data) => {
+                db.query(setUserData, [values], (err) => {
                     if (err) return res.json(err);
                     return res.status(200).json("User registered");
                 });
@@ -83,7 +83,7 @@ module.exports = {
                 if (req.body.newPassword !== req.body.confirmPassword) return res.status(400).json("Passwords do not match");
                 if (!req.body.newPassword || !req.body.confirmPassword) return res.status(400).json("Password is required");
 
-                jwt.verify(token, process.env.SECRET, (err, decoded) => {
+                jwt.verify(token, process.env.SECRET, (err) => {
                     if (err) return res.status(403).json("Invalid token");
                     
                     console.log(req.body.newPassword);
@@ -95,7 +95,7 @@ module.exports = {
                     console.log(hash, data[0].id);
                     console.log("successfully set values");
 
-                    db.query(resetUserPassword, [hash, data[0].id], (err, data) => {
+                    db.query(resetUserPassword, [hash, data[0].id], (err) => {
                         console.log("resetting password");
                         if (err) return res.json(err);
                         return res.status(200).json("Password reset");

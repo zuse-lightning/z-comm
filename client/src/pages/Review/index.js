@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Header, Rating, Image, Button, Icon } from "semantic-ui-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import DeleteReviewModal from "../../components/DeleteReviewModal";
@@ -15,7 +16,6 @@ const Review = (props) => {
     const location = useLocation();
     const navigate = useNavigate();
     const reviewId = location.pathname.split("/")[2];
-    console.log(reviewId);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -30,7 +30,7 @@ const Review = (props) => {
     }, [reviewId]);
 
     const handleAccess = async () => {
-        if (currentUser.id !== review.uid) {
+        if (!currentUser || currentUser.id !== review.uid) {
             alert("You are not authorized to edit this review.");
         } else {
             navigate(`/edit/${reviewId}`);
@@ -39,8 +39,7 @@ const Review = (props) => {
 
     const handleDelete = async () => {
         try {
-            console.log(currentUser.id, review.uid);
-            if (currentUser.id !== review.uid) alert("You are not authorized to delete this review.");
+            if (!currentUser || currentUser.id !== review.uid) alert("You are not authorized to delete this review.");
             await axiosInstance.delete(`/reviews/${reviewId}`);
             navigate("/reviews");
         } catch (err) {
@@ -73,6 +72,14 @@ const Review = (props) => {
             </div>
         </div>
     );
+};
+
+Review.propTypes = {
+    auth: PropTypes.shape({
+        currentUser: PropTypes.shape({
+            id: PropTypes.string
+        }),
+    }).isRequired,
 };
 
 export default Review;
