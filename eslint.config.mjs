@@ -7,14 +7,29 @@ export default [
   {
     files: ["**/*.{js,mjs,cjs,jsx}"],
     languageOptions: {
-      sourceType: "module", // or "commonjs" if you prefer
+      sourceType: "module",
       globals: { ...globals.browser, ...globals.node },
-      parser: babelParser, // Set the parser correctly
+      parser: babelParser,
       parserOptions: {
-        requireConfigFile: false, // You might need this depending on your Babel setup
+        requireConfigFile: false, // This allows you to use Babel without a config file
+        babelOptions: {
+          presets: ["@babel/preset-react"], // Ensure JSX parsing is enabled
+        },
       },
     },
   },
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
+  },
+  {
+    rules: {
+      "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }], // Optional
+    },
+  },
 ];
