@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Header, Rating } from "semantic-ui-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { axiosInstance } from "../../utils";
@@ -43,7 +44,7 @@ const Edit = (props) => {
         e.preventDefault();
         const image = await upload();
         try {
-            const res = await axiosInstance.put(`/reviews/${reviewId}`, {
+            await axiosInstance.put(`/reviews/${reviewId}`, {
                 rating: rating,
                 text: text,
                 date: moment().format("YYYY-MM-DD"),
@@ -125,6 +126,13 @@ const Edit = (props) => {
             </form>
         </div>
     );
+};
+
+Edit.propTypes = {
+    auth: PropTypes.shape({
+        currentUser: PropTypes.object.isRequired,
+        notAuthorized: PropTypes.func.isRequired,
+    }).isRequired,
 };
 
 export default Edit;
