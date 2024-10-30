@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Header, Rating } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
 import { axiosInstance } from "../../utils";
@@ -39,7 +40,7 @@ const Write = (props) => {
         e.preventDefault();
         const imgUrl = await upload();
         try {
-            const res = await axiosInstance.post(`/reviews`, {
+            await axiosInstance.post(`/reviews`, {
                 rating: rating,
                 text: text,
                 date: moment().format("YYYY-MM-DD"),
@@ -68,7 +69,7 @@ const Write = (props) => {
             <p className="write-text">
                 We appreciate your feedback. Please take a moment to rate and write a review of your experience with us.
             </p>
-            <form id="write-form">
+            <form id="write-form" onSubmit={handleSubmit}>
                 <div id="write-form-container">
                     <div className="write-form-col">
                         <label id="rating-label" htmlFor="write-rating">Rating: {rating}</label>
@@ -87,12 +88,20 @@ const Write = (props) => {
                         <textarea id="write-review" name="write-text" placeholder="Write a review..." value={text} onChange={(e) => setText(e.target.value)} required />
                     </div>
                     <div className="write-form-col">
-                        <button onClick={handleSubmit} type="submit" id="write-submit-btn">Submit Review</button>
+                        <button type="submit" id="write-submit-btn">Submit Review</button>
                     </div>
                 </div>
             </form>
         </div>
     );
+};
+
+Write.propTypes = {
+    auth: PropTypes.shape({
+        currentUser: PropTypes.shape({
+            id: PropTypes.string,
+        }),
+    }).isRequired,
 };
 
 export default Write;
