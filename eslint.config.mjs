@@ -6,17 +6,11 @@ export default [
   {
     files: ["**/*.{js,mjs,cjs,jsx}"],
     languageOptions: {
+      sourceType: "commonjs", // or "commonjs" if you prefer
       globals: { ...globals.browser, ...globals.node },
-      parser: "babel-eslint", // or "@babel/eslint-parser" if using that
-      parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: "commonjs", // or "commonjs" based on your project
-      },
+      parser: "@babel/eslint-parser", // Add the parser here
     },
-    plugins: {
-      react: pluginReact,
-    }
   },
   pluginJs.configs.recommended,
-  pluginReact.configs.flat.recommended
+  pluginReact.configs.flat.recommended,
 ];
