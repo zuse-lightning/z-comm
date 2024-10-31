@@ -1,10 +1,9 @@
 import axios from "axios";
 
-const baseURL = process.env.NODE_ENV === "production" 
-? "https://www.zusetestinggrounds.com/api/" 
-: "http://localhost:3001/api/";
-
+console.log(process.env.REACT_APP_API_URL);
 console.log(process.env.NODE_ENV);
+
+const baseURL = process.env.NODE_ENV === "production" ? process.env.REACT_APP_API_URL : "http://localhost:3001/api/";
 
 export const axiosInstance = axios.create({
     baseURL: baseURL,
