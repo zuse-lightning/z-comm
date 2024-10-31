@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import LogoutModal from "../../components/LogoutModal";
-import axios from "axios";
+import { axiosInstance } from "../../utils";
 
 const Home = (props) => {
 
@@ -10,7 +10,7 @@ const Home = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("/api/auth/test", { withCredentials: true });
+                const res = await axiosInstance.get("/auth/test", { withCredentials: true });
                 console.log(res.data);
             } catch (err) {
                 console.log(err);
