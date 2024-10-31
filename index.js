@@ -23,12 +23,21 @@ const app = express();
 const server = require("http").createServer(app);
 const path = require("path");
 const routes = require("./routes");
+const allowedOrigins = ["http://localhost:3000", "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com", "https://www.zusetestinggrounds.com"];
 const PORT = process.env.PORT || 3001;
 
 //Middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors({ credentials: true, origin: ["http://localhost:3000", "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com", "https://www.zusetestinggrounds.com"] }));
+app.use(cors({
+  origin: (origin, callback) => {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Origin not allowed by CORS"));
+    }
+  }
+}));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(helmet({
