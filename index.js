@@ -23,7 +23,7 @@ const app = express();
 const server = require("http").createServer(app);
 const path = require("path");
 const routes = require("./routes");
-const allowedOrigins = ["https://www.zusetestinggrounds.com"];
+const allowedOrigins = ["https://www.zusetestinggrounds.com", "http://localhost:3000", "http://localhost:3001"];
 const PORT = process.env.PORT || 3001;
 
 //Middlewares
@@ -36,7 +36,8 @@ app.use(cors({
     } else {
       callback(new Error("Origin not allowed by CORS"));
     }
-  }
+  },
+  credentials: true
 }));
 app.use(bodyParser.json());
 app.use(cookieParser());

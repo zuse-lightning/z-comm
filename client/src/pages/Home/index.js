@@ -10,7 +10,7 @@ const Home = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axiosInstance.get("/auth/test", { withCredentials: true });
+                const res = await axiosInstance.get("/auth/test");
                 console.log(res.data);
             } catch (err) {
                 console.log(err);
