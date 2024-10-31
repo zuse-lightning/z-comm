@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
-import axios from "axios";
+import { axiosInstance } from "../utils";
 
 export const AuthContext = createContext();
 
@@ -22,12 +22,12 @@ export const AuthContextProvider = ({ children }) => {
     };
 
     const login = async (inputs) => {
-        const res = await axios.post("/auth/login", inputs, { withCredentials: true });
+        const res = await axiosInstance.post("/auth/login", inputs, { withCredentials: true });
         setCurrentUser(res.data);
     };
 
     const logout = async () => {
-        await axios.post("/auth/logout", {}, { withCredentials: true });
+        await axiosInstance.post("/auth/logout", {}, { withCredentials: true });
         setCurrentUser(null);
         navigate("/");
     };
