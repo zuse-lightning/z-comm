@@ -23,7 +23,7 @@ const app = express();
 const server = require("http").createServer(app);
 const path = require("path");
 const routes = require("./routes");
-const allowedOrigins = ["http://localhost:3000", "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com", "https://www.zusetestinggrounds.com"];
+const allowedOrigins = ["https://www.zusetestinggrounds.com"];
 const PORT = process.env.PORT || 3001;
 
 //Middlewares
