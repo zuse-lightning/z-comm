@@ -6,8 +6,6 @@ import { AuthContextProvider } from "./context/authContext";
 import App from "./containers/App";
 import reportWebVitals from "./reportWebVitals";
 
-console.log(process.env.NODE_ENV);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const helmetContext = {};
 root.render(
