@@ -51,6 +51,7 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+      "connect-src": ["'self'", "https://www.zusetestinggrounds.com"],
       "img-src": ["'self'", "s3.amazonaws.com"]
     }
   }
