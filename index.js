@@ -52,10 +52,13 @@ app.use(helmet({
     directives: {
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
       "connect-src": ["'self'", "www.zusetestinggrounds.com"],
-      "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com"]
+      "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com"],
+      "object-src": ["'self'", "www.zusetestinggrounds.com"],
     }
   }
 }));
+
+console.log(helmet.contentSecurityPolicy.getDefaultDirectives());
 
 // const upload = multer({
 //   storage: multerS3({

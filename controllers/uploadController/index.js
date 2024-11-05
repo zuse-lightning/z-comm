@@ -13,6 +13,8 @@ let s3 = new S3Client({
     signatureVersion: "v4"
 });
 
+console.log(process.env.BUCKET_NAME + "\n", process.env.AWS_REGION + "\n", process.env.AWS_ACCESS_KEY + "\n", process.env.AWS_SECRET_ACCESS_KEY + "\n");
+
 const upload = multer({
     storage: multerS3({
         s3: s3,
