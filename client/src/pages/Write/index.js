@@ -39,6 +39,7 @@ const Write = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const imgUrl = await upload();
+        console.log(imgUrl.url);
         try {
             await axiosInstance.post(`/reviews`, {
                 rating: rating,
