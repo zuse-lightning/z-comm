@@ -20,6 +20,7 @@ const Write = (props) => {
         try {
             const formData = new FormData();
             formData.append("image", file);
+            console.log(file);
             console.log(formData);
             const res = await axiosInstance.post("/upload", formData);
             console.log(res.data);
