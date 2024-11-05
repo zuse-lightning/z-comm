@@ -58,8 +58,10 @@ const Edit = (props) => {
     
     const handleAccess = () => {
         if (userId) {
-            if (currentUser.id !== userId) {
-                notAuthorized();
+            console.log(currentUser.id, userId);
+            if (!currentUser || currentUser.id !== review.uid) {
+                alert("not authorized");
+                navigate("/reviews");
             }
         }
     };
