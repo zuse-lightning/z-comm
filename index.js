@@ -53,7 +53,7 @@ app.use(helmet({
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
       "connect-src": ["'self'", "www.zusetestinggrounds.com"],
       "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com"],
-      "object-src": ["'self'", "www.zusetestinggrounds.com"],
+      "object-src": ["'self'", "zuse-inc-bucket.s3.us-east-1.amazonaws.com"],
     }
   }
 }));
