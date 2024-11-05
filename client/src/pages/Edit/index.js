@@ -24,7 +24,7 @@ const Edit = (props) => {
         try {
             const formData = new FormData();
             formData.append("image", file);
-            const res = await axiosInstance.post("https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com/upload", formData);
+            const res = await axiosInstance.post("/upload", formData);
             return res.data;
         } catch (err) {
             console.log(err);

@@ -31,7 +31,7 @@ const Review = (props) => {
 
     const handleAccess = async () => {
         if (!currentUser || currentUser.id !== review.uid) {
-            alert("You are not authorized to edit this review.");
+            alert(`You are not authorized to edit ${review.first_name} ${review.last_name}'s review.`);
         } else {
             navigate(`/edit/${reviewId}`);
         };
@@ -39,7 +39,7 @@ const Review = (props) => {
 
     const handleDelete = async () => {
         try {
-            if (!currentUser || currentUser.id !== review.uid) alert("You are not authorized to delete this review.");
+            if (!currentUser || currentUser.id !== review.uid) alert(`You are not authorized to delete ${review.first_name} ${review.last_name}'s review.`);
             await axiosInstance.delete(`/reviews/${reviewId}`);
             navigate("/reviews");
         } catch (err) {
