@@ -46,9 +46,9 @@ app.use(helmet({
       "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com", "zuse-inc-bucket.s3.us-east-1.amazonaws.com"],
       "script-src": [
         "'self'", 
+        (req, res) => `'nonce-${res.locals.cspNonce}'`,
         "ct-schools-store.myshopify.com", 
-        "sdks.shopifycdn.com",
-        (req, res) => `'nonce-${res.locals.cspNonce}'`
+        "sdks.shopifycdn.com"
       ]
     }
   }
