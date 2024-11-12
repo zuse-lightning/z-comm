@@ -38,7 +38,8 @@ app.use(helmet({
     directives: {
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
       "connect-src": ["'self'", "www.zusetestinggrounds.com"],
-      "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com", "zuse-inc-bucket.s3.us-east-1.amazonaws.com"]
+      "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com", "zuse-inc-bucket.s3.us-east-1.amazonaws.com"],
+      "script-src": ["'self'", "ct-schools-store.myshopify.com"]
     }
   }
 }));
