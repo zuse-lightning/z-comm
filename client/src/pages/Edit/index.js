@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Header, Rating } from "semantic-ui-react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { axiosInstance } from "../../utils";
+import { axiosInstance } from "../../utils/api";
 import moment from "moment";
 
 import "./style.css";

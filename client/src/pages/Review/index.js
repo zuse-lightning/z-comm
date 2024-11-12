@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Header, Rating, Image, Button, Icon } from "semantic-ui-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import DeleteReviewModal from "../../components/DeleteReviewModal";
-import { axiosInstance } from "../../utils";
+import { axiosInstance } from "../../utils/api";
 import moment from "moment";
 
 import "./style.css";

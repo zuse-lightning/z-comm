@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import LogoutModal from "../../components/LogoutModal";
-import { axiosInstance } from "../../utils";
+import { axiosInstance } from "../../utils/api";
 
 const Home = (props) => {
 

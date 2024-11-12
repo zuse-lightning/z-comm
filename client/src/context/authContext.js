@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
-import { axiosInstance } from "../utils";
+import { axiosInstance } from "../utils/api";
 
 export const AuthContext = createContext();
 

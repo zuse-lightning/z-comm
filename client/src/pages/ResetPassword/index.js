@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Header, Button, Message } from "semantic-ui-react";
 import { useParams } from "react-router-dom";
-import { axiosInstance } from "../../utils";
+import { axiosInstance } from "../../utils/api";
 
 import "./style.css";
 
