@@ -42,7 +42,12 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-      "connect-src": ["'self'", "www.zusetestinggrounds.com"],
+      "connect-src": [
+        "'self'", 
+        "www.zusetestinggrounds.com",
+        "monorail-edge.shopifysvc.com",
+        "ct-schools-store.myshopify.com"
+      ],
       "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com", "zuse-inc-bucket.s3.us-east-1.amazonaws.com"],
       "script-src": [
         "'self'",
