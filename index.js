@@ -47,7 +47,7 @@ app.use(helmet({
       "script-src": [
         "'self'", 
         "ct-schools-store.myshopify.com", 
-        "sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js",
+        "sdks.shopifycdn.com",
         (req, res) => `'nonce-${res.locals.cspNonce}'`
       ]
     }
