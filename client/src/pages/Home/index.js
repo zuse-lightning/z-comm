@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import LogoutModal from "../../components/LogoutModal";
+import { embedShopifyProduct } from "../../utils/shopify";
 import { axiosInstance } from "../../utils/api";
 
 const Home = (props) => {
 
     const { auth } = props;
+
+    // console.log(window.ShopifyBuy.UI);
     
     useEffect(() => {
         const fetchData = async () => {
@@ -19,10 +22,15 @@ const Home = (props) => {
         fetchData();
     }, []);
 
+    useEffect(() => {
+        embedShopifyProduct("7997352608028", "ct-schools-store.myshopify.com", "b2b2a6d6fa1291bcb4219ec236d88b85");
+    }, []);
+
     return (
         <div>
             <h1>Home</h1>
             <LogoutModal auth={auth} />
+            <div id={`product-component-1731358336108`}></div>
         </div>
     );
 };
