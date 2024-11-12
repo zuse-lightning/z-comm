@@ -9,9 +9,7 @@ const db = mysql.createConnection({
 
 console.log(
     db.config.host,
-    db.config.user,
-    db.config.password,
-    db.config.database
+    db.config.user
 );
 
 module.exports = db;
