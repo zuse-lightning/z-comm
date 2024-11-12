@@ -48,7 +48,12 @@ app.use(helmet({
         "monorail-edge.shopifysvc.com",
         "ct-schools-store.myshopify.com"
       ],
-      "img-src": ["'self'", "zuse-inc-bucket.s3.amazonaws.com", "zuse-inc-bucket.s3.us-east-1.amazonaws.com"],
+      "img-src": [
+        "'self'", 
+        "zuse-inc-bucket.s3.amazonaws.com", 
+        "zuse-inc-bucket.s3.us-east-1.amazonaws.com",
+        "cdn.shopify.com"
+      ],
       "script-src": [
         "'self'",
         (req, res) => `'nonce-${res.locals.cspNonce}'`,
