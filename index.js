@@ -12,9 +12,9 @@ const server = require("http").createServer(app);
 const path = require("path");
 const routes = require("./routes");
 const allowedOrigins = [
-  "https://www.zusetestinggrounds.com", 
-  "http://localhost:3000", 
-  "http://localhost:3001", 
+  "https://www.zusetestinggrounds.com",
+  "http://localhost:3000",
+  "http://localhost:3001",
   "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com"
 ];
 const PORT = process.env.PORT || 3001;
@@ -43,14 +43,14 @@ app.use(helmet({
     directives: {
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
       "connect-src": [
-        "'self'", 
+        "'self'",
         "www.zusetestinggrounds.com",
         "monorail-edge.shopifysvc.com",
         "ct-schools-store.myshopify.com"
       ],
       "img-src": [
-        "'self'", 
-        "zuse-inc-bucket.s3.amazonaws.com", 
+        "'self'",
+        "zuse-inc-bucket.s3.amazonaws.com",
         "zuse-inc-bucket.s3.us-east-1.amazonaws.com",
         "cdn.shopify.com"
       ],
