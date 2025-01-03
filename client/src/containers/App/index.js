@@ -12,8 +12,8 @@ const App = () => {
 
     return (
         <>
-            {(window.location.href === "www.zcomm.store" || window.location.href.includes("localhost")) ? <ZComm auth={auth} /> : null}
-            {window.location.href === "www.allweatherhighviz.com" ? <AllWeaherHighViz /> : null}
+            {(window.location.href.includes("www.zcomm.store")) ? <ZComm auth={auth} /> : null}
+            {(window.location.href.includes("www.allweatherhighviz.com") || window.location.href.includes("localhost")) ? <AllWeaherHighViz /> : null}
         </>
     );
 };
