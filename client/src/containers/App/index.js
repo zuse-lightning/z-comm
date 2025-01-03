@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Route, Routes } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import AllWeaherHighViz from "../AllWeatherHighViz";
 import ZComm from "../ZComm";
