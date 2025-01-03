@@ -12,7 +12,7 @@ const App = () => {
     return (
         <>
             {(window.location.href.includes("www.zcomm.store")) ? <ZComm auth={auth} /> : null}
-            {(window.location.href.includes("www.allweatherhighviz.com") || window.location.href.includes("localhost")) ? <AllWeaherHighViz /> : null}
+            {(window.location.href.includes("www.allweatherhiviz.com") || window.location.href.includes("localhost")) ? <AllWeaherHighViz /> : null}
         </>
     );
 };
