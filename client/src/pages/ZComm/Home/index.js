@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import LogoutModal from "../../components/LogoutModal";
-import { embedShopifyProduct } from "../../utils/shopify";
-import { axiosInstance } from "../../utils/api";
+import LogoutModal from "../../../components/LogoutModal";
+import { embedShopifyProduct } from "../../../utils/shopify";
+import { axiosInstance } from "../../../utils/api";
 
 const Home = (props) => {
 

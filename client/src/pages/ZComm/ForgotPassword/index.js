@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Header, Button, Message } from "semantic-ui-react";
-import { axiosInstance } from "../../utils/api";
+import { axiosInstance } from "../../../utils/api";
 
 import "./style.css";
 

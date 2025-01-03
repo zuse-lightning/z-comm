@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Header, Rating, Image, Button, Icon } from "semantic-ui-react";
-import { axiosInstance } from "../../utils/api";
+import { axiosInstance } from "../../../utils/api";
 import moment from "moment";
 
 const Reviews = () => {
