@@ -9,6 +9,7 @@ import Reviews from "../../pages/ZComm/Reviews";
 import Review from "../../pages/ZComm/Review";
 import Write from "../../pages/ZComm/Write";
 import Edit from "../../pages/ZComm/Edit";
+import Navbar from "../../components/ZComm/Navbar";
 
 const ZComm = (props) => {
 
@@ -16,6 +17,7 @@ const ZComm = (props) => {
 
     return (
         <>
+            <Navbar />
             <Routes>
                 <Route exact path="/" element={<Home auth={auth} />} />
                 <Route exact path="/register" element={<Register auth={auth} />} />

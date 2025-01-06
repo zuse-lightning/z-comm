@@ -9,7 +9,7 @@ const Navbar = () => {
         <Menu secondary>
             <Menu.Item
                 className="zcomm-header-nav-item"
-                position="left"
+                
                 as={Link}
                 to="https://www.zcomm.store/"
                 name="home"
@@ -23,7 +23,7 @@ const Navbar = () => {
                     />
                 </div>
             </Menu.Item>
-            <Dropdown item text="Stores">
+            <Dropdown item text="Stores" >
                 <Dropdown.Menu>
                     <Dropdown.Item as={Link} to="https://www.allweatherhiviz.com/">All Weather High Viz</Dropdown.Item>   
                     <Dropdown.Item as={Link} to="https://www.dxnheadwear.com/">DXN Headwear</Dropdown.Item>
@@ -36,6 +36,7 @@ const Navbar = () => {
                 as={Link}
                 to="https://www.zcomm.store/about"
                 name="about"
+                
             >
                 About
             </Menu.Item>
@@ -44,6 +45,7 @@ const Navbar = () => {
                 as={Link}
                 to="https://www.zcomm.store/contact"
                 name="contact"
+                
             >
                 Contact
             </Menu.Item>
