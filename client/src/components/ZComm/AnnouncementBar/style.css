@@ -1,0 +1,10 @@
+#zcomm-announcement-container {
+    background-color: #262261;
+    padding: 0.5% 0;
+}
+
+#zcomm-announcement-header {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}

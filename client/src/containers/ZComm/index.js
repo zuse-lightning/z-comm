@@ -10,6 +10,7 @@ import Review from "../../pages/ZComm/Review";
 import Write from "../../pages/ZComm/Write";
 import Edit from "../../pages/ZComm/Edit";
 import Navbar from "../../components/ZComm/Navbar";
+import AnnouncementBar from "../../components/ZComm/AnnouncementBar";
 
 const ZComm = (props) => {
 
@@ -17,6 +18,7 @@ const ZComm = (props) => {
 
     return (
         <>
+            <AnnouncementBar />
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<Home auth={auth} />} />
