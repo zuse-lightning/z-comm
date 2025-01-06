@@ -12,10 +12,14 @@ const server = require("http").createServer(app);
 const path = require("path");
 const routes = require("./routes");
 const allowedOrigins = [
-  "https://www.zusetestinggrounds.com",
+  "https://www.zcomm.store",
+  "https://www.allweatherhiviz.com",
+  "https://www.dxnheadwear.com",
+  "https://www.fishlifeusa.com",
+  "https://www.pbrcorpshop.com",
   "http://localhost:3000",
   "http://localhost:3001",
-  "https://zuse-testing-grounds-3ca8bc72f89d.herokuapp.com"
+  "https://z-comm-7cc9724e1fa7.herokuapp.com"
 ];
 const PORT = process.env.PORT || 3001;
 
@@ -44,7 +48,11 @@ app.use(helmet({
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
       "connect-src": [
         "'self'",
-        "www.zusetestinggrounds.com",
+        "www.zcomm.store",
+        "www.allweatherhiviz.com",
+        "www.dxnheadwear.com",
+        "www.fishlifeusa.com",
+        "www.pbrcorpshop.com",
         "monorail-edge.shopifysvc.com",
         "ct-schools-store.myshopify.com"
       ],
