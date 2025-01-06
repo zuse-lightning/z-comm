@@ -4,7 +4,7 @@ import { AuthContext } from "../../context/authContext";
 import Home from "../../pages/AllWeatherHighViz/Home";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
 
-const AllWeaherHighViz = () => {
+const AllWeatherHighViz = () => {
 
     return (
         <>
@@ -16,4 +16,4 @@ const AllWeaherHighViz = () => {
     );
 };
 
-export default AllWeaherHighViz;
+export default AllWeatherHighViz;
