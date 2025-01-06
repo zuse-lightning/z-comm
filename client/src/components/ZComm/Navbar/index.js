@@ -6,10 +6,9 @@ import "./style.css";
 
 const Navbar = () => {
     return (
-        <Menu secondary>
+        <Menu id="zcomm-navbar" secondary>
             <Menu.Item
                 className="zcomm-header-nav-item"
-                
                 as={Link}
                 to="https://www.zcomm.store/"
                 name="home"
@@ -23,12 +22,12 @@ const Navbar = () => {
                     />
                 </div>
             </Menu.Item>
-            <Dropdown item text="Stores" >
+            <Dropdown className="zcomm-header-nav-item" item text="Stores">
                 <Dropdown.Menu>
-                    <Dropdown.Item as={Link} to="https://www.allweatherhiviz.com/">All Weather High Viz</Dropdown.Item>   
+                    <Dropdown.Item as={Link} to="https://www.allweatherhiviz.com/">All Weather High Viz</Dropdown.Item> 
                     <Dropdown.Item as={Link} to="https://www.dxnheadwear.com/">DXN Headwear</Dropdown.Item>
                     <Dropdown.Item as={Link} to="https://www.fishlifeusa.com/">Fish Life USA</Dropdown.Item>
-                    <Dropdown.Item as={Link} to="https://www.pbrcorpshop.com/">PBR Corp Shop</Dropdown.Item>  
+                    <Dropdown.Item as={Link} to="https://www.pbrcorpshop.com/">PBR Corp Shop</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             <Menu.Item

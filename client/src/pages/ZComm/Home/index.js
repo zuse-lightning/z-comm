@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import LogoutModal from "../../../components/LogoutModal";
+import HomeBanner from "../../../components/ZComm/HomeBanner";
 import { embedShopifyProduct } from "../../../utils/shopify";
 import { axiosInstance } from "../../../utils/api";
 
@@ -27,11 +27,10 @@ const Home = (props) => {
     }, []);
 
     return (
-        <div>
-            <h1>Home</h1>
-            <LogoutModal auth={auth} />
+        <>
+            <HomeBanner />
             <div id={`product-component-1731358336108`}></div>
-        </div>
+        </>
     );
 };
 

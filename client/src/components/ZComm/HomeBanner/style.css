@@ -1,0 +1,25 @@
+#zcomm-home-banner-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+#zcomm-home-banner {
+    object-fit: cover;
+    height: 700px;
+    filter: brightness(50%);;
+}
+
+#zcomm-home-banner-header1, #zcomm-home-banner-header2 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: white;
+}
+
+#zcomm-home-banner-header2 {
+    top: 50%;
+    font-size: 60px;
+}
