@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import HomeBanner from "../../../components/ZComm/HomeBanner";
+import HomeTrustBadges from "../../../components/ZComm/HomeTrustBadges";
 import { embedShopifyProduct } from "../../../utils/shopify";
 import { axiosInstance } from "../../../utils/api";
 
@@ -29,6 +30,7 @@ const Home = (props) => {
     return (
         <>
             <HomeBanner />
+            <HomeTrustBadges />
             <div id={`product-component-1731358336108`}></div>
         </>
     );
