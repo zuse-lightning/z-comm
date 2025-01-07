@@ -7,7 +7,7 @@ const HomeTrustBadges = () => {
     return (
         <div id="zcomm-home-trust-badges-container">
             <div className="zcomm-home-trust-badge">
-                <Image className="zcomm-home-trust-badge-img" draggable="false" />
+                <Image className="zcomm-home-trust-badge-img" draggable="false" src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/outstanding-service.png?v=1736273911" />
                 <Header className="zcomm-home-trust-badge-header" as="h2">Outstanding Service</Header>
                 <Header className="zcomm-home-trust-badge-text" as="h4">
                     At the heart of everything we do is a commitment to your success. Our dedicated team
@@ -16,7 +16,7 @@ const HomeTrustBadges = () => {
                 </Header>
             </div>
             <div className="zcomm-home-trust-badge">
-                <Image className="zcomm-home-trust-badge-img" draggable="false" />
+                <Image className="zcomm-home-trust-badge-img" draggable="false" src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/exclusive-pricing.png?v=1736273911" />
                 <Header className="zcomm-home-trust-badge-header" as="h2">Exclusive Pricing</Header>
                 <Header className="zcomm-home-trust-badge-text" as="h4">
                     Unlock the power of value with our tailored pricing plans designed to give you the edge.
@@ -24,7 +24,7 @@ const HomeTrustBadges = () => {
                 </Header>
             </div>
             <div className="zcomm-home-trust-badge">
-                <Image className="zcomm-home-trust-badge-img" draggable="false" />
+                <Image className="zcomm-home-trust-badge-img" draggable="false" src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/industry-expertise.png?v=1736273911" />
                 <Header className="zcomm-home-trust-badge-header" as="h2">Industry Expertise</Header>
                 <Header className="zcomm-home-trust-badge-text" as="h4">
                     With years of hands-on experience and a finger on the pulse of industry trends, Z-Comm delivers 

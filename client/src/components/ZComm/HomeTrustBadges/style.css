@@ -1,0 +1,20 @@
+#zcomm-home-trust-badges-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: 0 20%;
+    column-gap: 10%;
+    padding: 1% 0;
+}
+
+.zcomm-home-trust-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.zcomm-home-trust-badge-img {
+    width: 20%;
+}
