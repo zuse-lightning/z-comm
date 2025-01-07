@@ -5,18 +5,18 @@ console.log(process.env.NODE_ENV);
 let productionURL;
 
 console.log(window.location.href);
-console.log(process.env.ZCOMM_API_URL);
+console.log(process.env.REACT_APP_ZCOMM_API_URL);
 
 if (window.location.href.includes("www.zcomm.store")) {
-    productionURL = process.env.ZCOMM_API_URL;
+    productionURL = process.env.REACT_APP_ZCOMM_API_URL;
 } else if (window.location.href.includes("www.allweatherhiviz.com")) {
-    productionURL = process.env.AWHV_API_URL;
+    productionURL = process.env.REACT_APP_AWHV_API_URL;
 } else if (window.location.href.includes("www.dxnheadwear.com")) {
-    productionURL = process.env.DXN_API_URL;
+    productionURL = process.env.REACT_APP_DXN_API_URL;
 } else if (window.location.href.includes("www.fishlifeusa.com")) {
-    productionURL = process.env.FISH_LIFE_API_URL;
+    productionURL = process.env.REACT_APP_FISH_LIFE_API_URL;
 } else if (window.location.href.includes("www.pbrcorpshop.com")) {
-    productionURL = process.env.PBR_CORP_API_URL;
+    productionURL = process.env.REACT_APP_PBR_CORP_API_URL;
 }
 
 console.log(productionURL);
