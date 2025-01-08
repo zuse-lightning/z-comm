@@ -1,0 +1,48 @@
+#zcomm-home-about-container {
+    background-color: #262261;
+    padding: 1% 0;
+}
+
+#zcomm-home-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #262261;
+    width: 60%;
+    margin: 0 20%;
+    column-gap: 10%;
+    padding: 1% 0;
+}
+
+.zcomm-home-about-col {
+    margin: auto 0;
+}
+
+#zcomm-home-about-img {
+    width: 80%;
+    margin: 0 10%;
+}
+
+#zcomm-home-about-header {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+#zcomm-home-about-subheader {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+#zcomm-home-about-btn {
+    background-color: #f7931e;
+    color: #262261;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    margin: 5% 40%;
+    cursor: pointer;
+}
