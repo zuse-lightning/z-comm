@@ -10,7 +10,7 @@ const Navbar = () => {
             <Menu.Item
                 className="zcomm-header-nav-item"
                 as={Link}
-                to="https://www.zcomm.store/"
+                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/" : "/"}
                 name="home"
             >
                 <div id="zcomm-logo-container">
@@ -33,18 +33,16 @@ const Navbar = () => {
             <Menu.Item
                 className="zcomm-header-nav-item"
                 as={Link}
-                to="https://www.zcomm.store/about"
+                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/about" : "/about"}
                 name="about"
-                
             >
                 About
             </Menu.Item>
             <Menu.Item
                 className="zcomm-header-nav-item"
                 as={Link}
-                to="https://www.zcomm.store/contact"
+                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/contact" : "/contact"}
                 name="contact"
-                
             >
                 Contact
             </Menu.Item>

@@ -1,6 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../../pages/ZComm/Home";
+import About from "../../pages/ZComm/About";
+import Contact from "../../pages/ZComm/Contact";
 import Register from "../../pages/ZComm/Register";
 import Login from "../../pages/ZComm/Login";
 import ForgotPassword from "../../pages/ZComm/ForgotPassword";
@@ -22,6 +24,8 @@ const ZComm = (props) => {
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<Home auth={auth} />} />
+                <Route exact path="/about" element={<About />} />
+                <Route exact path="/contact" element={<Contact />} />
                 <Route exact path="/register" element={<Register auth={auth} />} />
                 <Route exact path="/login" element={<Login auth={auth} />} />
                 <Route exact path="/forgot" element={<ForgotPassword auth={auth} />} />
