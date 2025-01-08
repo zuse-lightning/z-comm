@@ -54,7 +54,8 @@ app.use(helmet({
         "www.fishlifeusa.com",
         "www.pbrcorpshop.com",
         "monorail-edge.shopifysvc.com",
-        "ct-schools-store.myshopify.com"
+        "ct-schools-store.myshopify.com",
+        "bfb312-ir.myshopify.com"
       ],
       "img-src": [
         "'self'",
@@ -67,6 +68,7 @@ app.use(helmet({
         "'self'",
         (req, res) => `'nonce-${res.locals.cspNonce}'`,
         "ct-schools-store.myshopify.com",
+        "bfb312-ir.myshopify.com",
         "sdks.shopifycdn.com"
       ]
     }

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import HomeBanner from "../../../components/ZComm/HomeBanner";
 import HomeTrustBadges from "../../../components/ZComm/HomeTrustBadges";
-import { embedShopifyProduct } from "../../../utils/shopify";
+import { embedShopifyProduct, embedShopifyCollection } from "../../../utils/shopify";
 import { axiosInstance } from "../../../utils/api";
 
 const Home = (props) => {
@@ -25,6 +25,7 @@ const Home = (props) => {
 
     useEffect(() => {
         embedShopifyProduct("7997352608028", "ct-schools-store.myshopify.com", "b2b2a6d6fa1291bcb4219ec236d88b85");
+        embedShopifyCollection("336240574659", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
     }, []);
 
     return (
@@ -32,6 +33,7 @@ const Home = (props) => {
             <HomeBanner />
             <HomeTrustBadges />
             <div id={`product-component-1731358336108`}></div>
+            <div id='collection-component-1736351766300'></div>
         </>
     );
 };
