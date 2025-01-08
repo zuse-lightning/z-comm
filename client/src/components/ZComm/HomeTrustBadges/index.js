@@ -11,7 +11,7 @@ const HomeTrustBadges = () => {
                 <Header className="zcomm-home-trust-badge-header" as="h2">Outstanding Service</Header>
                 <Header className="zcomm-home-trust-badge-text" as="h4">
                     At the heart of everything we do is a commitment to your success. Our dedicated team
-                    ensures every interaction is seamless, personalized, and exceeds your expectations —
+                    ensures every interaction is seamless, personalized, and exceeds your expectations, 
                     because you deserve nothing less than excellence.
                 </Header>
             </div>

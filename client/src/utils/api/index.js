@@ -4,10 +4,6 @@ console.log(process.env.NODE_ENV);
 
 let productionURL;
 
-console.log(window.location.href);
-console.log(process.env.REACT_APP_ZCOMM_API_URL);
-console.log(process.env.REACT_APP_AWHV_API_URL);
-
 if (window.location.href.includes("www.zcomm.store")) {
     productionURL = process.env.REACT_APP_ZCOMM_API_URL;
 } else if (window.location.href.includes("www.allweatherhiviz.com")) {

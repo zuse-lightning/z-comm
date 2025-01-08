@@ -18,3 +18,7 @@
 .zcomm-home-trust-badge-img {
     width: 20%;
 }
+
+.zcomm-home-trust-badge-header, .zcomm-home-trust-badge-text {
+    font-family: "Montserrat", sans-serif!important;
+}
