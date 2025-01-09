@@ -12,9 +12,7 @@
 
 #zcomm-about-banner-header, #zcomm-about-banner-subheader {
     position: absolute;
-    top: 40%;
-    width: 80%;
-    margin: 5% 10%;
+    top: 35%;
     text-align: center;
     font-weight: 700;
     color: white;
@@ -23,8 +21,13 @@
 
 #zcomm-about-banner-header {
     font-size: 60px;
+    width: 80%;
+    margin: 0 10%;
 }
 
 #zcomm-about-banner-subheader {
     top: 50%;
+    width: 50%;
+    margin: 0 25%;
+    font-size: 20px;
 }
