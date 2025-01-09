@@ -39,10 +39,18 @@
     color: #262261;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
-    border: none;
+    border: solid 2px #f7931e;
     border-radius: 5px;
     text-align: center;
     width: 20%;
     margin: 5% 40%;
     cursor: pointer;
+    transition: ease 0.5s !important;
+}
+
+#zcomm-home-about-btn:hover {
+    background-color: #262261;
+    color: #f7931e;
+    border: solid 2px #f7931e;
+    transition: ease 0.5s !important;
 }
