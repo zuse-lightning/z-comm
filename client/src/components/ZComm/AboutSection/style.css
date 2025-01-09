@@ -1,26 +1,30 @@
-#zcomm-home-banner-container {
+#zcomm-about-banner-container {
     position: relative;
     width: 100%;
     height: 700px;
 }
 
-#zcomm-home-banner {
+#zcomm-about-banner {
     object-fit: cover;
     height: 700px;
     filter: brightness(50%);
 }
 
-#zcomm-home-banner-header1, #zcomm-home-banner-header2 {
+#zcomm-about-banner-header, #zcomm-about-banner-subheader {
     position: absolute;
     top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: 5% 10%;
+    text-align: center;
     font-weight: 700;
     color: white;
     font-family: "Montserrat", sans-serif;
 }
 
-#zcomm-home-banner-header2 {
-    top: 50%;
+#zcomm-about-banner-header {
     font-size: 60px;
+}
+
+#zcomm-about-banner-subheader {
+    top: 50%;
 }
