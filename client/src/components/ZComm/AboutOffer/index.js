@@ -35,3 +35,5 @@ const AboutOffer = () => {
         </div>
     );
 };
+
+export default AboutOffer;
