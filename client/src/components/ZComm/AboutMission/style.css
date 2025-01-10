@@ -1,0 +1,16 @@
+#zcomm-about-mission-container {
+    width: 30%;
+    margin: 0 35%;
+    padding: 1%;
+}
+
+#zcomm-about-mission-header {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+#zcomm-about-mission-subheader {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}

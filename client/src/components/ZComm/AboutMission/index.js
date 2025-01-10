@@ -1,6 +1,8 @@
 import React from "react";
 import { Header } from "semantic-ui-react";
 
+import "./style.css";
+
 const AboutMission = () => {
     return (
         <div id="zcomm-about-mission-container">
