@@ -1,10 +1,10 @@
 import React from "react";
-import AboutSection from "../../../components/ZComm/AboutSection";
+import AboutBanner from "../../../components/ZComm/AboutBanner";
 
 const About = () => {
     return (
         <>
-            <AboutSection />
+            <AboutBanner />
         </>
     );
 };
