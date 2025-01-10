@@ -1,0 +1,29 @@
+#zcomm-about-qualities-container {
+    padding: 3%;
+}
+
+#zcomm-about-qualities {
+    background-color: #262261;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin: 0 20%;
+}
+
+.zcomm-about-quality-col {
+    margin: auto 0!important;
+}
+
+.zcomm-about-quality-col:nth-child(2),
+.zcomm-about-quality-col:nth-child(3),
+.zcomm-about-quality-col:nth-child(6),
+.zcomm-about-quality-col:nth-child(7) {
+    padding: 5%;
+}
+
+.zcomm-about-quality-header, .zcomm-about-quality-subheader {
+    color: white!important;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Montserrat", sans-serif!important;
+}
