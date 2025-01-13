@@ -1,5 +1,6 @@
 import React from "react";
-import { Image, Header } from "semantic-ui-react";
+import { Image, Header, Button } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -15,6 +16,7 @@ const AboutBanner = () => {
                     complexities of web development and product fulfillment, allowing you to focus on what 
                     matters most: growing your business and delighting your customers.
                 </Header>
+                <Button as={Link} to="/contact" id="zcomm-about-contact-btn">Contact Us</Button>
             </div>
         </div>
     );

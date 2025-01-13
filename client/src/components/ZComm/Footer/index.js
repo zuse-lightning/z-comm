@@ -33,7 +33,7 @@ const Footer = () => {
                         <List.Header as="h1" className="zcomm-footer-header">Ready to Get Started?</List.Header>
                         <List.Item className="zcomm-footer-list-item"><b>Call Us:</b> 203-458-3295</List.Item>
                         <List.Item className="zcomm-footer-list-item"><b>Email Us:</b> info@zcomm.store</List.Item>
-                    </List>                    
+                    </List>      
                 </div>
             </div>
         </div>
