@@ -6,6 +6,7 @@ import "./style.css";
 const AboutQualities = () => {
     return (
         <div id="zcomm-about-qualities-container">
+            <Header as="h1" id="zcomm-about-qualities-header">Why Choose Z-Comm?</Header>
             <div id="zcomm-about-qualities">
                 <div className="zcomm-about-quality-col">
                     <Image className="zcomm-about-quality-img" src="https://picsum.photos/800" />

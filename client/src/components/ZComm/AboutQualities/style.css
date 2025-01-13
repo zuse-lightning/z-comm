@@ -2,6 +2,16 @@
     padding: 3%;
 }
 
+#zcomm-about-qualities-header {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3%;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: #f7931e;
+}
+
 #zcomm-about-qualities {
     background-color: #262261;
     display: grid;

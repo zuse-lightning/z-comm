@@ -1,0 +1,37 @@
+#zcomm-about-quote-container {
+    background-color: #f7931e;
+    padding: 5%;
+}
+
+#zcomm-about-quote {
+    width: 30%;
+    margin: 0 35%;
+    text-align: center;
+}
+
+#zcomm-about-quote-header, #zcomm-about-quote-subheader {
+    color: white;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+#zcomm-about-quote-btn {
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    margin: 5% 40%;
+    cursor: pointer;
+    transition: ease 0.5s !important;
+}
+
+#zcomm-about-quote-btn:hover {
+    background-color: #ffffff;
+    color: #f7931e;
+    border: solid 2px #ffffff;
+    transition: ease 0.5s !important;
+}
