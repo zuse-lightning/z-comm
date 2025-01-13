@@ -1,10 +1,11 @@
 import React from "react";
+import ContactForm from "../../../components/ZComm/ContactForm";
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Z-Comm Contact</h1>
-        </div>
+        <>
+            <ContactForm />
+        </>
     );
 };
 
