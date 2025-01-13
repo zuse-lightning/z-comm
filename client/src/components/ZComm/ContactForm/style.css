@@ -1,0 +1,55 @@
+#zcomm-contact-form-container {
+    padding: 3%;
+}
+
+#zcomm-contact-form-header {
+    font-size: 48px;
+    font-weight: 700!important;
+    text-align: center;
+}
+
+#zcomm-contact-form-subheader {
+    font-size: 20px;
+    font-weight: 500!important;
+    text-align: center;
+}
+
+#zcomm-form-field-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)!important;
+    column-gap: 20px;
+    row-gap: 30px;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.zcomm-form-field-col:nth-child(3),
+.zcomm-form-field-col:nth-child(4),
+.zcomm-form-field-col:nth-child(5) {
+    grid-column: 1 / span 2;
+}
+
+#zcomm-name-input, #zcomm-email-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#zcomm-name-input {
+    margin: 0 0 0 20%;
+}
+
+#zcomm-phone-input,
+#zcomm-service-select, #zcomm-message-input {
+    width: 80%;
+    margin: 0 10%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#zcomm-message-input {
+    height: 100px;
+    resize: none;
+}
