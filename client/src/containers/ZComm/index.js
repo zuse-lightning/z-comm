@@ -11,8 +11,9 @@ import Reviews from "../../pages/ZComm/Reviews";
 import Review from "../../pages/ZComm/Review";
 import Write from "../../pages/ZComm/Write";
 import Edit from "../../pages/ZComm/Edit";
-import Navbar from "../../components/ZComm/Navbar";
 import AnnouncementBar from "../../components/ZComm/AnnouncementBar";
+import Navbar from "../../components/ZComm/Navbar";
+import Footer from "../../components/ZComm/Footer";
 
 const ZComm = (props) => {
 
@@ -35,6 +36,7 @@ const ZComm = (props) => {
                 <Route exact path="/write" element={<Write auth={auth} />} />
                 <Route exact path="/edit/:id" element={<Edit auth={auth} />} />
             </Routes>
+            <Footer />
         </>
     );
 };
