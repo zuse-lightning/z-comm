@@ -1,5 +1,6 @@
 import React from "react";
-import { Header, Button } from "semantic-ui-react";
+import { Header, Button, List } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -7,13 +8,33 @@ const Footer = () => {
     return (
         <div id="zcomm-footer-container">
             <div id="zcomm-footer">
-                <Header as="h1" id="zcomm-footer-header">Ready to Get Started?</Header>
-                <Header as="h4" id="zcomm-footer-subheader">
-                    Whether you're looking to launch a new e-commerce store, optimize your existing website, or
-                    streamline your product fulfillment process, Z-Comm is here to help. Get in touch with us today
-                    to learn more about our services and how we can empower your e-commerce success.
-                </Header>
-                <Button id="zcomm-footer-btn" as="a" href="/contact">Get In Touch</Button>
+                <div className="zcomm-footer-col">
+                    <List>
+                        <List.Header as="h1" className="zcomm-footer-header">Explore</List.Header>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/quote">Get A Quote</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/about">About</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/services">Services</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/contact">Contact</List.Item>
+                    </List>
+                </div>
+                <div className="zcomm-footer-col">
+                    <List>
+                        <List.Header as="h1" className="zcomm-footer-header">Learn More</List.Header>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/faq">Help</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/guarantee">Guarantee</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/returns">Returns & Refunds Policy</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/privacy">Privacy Policy</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/shipping">Shipping Policy</List.Item>
+                        <List.Item className="zcomm-footer-list-item" as={Link} to="/terms">Terms of Service</List.Item>
+                    </List>
+                </div>
+                <div className="zcomm-footer-col">
+                    <List>
+                        <List.Header as="h1" className="zcomm-footer-header">Ready to Get Started?</List.Header>
+                        <List.Item className="zcomm-footer-list-item"><b>Call Us:</b> 203-458-3295</List.Item>
+                        <List.Item className="zcomm-footer-list-item"><b>Email Us:</b> info@zcomm.store</List.Item>
+                    </List>                    
+                </div>
             </div>
         </div>
     );

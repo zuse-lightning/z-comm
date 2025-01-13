@@ -1,0 +1,28 @@
+#zcomm-footer-container {
+    background-color: #262261;
+    padding: 5%;
+}
+
+#zcomm-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: 0 20%;
+    column-gap: 10%;
+    padding: 1% 0;
+}
+
+.zcomm-footer-header {
+    color: white!important;
+    font-weight: 700!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif!important;
+}
+
+.zcomm-footer-list-item {
+    color: white!important;
+    
+    font-family: "Montserrat", sans-serif!important;
+    font-size: 18px;
+    margin: 5% 0;
+}
