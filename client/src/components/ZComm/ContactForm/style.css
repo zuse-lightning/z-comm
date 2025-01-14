@@ -6,12 +6,15 @@
     font-size: 48px;
     font-weight: 700!important;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 #zcomm-contact-form-subheader {
     font-size: 20px;
     font-weight: 500!important;
     text-align: center;
+    margin-bottom: 3%;
+    font-family: "Montserrat", sans-serif;
 }
 
 #zcomm-form-field-container {
@@ -34,6 +37,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
 }
 
 #zcomm-name-input {
@@ -47,6 +51,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
 }
 
 #zcomm-message-input {
