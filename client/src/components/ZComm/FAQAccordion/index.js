@@ -37,3 +37,5 @@ const FAQAccordion = () => {
         </div>
     );
 };
+
+export default FAQAccordion;

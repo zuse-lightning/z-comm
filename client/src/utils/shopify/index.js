@@ -1,4 +1,5 @@
-import { ctSchoolsProductOptions, awhvCollectionOptions } from "../../assets";
+import { ctSchoolsProductOptions } from "../../assets/productOptions";
+import { awhvCollectionOptions } from "../../assets/collectionOptions";
 
 export const embedShopifyProduct = (productId, domain, token) => {
     const loadScript = () => {
