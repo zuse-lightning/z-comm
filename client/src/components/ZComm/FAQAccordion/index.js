@@ -11,7 +11,6 @@ const FAQAccordion = () => {
     const handleClick = (e, titleProps) => {
         const { index } = titleProps;
         const newIndex = activeIndex === index ? -1 : index;
-
         setActiveIndex(newIndex);
     };
 
@@ -20,11 +19,12 @@ const FAQAccordion = () => {
     return (
         <div id="zcomm-faq-accordion-container">
             <Header as="h1" id="zcomm-faq-accordion-header">Frequently Asked Questions</Header>
-            <Accordion fluid styled>
+            <Accordion id="zcomm-faq-accordion" fluid styled>
                 {zcommFAQ.map((faq, index) => {
                     return (
                         <div key={index}>
                             <Accordion.Title
+                                className="zcomm-faq-accordion-title"
                                 active={activeIndex === index + 1}
                                 index={index + 1}
                                 onClick={handleClick}
@@ -32,12 +32,12 @@ const FAQAccordion = () => {
                                 <Icon name="dropdown" />
                                 {faq.question}
                             </Accordion.Title>
-                            <Accordion.Content active={activeIndex === index + 1}>
+                            <Accordion.Content className="zcomm-faq-accordion-content" active={activeIndex === index + 1}>
                                 <p className="zcomm-faq-accordion-text">{faq.answer}</p>
-                                {activeIndex === 3 ? <List bulleted>
+                                {activeIndex === 3 ? <List id="zcomm-faq-accordion-list" bulleted>
                                     {zcommServices.map((service, index) => {
                                         return (
-                                            <List.Item key={index}>{service}</List.Item>
+                                            <List.Item className="zcomm-faq-accordion-list-item" key={index}>{service}</List.Item>
                                         );
                                     })}
                                 </List> : null}
@@ -45,21 +45,6 @@ const FAQAccordion = () => {
                         </div>
                     );
                 })}
-                {/* <Accordion.Title
-                    active={activeIndex === 0}
-                    index={0}
-                    onClick={handleClick}
-                >
-                    <Icon name="dropdown" />
-                    What does Z-Comm do?
-                </Accordion.Title>
-                <Accordion.Content active={activeIndex === 0}>
-                    <p className="zcomm-faq-accordion-text">
-                        Z-Comm is an innovative e-commerce solutions provider. We help businesses of 
-                        all sizes create, optimize, and grow their online stores with cutting-edge tools, 
-                        integrations, and strategies.
-                    </p>
-                </Accordion.Content> */}
             </Accordion>
         </div>
     );
