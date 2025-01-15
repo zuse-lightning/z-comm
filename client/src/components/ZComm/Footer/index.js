@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Button, List } from "semantic-ui-react";
+import { Header, Button, Icon, List } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
 import "./style.css";
@@ -34,6 +34,20 @@ const Footer = () => {
                         <List.Item className="zcomm-footer-list-item"><b>Call Us:</b> 203-458-3295</List.Item>
                         <List.Item className="zcomm-footer-list-item"><b>Email Us:</b> info@zcomm.store</List.Item>
                     </List>      
+                </div>
+            </div>
+            <div id="zcomm-footer-social-icons">
+                <div className="zcomm-footer-social-icon-col">
+                    <Icon className="zcomm-footer-social-icon" name="facebook" size="big" />
+                </div>
+                <div className="zcomm-footer-social-icon-col">
+                    <Icon className="zcomm-footer-social-icon" name="instagram" size="big" />
+                </div>
+                <div className="zcomm-footer-social-icon-col">
+                    <Icon className="zcomm-footer-social-icon" name="youtube" size="big" />
+                </div>
+                <div className="zcomm-footer-social-icon-col">
+                    <Icon className="zcomm-footer-social-icon" name="linkedin" size="big" />
                 </div>
             </div>
         </div>
