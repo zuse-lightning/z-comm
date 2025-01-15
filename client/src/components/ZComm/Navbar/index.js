@@ -41,6 +41,30 @@ const Navbar = () => {
             <Menu.Item
                 className="zcomm-header-nav-item"
                 as={Link}
+                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/services" : "/services"}
+                name="services"
+            >
+                Services
+            </Menu.Item>
+            <Menu.Item
+                className="zcomm-header-nav-item"
+                as={Link}
+                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/faq" : "/faq"}
+                name="faq"
+            >
+                Help
+            </Menu.Item>
+            <Menu.Item
+                className="zcomm-header-nav-item"
+                as={Link}
+                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/quote" : "/quote"}
+                name="quote"
+            >
+                Get A Quote
+            </Menu.Item>
+            <Menu.Item
+                className="zcomm-header-nav-item"
+                as={Link}
                 to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/contact" : "/contact"}
                 name="contact"
             >
