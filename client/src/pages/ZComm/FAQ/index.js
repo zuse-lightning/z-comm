@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import FAQAccordion from "../../../components/ZComm/FAQAccordion";
 
 const FAQ = () => {
     return (
         <div>
-            <h1>FAQ</h1>
+            <FAQAccordion />
         </div>
     );
 };
