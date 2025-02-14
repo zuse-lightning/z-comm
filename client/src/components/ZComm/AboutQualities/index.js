@@ -9,7 +9,7 @@ const AboutQualities = () => {
             <Header as="h1" id="zcomm-about-qualities-header">Why Choose Z-Comm?</Header>
             <div id="zcomm-about-qualities">
                 <div className="zcomm-about-quality-col">
-                    <Image className="zcomm-about-quality-img" src="https://picsum.photos/800" />
+                    <Image className="zcomm-about-quality-img" src="https://zcomm-site.s3.us-east-1.amazonaws.com/zcomm/IMG_6077.jpg" />
                 </div>
                 <div className="zcomm-about-quality-col">
                     <Header as="h1" className="zcomm-about-quality-header">Expertise</Header>
@@ -24,10 +24,10 @@ const AboutQualities = () => {
                     </Header>
                 </div>
                 <div className="zcomm-about-quality-col">
-                    <Image className="zcomm-about-quality-img" src="https://picsum.photos/800" />
+                    <Image className="zcomm-about-quality-img" src="https://zcomm-site.s3.us-east-1.amazonaws.com/zcomm/IMG_6049.jpg" />
                 </div>
                 <div className="zcomm-about-quality-col">
-                    <Image className="zcomm-about-quality-img" src="https://picsum.photos/800" />
+                    <Image className="zcomm-about-quality-img" src="https://zcomm-site.s3.us-east-1.amazonaws.com/zcomm/AdobeStock_300873824.jpg" />
                 </div>
                 <div className="zcomm-about-quality-col">
                     <Header as="h1" className="zcomm-about-quality-header">Customer-Centric Approach</Header>
@@ -42,7 +42,7 @@ const AboutQualities = () => {
                     </Header>
                 </div>
                 <div className="zcomm-about-quality-col">
-                    <Image className="zcomm-about-quality-img" src="https://picsum.photos/800" />
+                    <Image className="zcomm-about-quality-img" src="https://zcomm-site.s3.us-east-1.amazonaws.com/zcomm/IMG_6092.jpg" />
                 </div>
             </div>
         </div>
