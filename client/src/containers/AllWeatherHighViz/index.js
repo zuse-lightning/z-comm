@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
+import Navbar from "../../components/AllWeatherHighViz/Navbar";
 import Home from "../../pages/AllWeatherHighViz/Home";
 import OurStory from "../../pages/AllWeatherHighViz/OurStory";
 import Headwear from "../../pages/AllWeatherHighViz/Headwear";
@@ -18,6 +19,7 @@ const AllWeatherHighViz = () => {
 
     return (
         <>
+            <Navbar />
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/our-story" element={<OurStory />} />

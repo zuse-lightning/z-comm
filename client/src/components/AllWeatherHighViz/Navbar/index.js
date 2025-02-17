@@ -22,26 +22,42 @@ const Navbar = () => {
                     />
                 </div>
             </Menu.Item>
-            <Dropdown className="awhv-header-nav-item" item text="Stores">
+            <Menu.Item
+                className="awhv-header-nav-item"
+                as={Link}
+                to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/our-story" : "/our-story"}
+                name="our-story"
+            >
+                Our Story
+            </Menu.Item>
+            <Dropdown className="awhv-header-nav-item" item text="Collections">
                 <Dropdown.Menu>
-                    <Dropdown.Item as={Link} to="https://www.allweatherhiviz.com/">All Weather High Viz</Dropdown.Item>
-                    <Dropdown.Item as={Link} to="https://www.dxnheadwear.com/">DXN Headwear</Dropdown.Item>
-                    <Dropdown.Item as={Link} to="https://www.fishlifeusa.com/">Fish Life USA</Dropdown.Item>
-                    <Dropdown.Item as={Link} to="https://www.pbrcorpshop.com/">PBR Corp Shop</Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/new-releases" : "/new-releases"}>
+                            New Releases
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/best-sellers" : "/best-sellers"}>
+                        DXN Headwear
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to="https://www.fishlifeusa.com/">
+                        Fish Life USA
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to="https://www.pbrcorpshop.com/">
+                        PBR Corp Shop
+                    </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             <Menu.Item
                 className="awhv-header-nav-item"
                 as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/about" : "/about"}
-                name="about"
-            >
-                About
-            </Menu.Item>
-            <Menu.Item
-                className="awhv-header-nav-item"
-                as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/services" : "/services"}
+                to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/services" : "/services"}
                 name="services"
             >
                 Services
@@ -49,7 +65,7 @@ const Navbar = () => {
             <Menu.Item
                 className="awhv-header-nav-item"
                 as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/faq" : "/faq"}
+                to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/faq" : "/faq"}
                 name="faq"
             >
                 Help
@@ -57,7 +73,7 @@ const Navbar = () => {
             <Menu.Item
                 className="awhv-header-nav-item"
                 as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/quote" : "/quote"}
+                to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/quote" : "/quote"}
                 name="quote"
             >
                 Get A Quote
@@ -65,7 +81,7 @@ const Navbar = () => {
             <Menu.Item
                 className="awhv-header-nav-item"
                 as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/contact" : "/contact"}
+                to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/contact" : "/contact"}
                 name="contact"
             >
                 Contact
