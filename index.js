@@ -61,6 +61,7 @@ app.use(helmet({
         "'self'",
         "zuse-inc-bucket.s3.amazonaws.com",
         "zuse-inc-bucket.s3.us-east-1.amazonaws.com",
+        "zcomm-site.s3.us-east-1.amazonaws.com",
         "cdn.shopify.com",
         "sdks.shopifycdn.com",
         "fastly.picsum.photos",
