@@ -2,6 +2,16 @@ import React, { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import Home from "../../pages/AllWeatherHighViz/Home";
+import OurStory from "../../pages/AllWeatherHighViz/OurStory";
+import Headwear from "../../pages/AllWeatherHighViz/Headwear";
+import Jackets from "../../pages/AllWeatherHighViz/Jackets";
+import Hoodies from "../../pages/AllWeatherHighViz/Hoodies";
+import NewReleases from "../../pages/AllWeatherHighViz/NewReleases";
+import BestSellers from "../../pages/AllWeatherHighViz/BestSellers";
+import ConcealedCarry from "../../pages/AllWeatherHighViz/ConcealedCarry";
+import Shirts from "../../pages/AllWeatherHighViz/Shirts";
+import Pants from "../../pages/AllWeatherHighViz/Pants";
+import Vests from "../../pages/AllWeatherHighViz/Vests";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
 
 const AllWeatherHighViz = () => {
@@ -10,6 +20,16 @@ const AllWeatherHighViz = () => {
         <>
             <Routes>
                 <Route exact path="/" element={<Home />} />
+                <Route exact path="/our-story" element={<OurStory />} />
+                <Route exact path="/headwear" element={<Headwear />} />
+                <Route exact path="/jackets" element={<Jackets />} />
+                <Route exact path="/hoodies" element={<Hoodies />} />
+                <Route exact path="/new-releases" element={<NewReleases />} />
+                <Route exact path="/best-sellers" element={<BestSellers />} />
+                <Route exact path="/concealed-carry" element={<ConcealedCarry />} />
+                <Route exact path="/shirts" element={<Shirts />} />
+                <Route exact path="/pants" element={<Pants />} />
+                <Route exact path="/vests" element={<Vests />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>
         </>
