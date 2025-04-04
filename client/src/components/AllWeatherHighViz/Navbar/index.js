@@ -40,17 +40,42 @@ const Navbar = () => {
                     <Dropdown.Item 
                         as={Link} 
                         to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/best-sellers" : "/best-sellers"}>
-                        DXN Headwear
+                        Best Sellers
                     </Dropdown.Item>
                     <Dropdown.Item 
                         as={Link} 
-                        to="https://www.fishlifeusa.com/">
-                        Fish Life USA
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/concealed-carry" : "/concealed-carry"}>
+                        Concealed Carry Collection
                     </Dropdown.Item>
                     <Dropdown.Item 
                         as={Link} 
-                        to="https://www.pbrcorpshop.com/">
-                        PBR Corp Shop
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/shirts" : "/shirts"}>
+                        Shirts
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/jackets" : "/jackets"}>
+                        Jackets
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/hoodies" : "/hoodies"}>
+                        Hoodies
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/headwear" : "/headwear"}>
+                        Headwear
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/vests" : "/vests"}>
+                        Vests
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/pants" : "/pants"}>
+                        Pants
                     </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
