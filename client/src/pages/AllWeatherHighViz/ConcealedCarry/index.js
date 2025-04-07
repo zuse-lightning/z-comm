@@ -1,12 +1,13 @@
 import React from "react";
+import { Header } from "semantic-ui-react";
 
 import "./style.css";
 
 const ConcealedCarry = () => {
     return (
         <>
-            <div>
-                <h1>AWHV Concealed Carry Collection</h1>
+            <div id="awhv-concealed-carry-container">
+                <Header as="h1" id="awhv-concealed-carry-header">Concealed Carry Collection</Header>
             </div>
         </>
     );

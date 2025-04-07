@@ -1,7 +1,7 @@
 import { ctSchoolsProductOptions } from "../../assets/productOptions";
 import { awhvCollectionOptions } from "../../assets/collectionOptions";
 
-export const embedShopifyProduct = (productId, domain, token) => {
+export const embedShopifyProduct = (productId, productNode, domain, token) => {
     const loadScript = () => {
         const script = document.getElementsByTagName("script")[0];
         script.onload = ShopifyBuyInit;
@@ -16,7 +16,7 @@ export const embedShopifyProduct = (productId, domain, token) => {
         window.ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
                 id: productId,
-                node: document.getElementById('product-component-1731358336108'),
+                node: document.getElementById(productNode),
                 moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: ctSchoolsProductOptions,
             });
@@ -35,7 +35,7 @@ export const embedShopifyProduct = (productId, domain, token) => {
     }
 };
 
-export const embedShopifyCollection = (collectionId, domain, token) => {
+export const embedShopifyCollection = (collectionId, collectionNode, domain, token) => {
     const loadScript = () => {
         const script = document.getElementsByTagName("script")[0];
         script.onload = ShopifyBuyInit;
@@ -50,7 +50,7 @@ export const embedShopifyCollection = (collectionId, domain, token) => {
         window.ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('collection', {
                 id: collectionId,
-                node: document.getElementById('collection-component-1736351766300'),
+                node: document.getElementById(collectionNode),
                 moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: awhvCollectionOptions,
             });
