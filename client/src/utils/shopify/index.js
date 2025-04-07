@@ -14,10 +14,10 @@ export const embedShopifyProduct = (productId, productNode, domain, token) => {
             storefrontAccessToken: token,
         });
         window.ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('product', {
+            ui.createComponent("product", {
                 id: productId,
                 node: document.getElementById(productNode),
-                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                moneyFormat: "%24%7B%7Bamount%7D%7D",
                 options: ctSchoolsProductOptions,
             });
         });
@@ -48,10 +48,10 @@ export const embedShopifyCollection = (collectionId, collectionNode, domain, tok
             storefrontAccessToken: token,
         });
         window.ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('collection', {
+            ui.createComponent("collection", {
                 id: collectionId,
                 node: document.getElementById(collectionNode),
-                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                moneyFormat: "%24%7B%7Bamount%7D%7D",
                 options: awhvCollectionOptions,
             });
         });
@@ -66,5 +66,11 @@ export const embedShopifyCollection = (collectionId, collectionNode, domain, tok
         }
     } else {
         loadScript();
+    }
+    return {
+        collectionId,
+        collectionNode,
+        domain,
+        token
     }
 };
