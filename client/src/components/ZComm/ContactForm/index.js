@@ -1,9 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import { Header, Button } from "semantic-ui-react";
 
 import "./style.css";
+import { set } from "mongoose";
 
 const ContactForm = () => {
+
+    const [submitted, setSubmitted] = useState(false);
+    const { register } = useForm();
+    const navigate = useNavigate();
+    const FORM_ENDPOINT = "https://www.formbackend.com/f/1ff3b1b967ef8484";
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const zcommContactForm = document.getElementById("zcomm-contact-form");
+        const formData = new FormData(zcommContactForm);
+
+        const response = await fetch(FORM_ENDPOINT, {
+            method: "POST",
+            
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": true,
+                "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+                "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+            },
+            body: formData
+        }).then((response) => {
+            if (!response.ok) {
+                throw new Error("Form response was not ok");
+            }
+            setSubmitted(true);
+        }).catch((err) => {
+            e.target.submit();
+        });
+    };
+
+    if (submitted) {
+        return (
+            <>
+                <div id="thank-you-container">
+                    <h2>Thank you!</h2>
+                    <div>We'll be in touch soon.</div>
+                </div>
+            </>
+        );
+    };
+
     return (
         <div id="zcomm-contact-form-container">
             <Header as="h1" id="zcomm-contact-form-header">Contact</Header>
