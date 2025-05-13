@@ -53,6 +53,7 @@ app.use(helmet({
         "www.dxnheadwear.com",
         "www.fishlifeusa.com",
         "www.pbrcorpshop.com",
+        "www.formbackend.com",
         "monorail-edge.shopifysvc.com",
         "ct-schools-store.myshopify.com",
         "bfb312-ir.myshopify.com"
@@ -66,6 +67,15 @@ app.use(helmet({
         "sdks.shopifycdn.com",
         "fastly.picsum.photos",
         "picsum.photos"
+      ],
+      "form-action": [
+        "'self'",
+        "www.zcomm.store",
+        "www.allweatherhiviz.com",
+        "www.dxnheadwear.com",
+        "www.fishlifeusa.com",
+        "www.pbrcorpshop.com",
+        "www.formbackend.com"
       ],
       "script-src": [
         "'self'",

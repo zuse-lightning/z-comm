@@ -54,7 +54,12 @@ const ContactForm = () => {
         <div id="zcomm-contact-form-container">
             <Header as="h1" id="zcomm-contact-form-header">Contact</Header>
             <Header as="h4" id="zcomm-contact-form-subheader">Fill out the form below to get in touch with us!</Header>
-            <form id="zcomm-contact-form">
+            <form 
+                id="zcomm-contact-form"
+                onSubmit={handleSubmit}
+                method="POST"
+                action={FORM_ENDPOINT}
+            >
                 <div id="zcomm-form-field-container">
                     <div className="zcomm-form-field-col">
                         <input id="zcomm-name-input" type="text" placeholder="Name" name="name" required />
@@ -77,6 +82,7 @@ const ContactForm = () => {
                         <textarea id="zcomm-message-input" placeholder="Message" name="message" required />
                     </div>
                 </div>
+                <button id="zcomm-submit-btn" type="submit">Submit</button>
             </form>
         </div>
     );
