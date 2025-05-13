@@ -19,7 +19,7 @@ const ContactForm = () => {
         const zcommContactForm = document.getElementById("zcomm-contact-form");
         const formData = new FormData(zcommContactForm);
 
-        const response = await fetch(FORM_ENDPOINT, {
+        const response = await fetch("http://localhost:3001/api/contact", {
             method: "POST",
             
             headers: {
@@ -58,7 +58,7 @@ const ContactForm = () => {
                 id="zcomm-contact-form"
                 onSubmit={handleSubmit}
                 method="POST"
-                action={FORM_ENDPOINT}
+                action="http://localhost:3001/api/contact"
             >
                 <div id="zcomm-form-field-container">
                     <div className="zcomm-form-field-col">
@@ -68,7 +68,7 @@ const ContactForm = () => {
                         <input id="zcomm-email-input" type="email" placeholder="Email" name="email" required />
                     </div>
                     <div className="zcomm-form-field-col">
-                        <input id="zcomm-phone-input" type="text" placeholder="Phone Number" name="phone-number" />
+                        <input id="zcomm-phone-input" type="text" placeholder="Phone Number" name="phone_number" />
                     </div>
                     <div className="zcomm-form-field-col">
                         <select name="service" id="zcomm-service-select" required>

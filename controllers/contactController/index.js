@@ -1,4 +1,4 @@
-const { db } = require("../../config");
+const db = require("../../config");
 const { setContactData } = require ("../../models/contact");
 
 module.exports = {
@@ -11,7 +11,9 @@ module.exports = {
             req.body.service,
             req.body.message
         ];
-        
+
+        console.log("Contact form values:", values);
+
         db.query(setContactData, [values], (err, data) => {
             if (err) {
                 console.error("Error inserting contact form data:", err);
