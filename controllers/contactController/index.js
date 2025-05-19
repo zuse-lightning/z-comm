@@ -1,5 +1,6 @@
 const db = require("../../config");
 const { setContactData } = require ("../../models/contact");
+const sendEmail = require("../../utils/sendEmail");
 
 module.exports = {
     submitContactForm: (req, res) => {
@@ -19,6 +20,7 @@ module.exports = {
                 console.error("Error inserting contact form data:", err);
                 return res.status(500).json({ error: "Internal server error" });
             }
+            sendEmail(req.body.email, "Contact Form Submission", "Thank you for contacting us!");
             res.status(200).json({ message: "Contact form submitted successfully" });
         });
     }
