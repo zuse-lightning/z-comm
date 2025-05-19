@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { Header, Button } from "semantic-ui-react";
@@ -41,30 +41,21 @@ const ContactForm = () => {
             console.log(err);
             // e.target.submit();
         }
-
-        // const response = await fetch("http://localhost:3001/api/contact", {
-        //     method: "POST",
-        //     headers: {
-        //         "Access-Control-Allow-Origin": "*",
-        //         "Access-Control-Allow-Credentials": true,
-        //         "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
-        //         "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
-        //     },
-        //     body: formData
-        // }).then((response) => {
-        //     if (!response.ok) {
-        //         throw new Error("Form response was not ok");
-        //     }
-        //     setSubmitted(true);
-        // }).catch((err) => {
-        //     e.target.submit();
-        // });
     };
 
+    useEffect(() => {
+        if (submitted) {
+            const timer = setTimeout(() => {
+                navigate("/");
+            }, 2000);
+            return () => clearTimeout(timer);
+        }
+    }, [submitted, navigate]);
+    
     if (submitted) {
         return (
             <>
-                <div id="thank-you-container">
+                <div id="zcomm-thank-you-container">
                     <h2>Thank you!</h2>
                     <div>We'll be in touch soon.</div>
                 </div>
