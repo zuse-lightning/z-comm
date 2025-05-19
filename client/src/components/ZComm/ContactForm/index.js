@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { Header, Button } from "semantic-ui-react";
+import { axiosInstance } from "../../../utils/api";
 
 import "./style.css";
 import { set } from "mongoose";
@@ -19,45 +20,66 @@ const ContactForm = () => {
         const zcommContactForm = document.getElementById("zcomm-contact-form");
         const formData = new FormData(zcommContactForm);
 
-        const response = await fetch("http://localhost:3001/api/contact", {
-            method: "POST",
-            
-            headers: {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Credentials": true,
-                "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
-                "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
-            },
-            body: formData
-        }).then((response) => {
-            if (!response.ok) {
-                throw new Error("Form response was not ok");
+        console.log("Form data:", Object.fromEntries(formData.entries()));
+
+        try {
+            console.log("Form data:", Object.fromEntries(formData.entries()));
+            const res = await axiosInstance.post("/contact", Object.fromEntries(formData.entries()), {
+                headers: {
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Credentials": true,
+                    "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+                    "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+                }
+            });
+            console.log(res.data);
+            if (res.status === 200) {
+                setSubmitted(true);
+            } else {
+                console.error("Error submitting form:", res.data);
             }
-            setSubmitted(true);
-        }).catch((err) => {
-            e.target.submit();
-        });
+        } catch (err) {
+            console.log(err);
+            // e.target.submit();
+        }
+
+        // const response = await fetch("http://localhost:3001/api/contact", {
+        //     method: "POST",
+        //     headers: {
+        //         "Access-Control-Allow-Origin": "*",
+        //         "Access-Control-Allow-Credentials": true,
+        //         "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+        //         "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+        //     },
+        //     body: formData
+        // }).then((response) => {
+        //     if (!response.ok) {
+        //         throw new Error("Form response was not ok");
+        //     }
+        //     setSubmitted(true);
+        // }).catch((err) => {
+        //     e.target.submit();
+        // });
     };
 
-    if (submitted) {
-        return (
-            <>
-                <div id="thank-you-container">
-                    <h2>Thank you!</h2>
-                    <div>We'll be in touch soon.</div>
-                </div>
-            </>
-        );
-    };
+    // if (submitted) {
+    //     return (
+    //         <>
+    //             <div id="thank-you-container">
+    //                 <h2>Thank you!</h2>
+    //                 <div>We'll be in touch soon.</div>
+    //             </div>
+    //         </>
+    //     );
+    // };
 
     return (
         <div id="zcomm-contact-form-container">
             <Header as="h1" id="zcomm-contact-form-header">Contact</Header>
             <Header as="h4" id="zcomm-contact-form-subheader">Fill out the form below to get in touch with us!</Header>
-            <form 
+            <form
                 id="zcomm-contact-form"
                 onSubmit={handleSubmit}
-                method="POST"
                 action="http://localhost:3001/api/contact"
             >
                 <div id="zcomm-form-field-container">

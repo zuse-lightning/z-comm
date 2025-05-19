@@ -19,6 +19,7 @@ if (window.location.href.includes("www.zcomm.store")) {
 console.log(productionURL);
 
 const baseURL = process.env.NODE_ENV === "production" ? productionURL : "http://localhost:3001/api/";
+console.log(`Base URL: ${baseURL}`);
 
 export const axiosInstance = axios.create({
     baseURL: baseURL,
