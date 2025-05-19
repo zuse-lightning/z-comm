@@ -19,12 +19,11 @@ const ContactForm = () => {
 
         const zcommContactForm = document.getElementById("zcomm-contact-form");
         const formData = new FormData(zcommContactForm);
-
-        console.log("Form data:", Object.fromEntries(formData.entries()));
+        const formEntries = Object.fromEntries(formData.entries());
 
         try {
-            console.log("Form data:", Object.fromEntries(formData.entries()));
-            const res = await axiosInstance.post("/contact", Object.fromEntries(formData.entries()), {
+            console.log("Form data:", formEntries);
+            const res = await axiosInstance.post("/contact", formEntries, {
                 headers: {
                     "Access-Control-Allow-Origin": "*",
                     "Access-Control-Allow-Credentials": true,
@@ -62,16 +61,16 @@ const ContactForm = () => {
         // });
     };
 
-    // if (submitted) {
-    //     return (
-    //         <>
-    //             <div id="thank-you-container">
-    //                 <h2>Thank you!</h2>
-    //                 <div>We'll be in touch soon.</div>
-    //             </div>
-    //         </>
-    //     );
-    // };
+    if (submitted) {
+        return (
+            <>
+                <div id="thank-you-container">
+                    <h2>Thank you!</h2>
+                    <div>We'll be in touch soon.</div>
+                </div>
+            </>
+        );
+    };
 
     return (
         <div id="zcomm-contact-form-container">
