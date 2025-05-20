@@ -3,9 +3,9 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { Header, Button } from "semantic-ui-react";
 import { axiosInstance } from "../../../utils/api";
+import moment from "moment";
 
 import "./style.css";
-import { set } from "mongoose";
 
 const ContactForm = () => {
 
@@ -20,6 +20,7 @@ const ContactForm = () => {
         const zcommContactForm = document.getElementById("zcomm-contact-form");
         const formData = new FormData(zcommContactForm);
         const formEntries = Object.fromEntries(formData.entries());
+        formEntries.date = moment().format("YYYY-MM-DD HH:mm:ss");
 
         try {
             console.log("Form data:", formEntries);

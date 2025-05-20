@@ -10,7 +10,8 @@ module.exports = {
             req.body.email,
             req.body.phone_number,
             req.body.service,
-            req.body.message
+            req.body.message,
+            req.body.date
         ];
 
         console.log("Contact form values:", values);
@@ -20,7 +21,7 @@ module.exports = {
                 console.error("Error inserting contact form data:", err);
                 return res.status(500).json({ error: "Internal server error" });
             }
-            sendEmail(req.body.email, "Contact Form Submission", "Thank you for contacting us!");
+            sendEmail("contact", req.body.email, "Contact Form Submission", values);
             res.status(200).json({ message: "Contact form submitted successfully" });
         });
     }

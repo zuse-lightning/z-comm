@@ -113,7 +113,13 @@ module.exports = {
                 if (data.length === 0) return res.status(404).json("User not found");
                 console.log(data[0].user_id);
                 const token = jwt.sign({ id: data[0].user_id }, process.env.SECRET, { expiresIn: "1h" });
-                sendEmail(req.body.email, "Password Reset", `https://www.zusetestinggrounds.com/reset/${data[0].user_id}/${token}`);
+
+                const values = [
+                    data[0].first_name,
+                    `http://localhost:3000/reset/${data[0].user_id}/${token}`
+                ];
+
+                sendEmail("reset-password", req.body.email, "Password Reset", values);
             });
         } catch (err) {
             console.log(err);

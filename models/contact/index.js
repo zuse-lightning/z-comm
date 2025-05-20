@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === "production") {
     database = process.env.DEV_DB_NAME;
 }
 
-const setContactData = `INSERT INTO ${database}.zcomm_contact (name, email, phone_number, service, message) VALUES (?)`;
+const setContactData = `INSERT INTO ${database}.zcomm_contact (name, email, phone_number, service, message, date) VALUES (?)`;
 
 module.exports = {
     setContactData
