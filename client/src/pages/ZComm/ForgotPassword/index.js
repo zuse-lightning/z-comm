@@ -20,6 +20,7 @@ const ForgotPassword = (props) => {
         e.preventDefault();
         try {
             await axiosInstance.post("/auth/forgot", inputs);
+            console.log("Forgot password email sent");
             setSubmitted(true);
         } catch (err) {
             setError(err.response.data);
@@ -64,11 +65,11 @@ const ForgotPassword = (props) => {
     );
 };
 
-ForgotPassword.propTypes = {
-    auth: PropTypes.shape({
-        currentUser: PropTypes.object.isRequired,
-        alreadyLoggedIn: PropTypes.func.isRequired,
-    }).isRequired,
-};
+// ForgotPassword.propTypes = {
+//     auth: PropTypes.shape({
+//         currentUser: PropTypes.object.isRequired,
+//         alreadyLoggedIn: PropTypes.func.isRequired,
+//     }).isRequired,
+// };
 
 export default ForgotPassword;
