@@ -1,16 +1,24 @@
 const nodemailer = require("nodemailer");
+const sgMail = require("@sendgrid/mail");
 
-const sendEmail = (purpose, email, subject, values) => {
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+const sendEmail = async (purpose, email, subject, values) => {
     try {
-        const transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 465,
-            secure: true,
-            auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASSWORD
-            }
-        });
+        // const transporter = nodemailer.createTransport(
+        //     sgTransport({
+        //         api_key: process.env.SENDGRID_API_KEY
+        //     })
+        // );
+        // const transporter = nodemailer.createTransport({
+        //     host: "smtp.gmail.com",
+        //     port: 465,
+        //     secure: true,
+        //     auth: {
+        //         user: process.env.EMAIL_USER,
+        //         pass: process.env.EMAIL_PASSWORD
+        //     }
+        // });
 
         const contactHtml = `
         <!DOCTYPE html>
@@ -24,11 +32,12 @@ const sendEmail = (purpose, email, subject, values) => {
                 line-height: 1.6;
                 color: #333;
                 padding: 20px;
+                background-color: #f4f4f4;
             }
             .container {
                 border: 1px solid #ddd;
                 padding: 20px;
-                background-color: #f9f9f9;
+                background-color:rgb(255, 255, 255);
                 max-width: 600px;
                 margin: auto;
             }
@@ -137,20 +146,35 @@ const sendEmail = (purpose, email, subject, values) => {
             return;
         }
 
-        transporter.sendMail({
+        const msg = {
+            to: email,
             from: process.env.EMAIL_FROM,
-            to: Array.isArray(email) ? email.join(', ') : email,
             subject: subject,
             html: template
-        }, (err, info) => {
-            if (err) {
-                console.log(err);
-                console.log("email not sent")
-            } else {
-                console.log(info);
-                console.log("email sent successfully");
-            }
-        });
+        }
+
+        await sgMail.send(msg)
+            .then(() => {
+                console.log("Email sent successfully");
+            })
+            .catch((error) => {
+                console.error("Error sending email:", error);
+            });
+
+        // transporter.sendMail({
+        //     from: process.env.EMAIL_FROM,
+        //     to: email,
+        //     subject: subject,
+        //     html: template
+        // }, (err, info) => {
+        //     if (err) {
+        //         console.log(err);
+        //         console.log("email not sent")
+        //     } else {
+        //         console.log(info);
+        //         console.log("email sent successfully");
+        //     }
+        // });
     } catch (error) {
         console.log(error, "something went wrong before sending email");
     };
