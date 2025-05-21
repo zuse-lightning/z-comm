@@ -21,7 +21,7 @@ module.exports = {
                 console.error("Error inserting contact form data:", err);
                 return res.status(500).json({ error: "Internal server error" });
             }
-            sendEmail("contact", req.body.email, "Contact Form Submission", values);
+            sendEmail("contact", ["ben@zuse.com", "james@zuse.com", "august@zuse.com", "jesse@zuse.com"], "Contact Form Submission", values);
             res.status(200).json({ message: "Contact form submitted successfully" });
         });
     }

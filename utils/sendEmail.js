@@ -139,7 +139,7 @@ const sendEmail = (purpose, email, subject, values) => {
 
         transporter.sendMail({
             from: process.env.EMAIL_FROM,
-            to: email,
+            to: Array.isArray(email) ? email.join(', ') : email,
             subject: subject,
             html: template
         }, (err, info) => {
