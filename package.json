@@ -8,7 +8,7 @@
     "npm": "11.x"
   },
   "scripts": {
-    "start":"if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "NODE_ENV=production node index.js",
     "start:dev": "NODE_ENV=development concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
@@ -31,6 +31,7 @@
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.600.0",
+    "@sendgrid/mail": "^8.1.5",
     "aws-sdk": "^2.1649.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
@@ -52,6 +53,7 @@
     "multer-s3": "^3.0.1",
     "mysql": "^2.18.1",
     "nodemailer": "^6.9.14",
+    "nodemailer-sendgrid": "^1.0.3",
     "nodemon": "^3.1.4",
     "uuid": "^10.0.0"
   }
