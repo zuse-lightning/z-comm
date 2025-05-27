@@ -1,0 +1,12 @@
+.awhv-home-collections-header {
+    margin-bottom: 5%!important;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+.awhv-home-collections-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2%;
+}

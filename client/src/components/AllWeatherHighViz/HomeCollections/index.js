@@ -82,7 +82,7 @@ const HomeCollections = () => {
         <>
             {collections.length > 0 ? collections.map((collection) => (
                 <div key={collection.collection_id} className="awhv-home-collections-container">
-                    <Header as="h1" id="awhv-home-collections-header">{collection.collection_name}</Header>
+                    <Header as="h1" className="awhv-home-collections-header">{collection.collection_name}</Header>
                     <div id={`collection-component-${collection.collection_node}`}></div>
                 </div>
             )) : null}
