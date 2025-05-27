@@ -8,8 +8,10 @@ if (process.env.NODE_ENV === "production") {
 
 const getAllCollections = `SELECT * FROM ${database}.zcomm_collections`;
 const getCollectionById = `SELECT * FROM ${database}.zcomm_collections WHERE collection_id = ? AND collection_store = ?`;
+const getCollectionsByStore = `SELECT * FROM ${database}.zcomm_collections WHERE collection_store = ?`;
 
 module.exports = {
     getAllCollections,
-    getCollectionById
-}
+    getCollectionById,
+    getCollectionsByStore
+};
