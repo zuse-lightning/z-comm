@@ -56,11 +56,9 @@ const HomeCollections = () => {
                 });
                 setTimeout(() => {
                     const iframes = document.querySelectorAll('div[id^="collection-component-"] iframe');
-                    console.log("Iframes:", iframes);
-                    console.log(iframes.length > 0);
-
                     if (iframes) {
-                        iframes.forEach(iframe => {
+                        iframes.forEach(iframe => { 
+                            iframe.style.height = "460px";
                             const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
                             if (iframeDoc) {
                                 const productElements = iframeDoc.querySelectorAll('.shopify-buy__product');
