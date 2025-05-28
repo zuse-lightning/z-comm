@@ -77,16 +77,13 @@ const Navbar = () => {
                         to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/pants" : "/pants"}>
                         Pants
                     </Dropdown.Item>
+                    <Dropdown.Item 
+                        as={Link} 
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/accessories" : "/accessories"}>
+                        Accessories
+                    </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
-            <Menu.Item
-                className="awhv-header-nav-item"
-                as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/services" : "/services"}
-                name="services"
-            >
-                Services
-            </Menu.Item>
             <Menu.Item
                 className="awhv-header-nav-item"
                 as={Link}
@@ -94,14 +91,6 @@ const Navbar = () => {
                 name="faq"
             >
                 Help
-            </Menu.Item>
-            <Menu.Item
-                className="awhv-header-nav-item"
-                as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/quote" : "/quote"}
-                name="quote"
-            >
-                Get A Quote
             </Menu.Item>
             <Menu.Item
                 className="awhv-header-nav-item"
