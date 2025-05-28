@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Header } from "semantic-ui-react";
+import { Header, Button } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 import { axiosInstance } from "../../../utils/api";
 import { embedShopifyCollection } from "../../../utils/shopify";
 
 import "./style.css";
-import { set } from "mongoose";
 
 const HomeCollections = () => {
 
@@ -82,17 +82,9 @@ const HomeCollections = () => {
                 <div key={collection.collection_id} className="awhv-home-collections-container">
                     <Header as="h1" className="awhv-home-collections-header">{collection.collection_name}</Header>
                     <div id={`collection-component-${collection.collection_node}`}></div>
+                    <Button className="awhv-home-collections-button" as={Link} to={`/${collection.collection_link}`}>View All</Button>
                 </div>
             )) : null}
-            {/* <div id="awhv-home-collections-container">
-                <Header as="h1" id="awhv-home-collections-header">Home Collections</Header>
-                <div id={`collection-component-336238215363`}></div>
-            )) : null}
-            <div id="awhv-home-collections-container">
-                <Header as="h1" id="awhv-home-collections-header">Home Collections</Header>
-                <div id={`collection-component-336238215363`}></div>
-                <div id={`collection-component-336238215363`}></div>
-            </div>*/}
         </>
     );
 };
