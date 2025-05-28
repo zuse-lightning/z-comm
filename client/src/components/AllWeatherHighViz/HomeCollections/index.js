@@ -33,27 +33,8 @@ const HomeCollections = () => {
                 embedShopifyCollection(collection.collection_id, `collection-component-${collection.collection_node}`, collection.collection_domain, collection.collection_token);
             });
             const collectionContainer = document.getElementsByClassName("awhv-home-collections-container");
-            console.log("Collection Container:", collectionContainer);
-            // setTimeout(() => {
-            //     console.log("Collection Container:", collectionContainer);
-            // }, 1000);
 
             if (collectionContainer.length > 0) {
-
-                Object.keys(collectionContainer).forEach((key) => {
-                    console.log(collectionContainer);
-
-                    const collectionDivs = document.querySelectorAll('div[id^="collection-component-"]');
-                    console.log("Collection Divs:", collectionDivs);
-                    // const collectionProducts = document.getElementsByClassName("has-image shopify-buy__layout-vertical shopify-buy__product");
-                    // if (collectionProducts.length > 0) {
-                    //     console.log("Collection Products:", collectionProducts);
-                    // }
-
-                    // for (let i = 0; i < collectionProducts.length; i++) {
-                    //     console.log("Collection Product:", collectionProducts[i]);
-                    // };
-                });
                 setTimeout(() => {
                     const iframes = document.querySelectorAll('div[id^="collection-component-"] iframe');
                     if (iframes) {
@@ -62,6 +43,10 @@ const HomeCollections = () => {
                             const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
                             if (iframeDoc) {
                                 const productElements = iframeDoc.querySelectorAll('.shopify-buy__product');
+                                const collectionPagination = iframeDoc.querySelector('.shopify-buy__collection-pagination-button.shopify-buy__btn.is-active');
+                                if (collectionPagination) {
+                                    collectionPagination.style.display = "none"; // Hide the pagination button
+                                }
                                 productElements.forEach((el, index) => {
                                     if (index > 3) {
                                         el.style.display = "none"; // Hide all but the first 4 products
