@@ -30,7 +30,9 @@ const HomeCollections = () => {
     useEffect(() => {
         if (collections.length > 0) {
             collections.forEach((collection) => {
-                embedShopifyCollection(collection.collection_id, `collection-component-${collection.collection_node}`, collection.collection_domain, collection.collection_token);
+                if (["Concealed Carry Collection", "Accessories", "Headwear", "Best Sellers", "New Releases"].includes(collection.collection_name)) {
+                    embedShopifyCollection(collection.collection_id, `collection-component-${collection.collection_node}`, collection.collection_domain, collection.collection_token);
+                }
             });
             const collectionContainer = document.getElementsByClassName("awhv-home-collections-container");
 
@@ -38,7 +40,7 @@ const HomeCollections = () => {
                 setTimeout(() => {
                     const iframes = document.querySelectorAll('div[id^="collection-component-"] iframe');
                     if (iframes) {
-                        iframes.forEach(iframe => { 
+                        iframes.forEach(iframe => {
                             iframe.style.height = "460px";
                             const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
                             if (iframeDoc) {
@@ -63,13 +65,22 @@ const HomeCollections = () => {
 
     return (
         <>
-            {collections.length > 0 ? collections.map((collection) => (
-                <div key={collection.collection_id} className="awhv-home-collections-container">
-                    <Header as="h1" className="awhv-home-collections-header">{collection.collection_name}</Header>
-                    <div id={`collection-component-${collection.collection_node}`}></div>
-                    <Button className="awhv-home-collections-button" as={Link} to={`/${collection.collection_link}`}>View All</Button>
-                </div>
-            )) : null}
+            {collections.length > 0
+                ? collections
+                    .filter(collection =>
+                        ["Best Sellers", "New Releases", "Concealed Carry Collection", "Headwear", "Accessories"]
+                            .includes(collection.collection_name)
+                    )
+                    .map((collection) => (
+                        <div key={collection.collection_id} className="awhv-home-collections-container">
+                            <Header as="h1" className="awhv-home-collections-header">{collection.collection_name}</Header>
+                            <div id={`collection-component-${collection.collection_node}`}></div>
+                            <Button className="awhv-home-collections-button" as={Link} to={`/${collection.collection_link}`}>
+                                View All
+                            </Button>
+                        </div>
+                    ))
+                : null}
         </>
     );
 };
