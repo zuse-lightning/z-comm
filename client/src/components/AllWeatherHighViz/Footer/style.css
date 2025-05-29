@@ -1,0 +1,14 @@
+#awhv-footer-container {
+    background-color: #ff8e00;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#awhv-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}

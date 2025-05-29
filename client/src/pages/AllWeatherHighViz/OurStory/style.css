@@ -19,3 +19,20 @@
     font-weight: 700!important;
     text-align: center!important;
 }
+
+#awhv-social-media {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+.awhv-social-media-col {
+    text-align: center!important;
+}
+
+.awhv-social-media-icon {
+    color: black!important;
+}
