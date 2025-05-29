@@ -1,0 +1,13 @@
+#awhv-headwear-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+#awhv-headwear-header {
+    margin-bottom: 5%;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
