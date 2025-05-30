@@ -1,9 +1,10 @@
 import React from "react";
+import ContactForm from "../../../components/AllWeatherHighViz/ContactForm";
 
 const Contact = () => {
     return (
         <div>
-            <h1>AWHV Contact</h1>
+            <ContactForm />
         </div>
     );
 };

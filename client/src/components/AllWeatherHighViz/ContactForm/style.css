@@ -1,0 +1,75 @@
+#awhv-contact-form-container {
+    padding: 3%;
+}
+
+#awhv-contact-form-header {
+    font-size: 48px;
+    font-weight: 700!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+#awhv-contact-form-subheader {
+    font-size: 20px;
+    font-weight: 500!important;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: "Montserrat", sans-serif;
+}
+
+#awhv-form-field-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)!important;
+    column-gap: 20px;
+    row-gap: 30px;
+    width: 50%;
+    margin: 0 25%;
+}
+
+#awhv-name-input, #awhv-email-input {
+    width: 80%;
+    margin: 0 10%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#awhv-phone-input, #awhv-message-input {
+    width: 80%;
+    margin: 0 10%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#awhv-message-input {
+    height: 100px;
+    resize: none;
+}
+
+#awhv-submit-btn {
+    width: 10%;
+    margin: 2% 45%;
+    padding: 10px;
+    background-color: #ff8e00;
+    color: white;
+    border: solid 1px #ff8e00;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+#awhv-submit-btn:hover {
+    background-color: transparent;
+    color: #ff8e00;
+}
+
+#awhv-thank-you-container {
+    padding: 15%;
+    width: 50%;
+    margin: 0 25%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
