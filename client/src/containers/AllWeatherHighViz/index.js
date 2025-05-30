@@ -14,6 +14,7 @@ import Shirts from "../../pages/AllWeatherHighViz/Shirts";
 import Pants from "../../pages/AllWeatherHighViz/Pants";
 import Vests from "../../pages/AllWeatherHighViz/Vests";
 import Accessories from "../../pages/AllWeatherHighViz/Accessories";
+import FAQ from "../../pages/AllWeatherHighViz/FAQ";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
 import Footer from "../../components/AllWeatherHighViz/Footer";
 
@@ -35,6 +36,7 @@ const AllWeatherHighViz = () => {
                 <Route exact path="/pants" element={<Pants />} />
                 <Route exact path="/vests" element={<Vests />} />
                 <Route exact path="/accessories" element={<Accessories />} />
+                <Route exact path="/faq" element={<FAQ />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>
             <Footer />

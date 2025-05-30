@@ -17,3 +17,16 @@ export const zcommServices = [
     "Marketing tools and analytics",
     "Product shipping and fulfillment"
 ];
+
+export const awhvFAQ = [
+    { question: "What makes All Weather High Viz workwear different?", answer: "We’re more than just a clothing brand — we’re built on the values of trust, honesty, and dependability. Our gear is designed for real working people, tested in tough conditions, and built to last." },
+    { question: "Where are you located?", answer: "Our headquarters are based in Branford, Connecticut, and we proudly employ over 100 associates around the world." },
+    { question: "Do you offer high-visibility clothing for all weather conditions?", answer: "Yes! Every product we make is designed to withstand a range of weather conditions — rain, snow, wind, or sun — while keeping you visible, safe, and comfortable." },
+    { question: "What sizes do your products come in?", answer: "We offer a wide range of sizes for men and women. Size charts are available on every product page to help you find the right fit." },
+    { question: "Can I return or exchange an item?", answer: "Absolutely. If you're not satisfied, you can return or exchange any unused product within 30 days of delivery. Visit our Returns & Exchanges page for full details." },
+    { question: "How long does shipping take?", answer: "Standard U.S. shipping typically takes 3–7 business days. Expedited options are available at checkout." },
+    { question: "Do you ship internationally?", answer: "No, we currently only ship within the United States." },
+    { question: "How can I track my order?", answer: "Once your order ships, you’ll receive an email with a tracking link. You can also log into your account to check order status." },
+    { question: "Do you offer bulk or corporate orders?", answer: "Yes, we work with businesses and organizations to provide bulk orders, custom branding, and special pricing. Contact us at sales@allweatherhighviz.com for inquiries." },
+    { question: "How do I contact customer service?", answer: "You can reach us via our Contact Us page or email us at support@allweatherhighviz.com. We're here to help Monday–Friday, 9am–5pm EST." }
+];
