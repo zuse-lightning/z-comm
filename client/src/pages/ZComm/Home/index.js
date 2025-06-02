@@ -25,10 +25,8 @@ const Home = (props) => {
     }, []);
 
     useEffect(() => {
-        embedShopifyProduct("7997352608028", "product-component-1731358336108", "ct-schools-store.myshopify.com", "b2b2a6d6fa1291bcb4219ec236d88b85");
-        embedShopifyCollection("336240574659", "collection-component-1736351766300", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
-        // const { collectionNode } = embedShopifyCollection("336240574659", "collection-component-1736351766300", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
-        // console.log(collectionNode);
+        embedShopifyProduct("8075315773635", "product-component-1748633948781", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
+        embedShopifyCollection("335820488899", "collection-component-1748629128430", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
     }, []);
 
     
@@ -40,7 +38,7 @@ const Home = (props) => {
             <HomeTrustBadges />
             <HomeAbout />
             <div id={`product-component-1731358336108`}></div>
-            <div id='collection-component-1736351766300'></div>
+            <div id='collection-component-1748629128430'></div>
         </>
     );
 };
