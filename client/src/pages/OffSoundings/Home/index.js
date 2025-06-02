@@ -1,9 +1,14 @@
 import React from "react";
+import { Header } from "semantic-ui-react";
+
+import "./style.css";
 
 const Home = () => {
     return (
-        <div>
-            <h1>Off Soundings Home</h1>
+        <div id="off-sound-container">
+            <div className="off-sound-header-container">
+                <Header as="h1" id="off-sound-header">Off Soundings Home</Header>
+            </div>
         </div>
     );
 };

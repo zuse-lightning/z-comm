@@ -1,0 +1,15 @@
+#off-sound-navbar {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.ui.secondary.menu a.item:hover {
+    background: none !important;
+}
+
+.item.off-sound-header-nav-item {
+    color: #000;
+    font-size: 24px!important;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
