@@ -1,7 +1,7 @@
 import { ctSchoolsProductOptions } from "../../assets/productOptions";
 import { awhvCollectionOptions } from "../../assets/collectionOptions";
 
-export const embedShopifyProduct = (productId, productNode, domain, token) => {
+export const embedShopifyProduct = (productId, productNode, domain, token, options) => {
     const loadScript = () => {
         const script = document.getElementsByTagName("script")[0];
         script.onload = ShopifyBuyInit;
@@ -18,7 +18,7 @@ export const embedShopifyProduct = (productId, productNode, domain, token) => {
                 id: productId,
                 node: document.getElementById(productNode),
                 moneyFormat: "%24%7B%7Bamount%7D%7D",
-                options: ctSchoolsProductOptions,
+                options: options,
             });
         });
     };
@@ -35,7 +35,7 @@ export const embedShopifyProduct = (productId, productNode, domain, token) => {
     }
 };
 
-export const embedShopifyCollection = (collectionId, collectionNode, domain, token) => {
+export const embedShopifyCollection = (collectionId, collectionNode, domain, token, options) => {
     const loadScript = () => {
         const script = document.getElementsByTagName("script")[0];
         script.onload = ShopifyBuyInit;
@@ -52,7 +52,7 @@ export const embedShopifyCollection = (collectionId, collectionNode, domain, tok
                 id: collectionId,
                 node: document.getElementById(collectionNode),
                 moneyFormat: "%24%7B%7Bamount%7D%7D",
-                options: awhvCollectionOptions,
+                options: options,
             });
         });
     };

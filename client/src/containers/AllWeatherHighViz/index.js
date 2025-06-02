@@ -18,24 +18,25 @@ import FAQ from "../../pages/AllWeatherHighViz/FAQ";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
 import Footer from "../../components/AllWeatherHighViz/Footer";
 
-const AllWeatherHighViz = () => {
+import { awhvCollectionOptions } from "../../assets"
 
+const AllWeatherHighViz = () => {
     return (
         <>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route exact path="/" element={<Home styleOptions={awhvCollectionOptions} />} />
                 <Route exact path="/our-story" element={<OurStory />} />
-                <Route exact path="/headwear" element={<Headwear />} />
-                <Route exact path="/jackets" element={<Jackets />} />
-                <Route exact path="/hoodies" element={<Hoodies />} />
-                <Route exact path="/new-releases" element={<NewReleases />} />
-                <Route exact path="/best-sellers" element={<BestSellers />} />
-                <Route exact path="/concealed-carry" element={<ConcealedCarry />} />
-                <Route exact path="/shirts" element={<Shirts />} />
-                <Route exact path="/pants" element={<Pants />} />
-                <Route exact path="/vests" element={<Vests />} />
-                <Route exact path="/accessories" element={<Accessories />} />
+                <Route exact path="/headwear" element={<Headwear styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/jackets" element={<Jackets styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/hoodies" element={<Hoodies styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/new-releases" element={<NewReleases styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/best-sellers" element={<BestSellers styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/concealed-carry" element={<ConcealedCarry styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/shirts" element={<Shirts styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/pants" element={<Pants styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/vests" element={<Vests styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/accessories" element={<Accessories styleOptions={awhvCollectionOptions} />} />
                 <Route exact path="/faq" element={<FAQ />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>
