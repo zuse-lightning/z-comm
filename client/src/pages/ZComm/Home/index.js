@@ -29,9 +29,6 @@ const Home = (props) => {
         embedShopifyCollection("335820488899", "collection-component-1748629128430", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
     }, []);
 
-    
-    
-
     return (
         <>
             <HomeBanner />
