@@ -10,3 +10,16 @@
     font-family: "Poppins"!important;
 }
 
+#off-sound-subheader {
+    color: #1e3170;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: "Poppins"!important;
+}
+
+#off-sound-home-collection {
+    width: 60%;
+    margin: 0 auto;
+}
