@@ -18,7 +18,7 @@ import FAQ from "../../pages/AllWeatherHighViz/FAQ";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
 import Footer from "../../components/AllWeatherHighViz/Footer";
 
-import { awhvCollectionOptions } from "../../assets"
+import { awhvCollectionOptions } from "../../assets/collectionOptions"
 
 const AllWeatherHighViz = () => {
     return (

@@ -3,10 +3,9 @@ import { Header } from "semantic-ui-react";
 import { axiosInstance } from "../../../utils/api";
 import { embedShopifyCollection } from "../../../utils/shopify";
 
-
 import "./style.css";
 
-const Accessories = () => {
+const Accessories = ({ styleOptions }) => {
     const [collection, setCollection] = useState([]);
 
     useEffect(() => {
@@ -30,7 +29,7 @@ const Accessories = () => {
 
     useEffect(() => {
         if (collection.length > 0) {
-            embedShopifyCollection(collection[0].collection_id, `collection-component-${collection[0].collection_node}`, collection[0].collection_domain, collection[0].collection_token)
+            embedShopifyCollection(collection[0].collection_id, `collection-component-${collection[0].collection_node}`, collection[0].collection_domain, collection[0].collection_token, styleOptions)
         };
     }, [collection]);
 

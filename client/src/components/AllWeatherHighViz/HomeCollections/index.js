@@ -6,7 +6,7 @@ import { embedShopifyCollection } from "../../../utils/shopify";
 
 import "./style.css";
 
-const HomeCollections = () => {
+const HomeCollections = ({ styleOptions }) => {
 
     const [collections, setCollections] = useState([]);
 
@@ -31,7 +31,7 @@ const HomeCollections = () => {
         if (collections.length > 0) {
             collections.forEach((collection) => {
                 if (["Concealed Carry Collection", "Accessories", "Headwear", "Best Sellers", "New Releases"].includes(collection.collection_name)) {
-                    embedShopifyCollection(collection.collection_id, `collection-component-${collection.collection_node}`, collection.collection_domain, collection.collection_token);
+                    embedShopifyCollection(collection.collection_id, `collection-component-${collection.collection_node}`, collection.collection_domain, collection.collection_token, styleOptions);
                 }
             });
             const collectionContainer = document.getElementsByClassName("awhv-home-collections-container");
