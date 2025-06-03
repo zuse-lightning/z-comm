@@ -24,55 +24,20 @@ const Navbar = () => {
             </Menu.Item>
             <Dropdown className="off-sound-header-nav-item" item text="Collections">
                 <Dropdown.Menu>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/new-releases" : "/new-releases"}>
-                            New Releases
-                    </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/best-sellers" : "/best-sellers"}>
-                        Best Sellers
-                    </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/concealed-carry" : "/concealed-carry"}>
-                        Concealed Carry Collection
-                    </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
+                    <Dropdown.Item
+                        as={Link}
                         to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/shirts" : "/shirts"}>
                         Shirts
                     </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/jackets" : "/jackets"}>
-                        Jackets
+                    <Dropdown.Item
+                        as={Link}
+                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/outerwear" : "/outerwear"}>
+                        Outerwear
                     </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/hoodies" : "/hoodies"}>
-                        Hoodies
-                    </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
+                    <Dropdown.Item
+                        as={Link}
                         to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/headwear" : "/headwear"}>
                         Headwear
-                    </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/vests" : "/vests"}>
-                        Vests
-                    </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/pants" : "/pants"}>
-                        Pants
-                    </Dropdown.Item>
-                    <Dropdown.Item 
-                        as={Link} 
-                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/accessories" : "/accessories"}>
-                        Accessories
                     </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
