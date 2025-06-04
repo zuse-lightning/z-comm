@@ -4,6 +4,7 @@ import { AuthContext } from "../../context/authContext";
 import Navbar from "../../components/OffSoundings/Navbar";
 import Home from "../../pages/OffSoundings/Home";
 import Shirts from "../../pages/OffSoundings/Shirts";
+import Outerwear from "../../pages/OffSoundings/Outerwear";
 import Contact from "../../pages/OffSoundings/Contact";
 
 import { offSoundingsCollectionOptions } from "../../assets/collectionOptions";
@@ -16,6 +17,7 @@ const OffSoundings = () => {
             <Routes>
                 <Route exact path="/" element={<Home styleOptions={offSoundingsCollectionOptions} />} />
                 <Route exact path="/shirts" element={<Shirts styleOptions={offSoundingsCollectionOptions} />} />
+                <Route exact path="/outerwear" element={<Outerwear styleOptions={offSoundingsCollectionOptions} />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>
         </>
