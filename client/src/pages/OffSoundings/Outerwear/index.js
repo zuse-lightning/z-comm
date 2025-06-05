@@ -11,9 +11,10 @@ const Outerwear = ({ styleOptions }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                console.log(process.env.REACT_APP_OFF_SOUNDINGS_OUTERWEAR_ID);
                 const res = await axiosInstance.get("/collections", {
                     params: {
-                        collectionId: "340981645507",
+                        collectionId: process.env.REACT_APP_OFF_SOUNDINGS_OUTERWEAR_ID,
                         store: "Off Soundings"
                     }
                 });

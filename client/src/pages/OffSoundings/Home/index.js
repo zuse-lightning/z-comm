@@ -14,7 +14,7 @@ const Home = ({ styleOptions }) => {
                 try {
                     const res = await axiosInstance.get("/collections", {
                         params: {
-                            collectionId: "336152527043",
+                            collectionId: process.env.REACT_APP_OFF_SOUNDINGS_HOME_ID,
                             store: "Off Soundings"
                         }
                     });

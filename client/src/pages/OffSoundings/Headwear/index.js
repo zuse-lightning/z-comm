@@ -5,15 +5,16 @@ import { embedShopifyCollection } from "../../../utils/shopify";
 
 import "./style.css";
 
-const Shirts = ({ styleOptions }) => {
+const Headwear = ({ styleOptions }) => {
     const [collection, setCollection] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
+                console.log(process.env.REACT_APP_OFF_SOUNDINGS_HEADWEAR_ID);
                 const res = await axiosInstance.get("/collections", {
                     params: {
-                        collectionId: process.env.REACT_APP_OFF_SOUNDINGS_SHIRTS_ID,
+                        collectionId: process.env.REACT_APP_OFF_SOUNDINGS_HEADWEAR_ID,
                         store: "Off Soundings"
                     }
                 });
@@ -36,12 +37,12 @@ const Shirts = ({ styleOptions }) => {
     return (
         <>
             {collection.length > 0 ?
-                <div id="off-sound-shirts-container">
-                    <Header as="h1" id="off-sound-shirts-header">{collection[0].collection_name}</Header>
+                <div id="off-sound-headwear-container">
+                    <Header as="h1" id="off-sound-headwear-header">{collection[0].collection_name}</Header>
                     <div id={`collection-component-${collection[0].collection_node}`}></div>
                 </div> : null}
         </>
     );
 };
 
-export default Shirts;
+export default Headwear;

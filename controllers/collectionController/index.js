@@ -7,16 +7,20 @@ module.exports = {
         if (!collectionId || !store) {
             db.query(getAllCollections, (err, data) => {
                 if (err) return res.json(err);
+                console.log("Getting all collections");
+                console.log(collectionId, store);
                 return res.status(200).json(data);
             });
         } else if (!collectionId && store) {
             db.query(getCollectionsByStore, [store], (err, data) => {
                 if (err) return res.json(err);
+                console.log("Getting collections for store:", store);
                 return res.status(200).json(data);
             });
         } else {
             db.query(getCollectionById, [collectionId, store], (err, data) => {
                 if (err) return res.json(err);
+                console.log("Getting collection by ID:", collectionId, "for store:", store);
                 return res.status(200).json(data);
             });
         }
