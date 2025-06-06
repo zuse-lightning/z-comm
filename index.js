@@ -82,7 +82,8 @@ app.use(helmet({
         (req, res) => `'nonce-${res.locals.cspNonce}'`,
         "ct-schools-store.myshopify.com",
         "bfb312-ir.myshopify.com",
-        "sdks.shopifycdn.com"
+        "sdks.shopifycdn.com",
+        "ajax.googleapis.com"
       ]
     }
   }
