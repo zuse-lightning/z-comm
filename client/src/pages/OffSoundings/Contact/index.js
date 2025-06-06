@@ -1,11 +1,12 @@
 import React from "react";
+import ContactForm from "../../../components/OffSoundings/ContactForm";
 
-const Home = () => {
+const Contact = () => {
     return (
-        <div>
-            <h1>Off Soundings Contact</h1>
-        </div>
+        <>
+            <ContactForm />
+        </>
     );
 };
 
-export default Home;
+export default Contact;

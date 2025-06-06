@@ -6,7 +6,7 @@
     font-size: 48px;
     font-weight: 700!important;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-bottom: 3%;
 }
 
@@ -18,13 +18,13 @@
 .off-sound-faq-accordion-title {
     font-size: 20px!important;
     font-weight: 700!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: "Poppins", sans-serif!important;
 }
 
 .off-sound-faq-accordion-text {
     font-size: 16px!important;
     font-weight: 500!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: "Poppins", sans-serif!important;
     margin-top: 10px;
     width: 90%;
     margin: 0 5%;
@@ -37,5 +37,5 @@
 
 .off-sound-faq-accordion-list-item {
     font-weight: 500!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: "Poppins", sans-serif!important;
 };
