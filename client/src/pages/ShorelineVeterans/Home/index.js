@@ -1,9 +1,10 @@
 import React from "react";
+import { Header } from "semantic-ui-react";
 
 const Home = () => {
     return (
         <div>
-            <h1>Shoreline Veterans Home</h1>
+            <Header as="h1">Shoreline Veterans Home</Header>
         </div>
     );
 };
