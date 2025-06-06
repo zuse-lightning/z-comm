@@ -14,6 +14,8 @@ if (window.location.href.includes("www.zcomm.store")) {
     productionURL = process.env.REACT_APP_FISH_LIFE_API_URL;
 } else if (window.location.href.includes("www.pbrcorpshop.com")) {
     productionURL = process.env.REACT_APP_PBR_CORP_API_URL;
+} else if (window.location.href.includes("www.offsoundings.store")) {
+    productionURL = process.env.REACT_APP_OFF_SOUNDINGS_API_URL;
 }
 
 console.log(productionURL);
