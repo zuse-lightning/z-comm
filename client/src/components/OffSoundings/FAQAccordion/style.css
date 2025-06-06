@@ -1,0 +1,41 @@
+#off-sound-faq-accordion-container {
+    padding: 4%;
+}
+
+#off-sound-faq-accordion-header {
+    font-size: 48px;
+    font-weight: 700!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3%;
+}
+
+#off-sound-faq-accordion {
+    width: 40%;
+    margin: 0 30%;
+}
+
+.off-sound-faq-accordion-title {
+    font-size: 20px!important;
+    font-weight: 700!important;
+    font-family: "Montserrat", sans-serif!important;
+}
+
+.off-sound-faq-accordion-text {
+    font-size: 16px!important;
+    font-weight: 500!important;
+    font-family: "Montserrat", sans-serif!important;
+    margin-top: 10px;
+    width: 90%;
+    margin: 0 5%;
+}
+
+#off-sound-faq-accordion-list {
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.off-sound-faq-accordion-list-item {
+    font-weight: 500!important;
+    font-family: "Montserrat", sans-serif!important;
+};
