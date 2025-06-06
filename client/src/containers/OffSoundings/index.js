@@ -7,6 +7,7 @@ import Shirts from "../../pages/OffSoundings/Shirts";
 import Outerwear from "../../pages/OffSoundings/Outerwear";
 import Headwear from "../../pages/OffSoundings/Headwear";
 import Contact from "../../pages/OffSoundings/Contact";
+import Footer from "../../components/OffSoundings/Footer";
 
 import { offSoundingsCollectionOptions } from "../../assets/collectionOptions";
 
@@ -22,6 +23,7 @@ const OffSoundings = () => {
                 <Route exact path="/headwear" element={<Headwear styleOptions={offSoundingsCollectionOptions} />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
         </>
     );
 };
