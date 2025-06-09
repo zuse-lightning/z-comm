@@ -8,12 +8,19 @@ export default [
     files: ["**/*.{js,mjs,cjs,jsx}"],
     languageOptions: {
       sourceType: "module",
-      globals: { ...globals.browser, ...globals.node },
+      globals: {
+        window: "readonly",
+        document: "readonly",
+        console: "readonly",
+        process: "readonly",
+        module: "readonly",
+        require: "readonly",
+      },
       parser: babelParser,
       parserOptions: {
-        requireConfigFile: false, // This allows you to use Babel without a config file
+        requireConfigFile: false,
         babelOptions: {
-          presets: ["@babel/preset-react"], // Ensure JSX parsing is enabled
+          presets: ["@babel/preset-react"],
         },
       },
     },
