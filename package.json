@@ -11,6 +11,7 @@
     "legacy-peer-deps": true
   },
   "scripts": {
+    "heroku-prebuild": "npm config set legacy-peer-deps true",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "NODE_ENV=production node index.js",
     "start:dev": "NODE_ENV=development concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
