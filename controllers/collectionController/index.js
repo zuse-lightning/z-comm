@@ -24,11 +24,5 @@ module.exports = {
                 return res.status(200).json(data);
             });
         }
-    },
-    // getCollection: (req, res) => {
-    //     db.query(getCollectionById, [req.params.collectionId, req.params.store], (err, data) => {
-    //         if (err) return res.json(err);
-    //         return res.status(200).json(data);
-    //     });
-    // }
+    }
 }
