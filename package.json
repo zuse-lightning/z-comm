@@ -14,8 +14,8 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "NODE_ENV=production && cd client && npm run build",
-    "heroku-postbuild": "npm install --legacy-peer-deps && npm run build"
-},
+    "heroku-postbuild": "npm run build"
+  },
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
