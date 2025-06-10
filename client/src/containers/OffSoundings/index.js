@@ -7,6 +7,7 @@ import Shirts from "../../pages/OffSoundings/Shirts";
 import Outerwear from "../../pages/OffSoundings/Outerwear";
 import Headwear from "../../pages/OffSoundings/Headwear";
 import FAQ from "../../pages/OffSoundings/FAQ";
+import PrivacyPolicy from "../../pages/OffSoundings/PrivacyPolicy";
 import Contact from "../../pages/OffSoundings/Contact";
 import Footer from "../../components/OffSoundings/Footer";
 
@@ -23,6 +24,7 @@ const OffSoundings = () => {
                 <Route exact path="/outerwear" element={<Outerwear styleOptions={offSoundingsCollectionOptions} />} />
                 <Route exact path="/headwear" element={<Headwear styleOptions={offSoundingsCollectionOptions} />} />
                 <Route exact path="/faq" element={<FAQ />} />
+                <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
