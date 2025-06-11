@@ -2,7 +2,7 @@ import React from "react";
 import { Menu, Dropdown, Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-import "./style.css";
+import "../style.css";
 
 const MobileNavbar = () => {
     return (
