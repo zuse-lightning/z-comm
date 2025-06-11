@@ -8,161 +8,95 @@ const PrivacyPolicy = () => {
         <div id="privacy-policy-container">
             <Header id="privacy-policy-header" as="h1">Privacy Policy</Header>
             <div id="privacy-policy">
-                <Header id="privacy-policy-updated" as="h5">Last updated: 4/8/2025</Header>
+                <Header id="privacy-policy-updated" as="h5">Last updated: 6/10/2025</Header>
                 <div className="privacy-policy-section">
                     <p className="privacy-text">
-                        No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Information
-                        sharing to subcontractors in support services, such as customer service is permitted. All other use case categories
-                        exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
-                    </p>
-                    <p className="privacy-text">
-                        This Privacy Policy describes how Off Soundings (“Off Soundings”, “we”, “us”, or “our”) collects, uses, and discloses your personal
-                        information when you visit, interact with, or submit an inquiry through www.offsoundings.store (the “Site”) or otherwise engage
-                        with us (collectively, the “Services”). For purposes of this Privacy Policy, “you” and “your” means you as the user of
-                        the Services, whether you are submitting a custom printing inquiry, scheduling a call, or otherwise engaging with our
-                        business.
-                    </p>
-                    <p className="privacy-text">
-                        Please read this Privacy Policy carefully. By using or accessing any part of our Services, you agree to the collection,
-                        use, and disclosure of your information as described here. If you do not agree with our practices, please do not use our
-                        Services.
+                        Off Soundings (“we,” “us,” or “our”) respects your privacy and is committed to protecting it through this Privacy Policy. This policy describes how we collect, use, and share personal information when you visit or make a purchase from www.offsoundings.store.
                     </p>
                 </div>
                 <Divider className="privacy-divider" />
                 <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">Changes to This Privacy Policy</Header>
+                    <Header className="privacy-policy-section-header" as="h3">1. Information We Collect</Header>
                     <p className="privacy-text">
-                        We may update this Privacy Policy from time to time to reflect changes in our practices, operations, or legal obligations.
-                        Any updates will be posted on this page with the revised “Last updated” date. We encourage you to review this page periodically.
-                    </p>
-                </div>
-                <Divider className="privacy-divider" />
-                <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">How We Collect and Use Your Personal Information</Header>
-                    <p className="privacy-text">
-                        We collect personal information about you to provide Services and respond to your inquiries regarding custom printing. We only collect what is necessary for these purposes. This includes:<br /><br />
-                        Information You Provide Directly<br /><br />
-                        You may provide personal information when you fill out a contact or appointment form, including:<br /><br />
+                        When you visit the Site, we may collect the following types of personal information:
                     </p>
                     <List as="ol">
-                        <List.Item as="li" value="*">Name</List.Item>
-                        <List.Item as="li" value="*">Email address</List.Item>
-                        <List.Item as="li" value="*">Phone number</List.Item>
-                        <List.Item as="li" value="*">Business name</List.Item>
-                        <List.Item as="li" value="*">Project details and notes</List.Item>
-                        <List.Item as="li" value="*">Preferred time for a call or appointment</List.Item>
-                        <List.Item as="li" value="*">Any files or documents you voluntarily upload related to your printing needs</List.Item>
+                        <List.Item as="li" value="*"><b>Personal Identifiers:</b> Name, shipping/billing address, email, phone number.</List.Item>
+                        <List.Item as="li" value="*"><b>Payment Information:</b> Processed securely by Shopify’s built-in payment gateway and/or any third-party payment providers (e.g., Shopify Payments, PayPal).</List.Item>
+                        <List.Item as="li" value="*"><b>Order Details:</b> Items purchased, purchase total, and order history.</List.Item>
+                        <List.Item as="li" value="*"><b>Device Information:</b> Browser type, IP address, time zone, and cookies used on your device.</List.Item>
                     </List>
-                    <p className="privacy-text">
-                        We may update this Privacy Policy from time to time to reflect changes in our practices, operations, or legal obligations.
-                        Any updates will be posted on this page with the revised “Last updated” date. We encourage you to review this page periodically. <br /><br />
-                        Information We Collect Automatically<br /><br />
-                        When you visit our Site, we may automatically collect certain technical data such as:<br /><br />
-                        <List as="ol">
-                            <List.Item as="li" value="*">IP address</List.Item>
-                            <List.Item as="li" value="*">Browser type and version</List.Item>
-                            <List.Item as="li" value="*">Device identifiers</List.Item>
-                            <List.Item as="li" value="*">Pages visited, time spent, and interactions with the Site</List.Item>
-                            <List.Item as="li" value="*">Referring URL</List.Item>
-                        </List>
-                    </p>
-                    <p className="privacy-text">
-                        We use cookies and similar technologies to collect this data to improve the Site’s performance and user experience.<br /><br />
-                        Information from Third Parties<br /><br />
-                        We may receive limited information from third-party providers (e.g., booking systems, analytics platforms) that help us manage inquiries, schedule appointments, or analyze website traffic. Any data collected from such sources will be used only in accordance with this Privacy Policy.
-                    </p>
                 </div>
                 <Divider className="privacy-divider" />
                 <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">How We Share Personal Information</Header>
+                    <Header className="privacy-policy-section-header" as="h3">2. How We Use Your Information</Header>
                     <p className="privacy-text">
-                        We may share personal information in the following limited cases:
+                        We use your information to:
                     </p>
                     <List as="ol">
-                        <List.Item as="li" value="*">Service Providers: With vendors and platforms that help us run our business (e.g., scheduling software, analytics, CRM tools, website hosting).</List.Item>
-                        <List.Item as="li" value="*">Legal Compliance: When required by law, regulation, or legal process.</List.Item>
-                        <List.Item as="li" value="*">Business Transfers: In connection with a potential merger, acquisition, or business restructuring.</List.Item>
-                        <List.Item as="li" value="*">With Your Consent: If you instruct us to share your information with another party or request a referral.</List.Item>
+                        <List.Item as="li" value="*">Fulfill and manage your orders</List.Item>
+                        <List.Item as="li" value="*">Process payments and provide invoices/confirmations</List.Item>
+                        <List.Item as="li" value="*">Communicate with you (e.g., order status, support)</List.Item>
+                        <List.Item as="li" value="*">Prevent fraud or misuse of our services</List.Item>
+                        <List.Item as="li" value="*">Comply with legal obligations</List.Item>
                     </List>
-                    <p className="privacy-text">
-                        We do not sell or rent your personal information.
-                    </p>
                 </div>
                 <Divider className="privacy-divider" />
                 <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">Cookies and Tracking</Header>
+                    <Header className="privacy-policy-section-header" as="h3">3. Sharing Your Information</Header>
                     <p className="privacy-text">
-                        We use cookies and similar tools to analyze how visitors use our Site. These may include Google Analytics or comparable tools to collect anonymous traffic data and measure performance.
-                        Most web browsers accept cookies by default. You can adjust your settings to reject cookies, but this may affect your experience on the Site.
-                    </p>
-                </div>
-                <Divider className="privacy-divider" />
-                <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">Your Rights</Header>
-                    <p className="privacy-text">
-                        Depending on your location, you may have the following rights:
+                        We do <b>not sell</b> your personal information. We may share it with:
                     </p>
                     <List as="ol">
-                        <List.Item as="li" value="*">Right to Know: What personal information we collect and how we use it.</List.Item>
-                        <List.Item as="li" value="*">Right to Access: A copy of the personal information we hold about you.</List.Item>
-                        <List.Item as="li" value="*">Right to Correct: You can request correction of inaccurate or outdated information.</List.Item>
-                        <List.Item as="li" value="*">Right to Delete: You may request we delete your personal information (subject to legal requirements).</List.Item>
-                        <List.Item as="li" value="*">Right to Withdraw Consent: Where we rely on consent, you may withdraw it at any time.</List.Item>
+                        <List.Item as="li" value="*"><b>Shopify, </b>to power our online store</List.Item>
+                        <List.Item as="li" value="*"><b>Shipping Carriers, </b>to deliver your order</List.Item>
+                        <List.Item as="li" value="*"><b>Legal authorities, </b> if required to comply with applicable laws</List.Item>
+                    </List>
+                </div>
+                <Divider className="privacy-divider" />
+                <div className="privacy-policy-section">
+                    <Header className="privacy-policy-section-header" as="h3">4. Data Retention</Header>
+                    <p className="privacy-text">
+                        We retain your personal information only as long as necessary to fulfill the purposes described in this policy, unless a longer retention period is required by law.
+                    </p>
+                </div>
+                <Divider className="privacy-divider" />
+                <div className="privacy-policy-section">
+                    <Header className="privacy-policy-section-header" as="h3">5. Your Rights</Header>
+                    <p className="privacy-text">
+                       If you are a resident of certain jurisdictions (like the EU, UK, or California), you may have the right to:
+                    </p>
+                    <List as="ol">
+                        <List.Item as="li" value="*">Access or request a copy of the data we hold about you</List.Item>
+                        <List.Item as="li" value="*">Request correction or deletion of your personal data</List.Item>
+                        <List.Item as="li" value="*">Withdraw consent for data processing, where applicable</List.Item>
                     </List>
                     <p className="privacy-text">
-                        To exercise any of these rights, please email us at support@offsoundings.store. We may need to verify your identity before processing your request.
+                        To make a request, contact us at support@offsoundings.store.
                     </p>
                 </div>
                 <Divider className="privacy-divider" />
                 <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">Security and Data Retention</Header>
+                    <Header className="privacy-policy-section-header" as="h3">6. Security</Header>
                     <p className="privacy-text">
-                        We implement reasonable administrative and technical safeguards to protect your personal data. However, no system is completely secure. Do not submit
-                        sensitive or confidential information through unprotected channels.
-                    </p>
-                    <p className="privacy-text">
-                        We retain personal information only as long as necessary to respond to inquiries, conduct follow-ups, or comply with legal obligations.
+                        We take reasonable measures to protect your information from unauthorized access or disclosure. However, no method of transmission over the Internet or method of storage is 100% secure.
                     </p>
                 </div>
                 <Divider className="privacy-divider" />
                 <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">User-Generated Content</Header>
+                    <Header className="privacy-policy-section-header" as="h3">7. Changes to This Policy</Header>
                     <p className="privacy-text">
-                        Our Services may allow users to submit testimonials or reviews (if implemented). Any content submitted to public-facing sections of the Site is viewable by others.
-                        Please exercise caution before posting any personal information publicly.
+                        We may update this Privacy Policy from time to time to reflect changes in our practices or for other legal, operational, or regulatory reasons.
                     </p>
                 </div>
                 <Divider className="privacy-divider" />
                 <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">Third-Party Links</Header>
+                    <Header className="privacy-policy-section-header" as="h3">8. Contact Us</Header>
                     <p className="privacy-text">
-                        Our Site may contain links to third-party websites or services. These are not operated or controlled by Off Soundings, and we are not responsible for the content or privacy
-                        practices of any third-party platforms. We recommend reviewing their privacy policies separately.
-                    </p>
-                </div>
-                <Divider className="privacy-divider" />
-                <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">Children’s Data</Header>
-                    <p className="privacy-text">
-                        Our Site is not intended for children under 13 years of age, and we do not knowingly collect personal information from children. If we discover we’ve collected such
-                        information, we will delete it promptly.
-                    </p>
-                </div>
-                <Divider className="privacy-divider" />
-                <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">International Visitors</Header>
-                    <p className="privacy-text">
-                        If you access the Site from outside the United States, your data may be transferred and stored in the U.S. or other jurisdictions with different data protection laws.
-                        By using our Services, you consent to such transfers.
-                    </p>
-                </div>
-                <Divider className="privacy-divider" />
-                <div className="privacy-policy-section">
-                    <Header id="privacy-policy-section-header" as="h3">Contact Us</Header>
-                    <p className="privacy-text">
-                        If you have questions about this Privacy Policy or wish to exercise your rights, contact us at:<br /><br />
+                        If you have questions or concerns about this Privacy Policy or our data practices, please contact us:<br /><br />
                         Email: support@offsoundings.store<br /><br />
-                        Mailing Address: 54 East Industrial Road, Branford, CT 06405
+                        Mailing Address: 54 East Industrial Road, Branford, CT 06405<br /><br />
+                        Phone: (203) 458-3295
                     </p>
                 </div>
                 <Divider className="privacy-divider" />
