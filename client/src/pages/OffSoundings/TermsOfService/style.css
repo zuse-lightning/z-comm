@@ -1,11 +1,11 @@
-#privacy-policy-container {
+#terms-service-container {
     background-color: #fff;
     width: 60%;
     margin: 0 20%;
     border: solid 1px #fff;
 }
 
-#privacy-policy-header {
+#terms-service-header {
     color: #1e3170;
     font-size: 36px;
     font-weight: 700;
@@ -14,13 +14,13 @@
     margin: 5%;
 }
 
-#privacy-policy {
+#terms-service {
     padding: 2%;
     width: 80%;
     margin: 0 10%;
 }
 
-.privacy-policy-section-header {
+.terms-service-section-header {
     font-family: "Poppins", sans-serif!important;
     font-size: 24px!important;
     font-weight: 600!important;
@@ -28,7 +28,7 @@
     margin-top: 20px!important;
 }
 
-.privacy-text {
+.terms-text {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -40,54 +40,54 @@ li {
 }
 
 @media (max-width: 1699px) and (min-width: 1200px) {
-    #privacy-policy-container {
+    #terms-service-container {
         width: 70%;
         margin: 0 15%;
     }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-    #privacy-policy-container {
+    #terms-service-container {
         width: 80%;
         margin: 0 10%;
     }
 }
 
 @media (max-width: 991px) and (min-width: 801px) {
-    #privacy-policy-container {
+    #terms-service-container {
         width: 80%;
         margin: 0 10%;
     }
-    #privacy-policy-header {
+    #terms-service-header {
         margin: 5% 0;
         text-align: center;
     }
 }
 
 @media (max-width: 800px) and (min-width: 768px) {
-    #privacy-policy-container {
+    #terms-service-container {
         width: 80%;
         margin: 0 10%;
     }
-    #privacy-policy-header {
+    #terms-service-header {
         margin: 5% 0;
         text-align: center;
     }
 }
 
 @media (max-width: 767px) {
-    #privacy-policy-container {
+    #terms-service-container {
         width: 80%;
         margin: 0 10%;
     }
-    #privacy-policy-header {
+    #terms-service-header {
         margin: 5% 0;
         text-align: center;
     }
 }
 
 @media (max-width: 516px) {
-    #privacy-policy-container {
+    #terms-service-container {
         width: 100%;
         margin: 5% 0;
     }
