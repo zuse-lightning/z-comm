@@ -13,3 +13,24 @@
     font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #off-sound-navbar {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #off-sound-navbar {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #off-sound-navbar {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

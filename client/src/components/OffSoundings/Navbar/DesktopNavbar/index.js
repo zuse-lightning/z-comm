@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 
 import "./style.css";
 
-const Navbar = (props) => {
-
-    const { screenWidth } = props;
-    
+const DesktopNavbar = () => {
     return (
         <Menu id="off-sound-navbar" secondary>
             <Menu.Item
@@ -64,4 +61,4 @@ const Navbar = (props) => {
     );
 };
 
-export default Navbar;
+export default DesktopNavbar;
