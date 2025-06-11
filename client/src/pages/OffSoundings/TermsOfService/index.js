@@ -11,7 +11,7 @@ const TermsOfService = () => {
                 <Header id="terms-service-updated" as="h5">Effective Date: 6/11/2025</Header>
                 <div className="terms-service-section">
                     <p className="terms-text">
-                        Welcome to Off Soundings. These Terms of Service (“Terms”) govern your use of our website located at https://www.offsoundings.store, operated by Off Soundings LLC (“Off Soundings”, “we”, “us”, or “our”).
+                        Welcome to Off Soundings. These Terms of Service (“Terms”) govern your use of our website located at https://www.offsoundings.store, operated by Zuse Inc. (“Off Soundings”, “we”, “us”, or “our”).
                     </p>
                     <p className="terms-text">
                         By accessing or using our website, products, or services, you agree to be bound by these Terms. If you do not agree to all of these Terms, you may not access or use the website or any services offered.
