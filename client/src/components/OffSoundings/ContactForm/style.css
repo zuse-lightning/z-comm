@@ -4,14 +4,14 @@
 
 #off-sound-contact-form-header {
     font-size: 48px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
 
 #off-sound-contact-form-subheader {
     font-size: 20px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
     text-align: center;
     margin-bottom: 3%;
     font-family: "Poppins", sans-serif;
@@ -19,14 +19,15 @@
 
 #off-sound-form-field-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr)!important;
+    grid-template-columns: repeat(1, 1fr) !important;
     column-gap: 20px;
     row-gap: 30px;
     width: 50%;
     margin: 0 25%;
 }
 
-#off-sound-name-input, #off-sound-email-input {
+#off-sound-name-input,
+#off-sound-email-input {
     width: 80%;
     margin: 0 10%;
     padding: 10px;
@@ -35,7 +36,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-#off-sound-phone-input, #off-sound-message-input {
+#off-sound-phone-input,
+#off-sound-message-input {
     width: 80%;
     margin: 0 10%;
     padding: 10px;
@@ -61,6 +63,7 @@
     font-size: 16px;
     cursor: pointer;
 }
+
 #off-sound-submit-btn:hover {
     background-color: transparent;
     color: #1e3170;
@@ -72,4 +75,63 @@
     margin: 0 25%;
     text-align: center;
     font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #off-sound-form-field-container {
+        width: 60%;
+        margin: 0 20%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #off-sound-form-field-container {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 801px) {
+    #off-sound-form-field-container {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    #off-sound-form-field-container {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #off-sound-submit-btn {
+        width: 30%;
+        margin: 2% 35%;
+    }
+}
+
+@media (max-width: 600px) {
+    #off-sound-contact-form-container {
+        padding: 10% 3%;
+    }
+
+    #off-sound-form-field-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #off-sound-contact-form-header {
+        font-size: 36px;
+    }
+
+    #off-sound-contact-form-subheader {
+        font-size: 16px;
+    }
+
+    #off-sound-submit-btn {
+        width: 50%;
+        margin: 2% 25%;
+    }
 }

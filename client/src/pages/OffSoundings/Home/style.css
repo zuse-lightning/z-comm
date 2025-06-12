@@ -23,3 +23,25 @@
     width: 60%;
     margin: 0 auto;
 }
+
+@media (max-width: 1808px) and (min-width: 1200px) {
+    #off-sound-home-collection {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #off-sound-home-collection {
+        width: 90%;
+    }
+}
+@media (max-width: 991px) and (min-width: 801px) {
+    #off-sound-home-collection {
+        width: 90%;
+    }
+}
+@media (max-width: 800px) {
+    #off-sound-home-collection {
+        width: 100%;
+    }
+}
