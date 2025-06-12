@@ -14,11 +14,13 @@ import Footer from "../../components/OffSoundings/Footer";
 
 import { offSoundingsCollectionOptions } from "../../assets/collectionOptions";
 
-const OffSoundings = () => {
+const OffSoundings = (props) => {
+
+    const  { screenWidth } = props;
 
     return (
         <>
-            <Navbar />
+            <Navbar screenWidth={screenWidth} />
             <Routes>
                 <Route exact path="/" element={<Home styleOptions={offSoundingsCollectionOptions} />} />
                 <Route exact path="/shirts" element={<Shirts styleOptions={offSoundingsCollectionOptions} />} />
