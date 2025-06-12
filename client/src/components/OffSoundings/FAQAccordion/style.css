@@ -38,4 +38,73 @@
 .off-sound-faq-accordion-list-item {
     font-weight: 500!important;
     font-family: "Poppins", sans-serif!important;
-};
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #off-sound-faq-accordion {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #off-sound-faq-accordion {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #off-sound-faq-accordion {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 801px) {
+    #off-sound-faq-accordion-container {
+        padding: 6%;
+    }
+    #off-sound-faq-accordion {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #off-sound-faq-accordion-container {
+        padding: 6%;
+    }
+    #off-sound-faq-accordion {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #off-sound-faq-accordion-header {
+        font-size: 36px;
+    }
+    #off-sound-faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 400px) {
+    #off-sound-faq-accordion-header {
+        font-size: 28px;
+    }
+    #off-sound-faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 300px) {
+    #off-sound-faq-accordion-header {
+        font-size: 24px;
+    }
+    #off-sound-faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
