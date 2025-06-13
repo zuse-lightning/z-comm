@@ -9,7 +9,7 @@
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    font-family: "Poppins"!important;
+    font-family: "Poppins" !important;
     margin-bottom: 5%;
 }
 
@@ -24,13 +24,27 @@
         width: 90%;
     }
 }
+
 @media (max-width: 991px) and (min-width: 801px) {
     #off-sound-shirts-container {
         width: 90%;
     }
 }
+
 @media (max-width: 800px) {
     #off-sound-shirts-container {
         width: 100%;
+    }
+
+    #off-sound-shirts-header {
+        font-size: 28px;
+    }
+
+    #off-sound-shirts-header {
+        margin-bottom: 10%;
+    }
+
+    #off-sound-shirts-container {
+        padding: 5%;
     }
 }
