@@ -35,41 +35,34 @@ const MobileNavbar = () => {
                 onClose={() => setOpen(false)}
                 icon={null}
                 trigger={trigger}
-                direction="left"
+                // direction="right"
+                pointing="top"
             >
                 <Dropdown.Menu>
-                    <Dropdown.Item>
-                        <Dropdown text="Collections" pointing="left" className="link item">
-                            <Dropdown.Menu>
-                                <Dropdown.Item
-                                    as={Link}
-                                    onClick={() => setOpen(false)}
-                                    to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/shirts" : "/shirts"}>
-                                    Shirts
-                                </Dropdown.Item>
-                                <Dropdown.Item
-                                    as={Link}
-                                    onClick={() => setOpen(false)}
-                                    to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/outerwear" : "/outerwear"}>
-                                    Outerwear
-                                </Dropdown.Item>
-                                <Dropdown.Item
-                                    as={Link}
-                                    onClick={() => setOpen(false)}
-                                    to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/headwear" : "/headwear"}>
-                                    Headwear
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/shirts" : "/shirts"}>
+                        Shirts
                     </Dropdown.Item>
-
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/outerwear" : "/outerwear"}>
+                        Outerwear
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/headwear" : "/headwear"}>
+                        Headwear
+                    </Dropdown.Item>
                     <Dropdown.Item
                         as={Link}
                         onClick={() => setOpen(false)}
                         to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/faq" : "/faq"}>
                         Help
                     </Dropdown.Item>
-
                     <Dropdown.Item
                         as={Link}
                         onClick={() => setOpen(false)}
