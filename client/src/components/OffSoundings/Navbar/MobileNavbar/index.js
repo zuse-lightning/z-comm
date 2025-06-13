@@ -6,39 +6,36 @@ import "../style.css";
 
 const MobileNavbar = () => {
     const [open, setOpen] = useState(false);
+    console.log(open);
 
     const trigger = (
-        <div onClick={() => setOpen(!open)} style={{ cursor: 'pointer', padding: '10px' }}>
-            <div style={{ height: '3px', width: '25px', background: '#000', margin: '4px 0' }} />
-            <div style={{ height: '3px', width: '25px', background: '#000', margin: '4px 0' }} />
-            <div style={{ height: '3px', width: '25px', background: '#000', margin: '4px 0' }} />
+        <div id="mobile-menu-trigger" onClick={() => setOpen(o => !o)}>
+            <div className="mobile-menu-bar" />
+            <div className="mobile-menu-bar" />
+            <div className="mobile-menu-bar" />
         </div>
     );
 
     return (
-        <Menu id="off-sound-navbar" secondary>
-            <Menu.Item
-                className="off-sound-header-nav-item"
-                as={Link}
-                to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/" : "/"}
-                name="home"
-            >
-                <div id="off-sound-logo-container">
-                    <Image
-                        draggable="false"
-                        size="small"
-                        id="off-sound-logo"
-                        src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/off-soundings-logo.png?v=1732219354"
-                    />
-                </div>
-            </Menu.Item>
+        <div className="mobile-navbar-container">
+            <div id="mobile-off-sound-logo-container">
+                <Image
+                    as={Link}
+                    to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/" : "/"}
+                    draggable="false"
+                    size="small"
+                    id="mobile-off-sound-logo"
+                    src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/off-soundings-logo.png?v=1732219354"
+                />
+            </div>
             <Dropdown
                 item
                 open={open}
-                onClick={() => setOpen(!open)}
+                onOpen={() => setOpen(true)}
+                onClose={() => setOpen(false)}
                 icon={null}
                 trigger={trigger}
-                direction="right"
+                direction="left"
             >
                 <Dropdown.Menu>
                     <Dropdown.Item>
@@ -46,19 +43,19 @@ const MobileNavbar = () => {
                             <Dropdown.Menu>
                                 <Dropdown.Item
                                     as={Link}
-                                    onClick={() => setOpen(!open)}
+                                    onClick={() => setOpen(false)}
                                     to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/shirts" : "/shirts"}>
                                     Shirts
                                 </Dropdown.Item>
                                 <Dropdown.Item
                                     as={Link}
-                                    onClick={() => setOpen(!open)}
+                                    onClick={() => setOpen(false)}
                                     to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/outerwear" : "/outerwear"}>
                                     Outerwear
                                 </Dropdown.Item>
                                 <Dropdown.Item
                                     as={Link}
-                                    onClick={() => setOpen(!open)}
+                                    onClick={() => setOpen(false)}
                                     to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/headwear" : "/headwear"}>
                                     Headwear
                                 </Dropdown.Item>
@@ -68,20 +65,20 @@ const MobileNavbar = () => {
 
                     <Dropdown.Item
                         as={Link}
-                        onClick={() => setOpen(!open)}
+                        onClick={() => setOpen(false)}
                         to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/faq" : "/faq"}>
                         Help
                     </Dropdown.Item>
 
                     <Dropdown.Item
                         as={Link}
-                        onClick={() => setOpen(!open)}
+                        onClick={() => setOpen(false)}
                         to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/contact" : "/contact"}>
                         Contact
                     </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
-        </Menu>
+        </div>
     );
 };
 
