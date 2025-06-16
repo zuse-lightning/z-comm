@@ -1,11 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-export default ({ favIcon, site, title, description, keywords, type, image, url }) => {
+export default ({ favIcon, title, description, keywords, type, image, url }) => {
     return (
         <Helmet>
             <link rel="icon" href={favIcon} />
-            <title>{site} - {title}</title>
+            <title>{title}</title>
             <meta name="decription" content={description} />
             <meta name="keywords" content={keywords} />
             <meta property="og:type" content={type} />
