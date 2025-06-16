@@ -35,6 +35,15 @@ const Outerwear = ({ styleOptions }) => {
 
     return (
         <>
+            <SEO
+                favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/off-soundings-favicon.png?v=1750084870"
+                title="Off Soundings - Outerwear"
+                description="Discover premium Off Soundings outerwear—water-resistant jackets and windbreakers designed for boating and coastal racing. Stay protected on deck in style and comfort."
+                keywords="Off Soundings outerwear, boating jackets, sailing windbreakers, water-resistant jackets, coastal racing gear, boat club outerwear, Off Soundings Club apparel"
+                type="website"
+                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/off-soundings-outerwear.png?v=1750093142"
+                url={window.location.href}
+            />
             {collection.length > 0 ?
                 <div id="off-sound-outerwear-container">
                     <Header as="h1" id="off-sound-outerwear-header">{collection[0].collection_name}</Header>
