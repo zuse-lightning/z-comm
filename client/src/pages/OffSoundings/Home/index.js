@@ -41,8 +41,8 @@ const Home = ({ styleOptions }) => {
                 favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/off-soundings-favicon.png?v=1750084870"
                 site="Off Soundings"
                 title="Cherish The Memories Both On and Off the Water"
-                description="Cherish The Memories Both On and Off the Water"
-                keywords="Off Soundings, Home, Shopify, Collection"
+                description="Official Off Soundings apparel store—premium boating gear inspired by coastal racing tradition. Shop shirts, outerwear, headwear, and accessories proudly associated with the Off Soundings Club."
+                keywords="Off Soundings apparel, boating apparel, sailing gear, boat club merchandise, shirts, outerwear, headwear, accessories, Off Soundings Club"
                 type="website"
                 image="https://zuse-inc-bucket.s3.amazonaws.com/off-soundings-home.png"
                 url={window.location.href}
