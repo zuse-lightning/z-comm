@@ -1,10 +1,13 @@
 import React from "react";
+import QuoteForm from "../../../components/ZComm/QuoteForm";
+
+import "./style.css";
 
 const Quote = () => {
     return (
-        <div>
-            <h1>Quote</h1>
-        </div>
+        <>
+            <QuoteForm />
+        </>
     );
 };
 
