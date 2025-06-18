@@ -13,7 +13,7 @@ const QuoteForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const quoteForm = document.getElementById("quote-form");
+        const quoteForm = document.getElementById("zcomm-quote-form");
         const formData = new FormData(quoteForm);
 
         const response = await fetch(QUOTE_ENDPOINT, {
@@ -41,11 +41,11 @@ const QuoteForm = () => {
     };
 
     return (
-        <div id="quote-form-container">
-            <Header as="h1" id="quote-form-header">Request a Quote</Header>
+        <div id="zcomm-quote-form-container">
+            <Header as="h1" id="zcomm-quote-form-header">Request a Quote</Header>
             <p>To request a quote, please fill out the form below with your details and requirements. We will get back to you as soon as possible.</p>
             <form 
-                id="quote-form" 
+                id="zcomm-quote-form" 
                 onSubmit={handleSubmit}
                 action={QUOTE_ENDPOINT}
                 method="POST"    
@@ -61,7 +61,6 @@ const QuoteForm = () => {
 
                 <button type="submit">Submit</button>
             </form>
-
         </div>
     );
 };
