@@ -58,7 +58,7 @@ const QuoteForm = () => {
                 method="POST"
             >
                 <div className="zcomm-quote-form-col">
-                    <Header as="h3" id="zcomm-quote-form-title">Contact Information</Header>
+                    <Header as="h3" className="zcomm-quote-form-title">Contact Information</Header>
                 </div>
                 <div className="zcomm-quote-form-col">
                     <label htmlFor="name">Name:</label>
@@ -77,15 +77,37 @@ const QuoteForm = () => {
                     <input type="tel" id="phone" name="phone" required />
                 </div>
                 <div className="zcomm-quote-form-col">
-                    <Header as="h3" id="zcomm-quote-form-title">Services</Header>
+                    <Header as="h3" className="zcomm-quote-form-title">Services</Header>
                 </div>
                 <div className="zcomm-quote-form-col">
-                   <select value={service} onChange={handleServiceChange} id="zcomm-quote-service-dropdown" name="service" required>
+                    <select value={service} onChange={handleServiceChange} id="zcomm-quote-service-dropdown" name="service" required>
                         <option selected disabled value="">Select a service</option>
                         <option value="web-development">Web Development</option>
                         <option value="fulfillment">Fulfillment</option>
                         <option value="both">Both</option>
                     </select>
+                </div>
+                <div className="zcomm-quote-form-col">
+                    <Header as="h3" className="zcomm-quote-form-title">Project Details</Header>
+                </div>
+                <div className="zcomm-quote-form-col">
+                    <textarea id="zcomm-quote-project-details" name="project-details" placeholder="Please provide details about your project, including any specific requirements or features you need." required></textarea>
+                </div>
+                <div className="zcomm-quote-form-col">
+                    <select id="zcomm-quote-platform-dropdown" name="platform" required>
+                        <option selected disabled value="">Current Platform (if any)</option>
+                        <option value="none">None / Just Getting Started</option>
+                        <option value="shopify">Shopify</option>
+                        <option value="woocommerce">WooCommerce</option>
+                        <option value="squarespace">Squarespace</option>
+                        <option value="wix">Wix</option>
+                        <option value="bigcommerce">BigCommerce</option>
+                        <option value="custom">Custom (React, Node, etc.)</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div className="zcomm-quote-form-col">
+                    <input name="website" placeholder="Website (if any)" />
                 </div>
                 <div className="zcomm-quote-form-col">
                     <label htmlFor="message">Message:</label>

@@ -18,6 +18,26 @@
     margin: 0 auto;
 }
 
+.zcomm-quote-form-col {
+  position: relative;
+}
+
+.zcomm-quote-form-col::before {
+  content: "Col #" counter(col-num);
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Initialize and increment the counter */
+.zcomm-quote-form-row {
+  counter-reset: col-num;
+}
+.zcomm-quote-form-col {
+  counter-increment: col-num;
+}
+
 .zcomm-quote-form-col:nth-child(2),
 .zcomm-quote-form-col:nth-child(3),
 .zcomm-quote-form-col:nth-child(4),
@@ -25,15 +45,21 @@
     grid-column: span 6;
 }
 
-.zcomm-quote-form-col:nth-child(7) {
+.zcomm-quote-form-col:nth-child(7),
+.zcomm-quote-form-col:nth-child(10) {
     grid-column: span 4;
 }
 
 .zcomm-quote-form-col:nth-child(1),
 .zcomm-quote-form-col:nth-child(6),
 .zcomm-quote-form-col:nth-child(8),
-.zcomm-quote-form-col:nth-child(9) {
+.zcomm-quote-form-col:nth-child(9),
+.zcomm-quote-form-col:nth-child(11) {
     grid-column: span 12;
+}
+
+.zcomm-quote-form-title {
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .zcomm-checkbox-label {
@@ -66,4 +92,8 @@
 .zcomm-quote-form-col textarea {
     min-height: 100px;
     resize: none;
+}
+
+#zcomm-quote-project-details {
+    min-height: 200px;
 }
