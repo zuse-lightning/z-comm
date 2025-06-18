@@ -1,3 +1,69 @@
 #zcomm-quote-form-container {
+    padding: 5%;
+    font-family: "Montserrat", sans-serif !important;
+}
 
+#zcomm-quote-form-header,
+#zcomm-quote-form-subheader {
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+#zcomm-quote-form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.zcomm-quote-form-col:nth-child(2),
+.zcomm-quote-form-col:nth-child(3),
+.zcomm-quote-form-col:nth-child(4),
+.zcomm-quote-form-col:nth-child(5) {
+    grid-column: span 6;
+}
+
+.zcomm-quote-form-col:nth-child(7) {
+    grid-column: span 4;
+}
+
+.zcomm-quote-form-col:nth-child(1),
+.zcomm-quote-form-col:nth-child(6),
+.zcomm-quote-form-col:nth-child(8),
+.zcomm-quote-form-col:nth-child(9) {
+    grid-column: span 12;
+}
+
+.zcomm-checkbox-label {
+    display: flex!important;
+    align-items: center;
+    gap: 12px;
+    width: 100% !important;
+}
+
+.zcomm-quote-form-col label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.zcomm-quote-form-col select {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.zcomm-quote-form-col input,
+.zcomm-quote-form-col textarea {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.zcomm-quote-form-col textarea {
+    min-height: 100px;
+    resize: none;
 }
