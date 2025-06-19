@@ -1,5 +1,5 @@
 #zcomm-quote-form-container {
-    padding: 5%;
+    padding: 3%;
     font-family: "Montserrat", sans-serif !important;
 }
 
@@ -8,6 +8,16 @@
     text-align: center;
     margin-bottom: 2%;
     font-family: "Montserrat", sans-serif !important;
+}
+
+#zcomm-quote-form-header {
+    font-size: 48px;
+    font-weight: 700 !important;
+}
+
+#zcomm-quote-form-subheader {
+    font-size: 16px;
+    font-weight: 500 !important;
 }
 
 #zcomm-quote-form {
