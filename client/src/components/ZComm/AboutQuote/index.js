@@ -14,7 +14,7 @@ const AboutQuote = () => {
                     streamline your product fulfillment process, Z-Comm is here to help. Get in touch with us today 
                     to learn more about our services and how we can empower your e-commerce success.
                 </Header>
-                <Button id="zcomm-about-quote-btn" as={Link} to="/">Get A Quote</Button>
+                <Button id="zcomm-about-quote-btn" as={Link} to="/quote">Get A Quote</Button>
             </div>
         </div>
     );

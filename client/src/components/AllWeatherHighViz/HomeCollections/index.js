@@ -30,8 +30,9 @@ const HomeCollections = ({ styleOptions }) => {
     useEffect(() => {
         if (collections.length > 0) {
             collections.forEach((collection) => {
-                if (["Concealed Carry Collection", "Accessories", "Headwear", "Best Sellers", "New Releases"].includes(collection.collection_name)) {
+                if (["Concealed Carry Collection", "Accessories", "Headwear", "Best Sellers", "New Releases"].includes(collection.collection_name) && collection.collection_store === "All Weather High Viz") {
                     embedShopifyCollection(collection.collection_id, `collection-component-${collection.collection_node}`, collection.collection_domain, collection.collection_token, styleOptions);
+                    console.log(collection.collection_store);
                 }
             });
             const collectionContainer = document.getElementsByClassName("awhv-home-collections-container");
@@ -69,7 +70,7 @@ const HomeCollections = ({ styleOptions }) => {
                 ? collections
                     .filter(collection =>
                         ["Best Sellers", "New Releases", "Concealed Carry Collection", "Headwear", "Accessories"]
-                            .includes(collection.collection_name)
+                            .includes(collection.collection_name) && collection.collection_store === "All Weather High Viz"
                     )
                     .map((collection) => (
                         <div key={collection.collection_id} className="awhv-home-collections-container">

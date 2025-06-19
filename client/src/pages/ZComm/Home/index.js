@@ -3,14 +3,11 @@ import PropTypes from "prop-types";
 import HomeBanner from "../../../components/ZComm/HomeBanner";
 import HomeTrustBadges from "../../../components/ZComm/HomeTrustBadges";
 import HomeAbout from "../../../components/ZComm/HomeAbout";
-import { embedShopifyProduct, embedShopifyCollection } from "../../../utils/shopify";
 import { axiosInstance } from "../../../utils/api";
 
 const Home = (props) => {
 
     const { auth } = props;
-
-    // console.log(window.ShopifyBuy.UI);
     
     useEffect(() => {
         const fetchData = async () => {
@@ -24,18 +21,11 @@ const Home = (props) => {
         fetchData();
     }, []);
 
-    useEffect(() => {
-        embedShopifyProduct("8075315773635", "product-component-1748633948781", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
-        embedShopifyCollection("335820488899", "collection-component-1748629128430", "bfb312-ir.myshopify.com", "97789f988ec89e728949a3e7eeb05593");
-    }, []);
-
     return (
         <>
             <HomeBanner />
             <HomeTrustBadges />
             <HomeAbout />
-            <div id={`product-component-1731358336108`}></div>
-            <div id='collection-component-1748629128430'></div>
         </>
     );
 };
