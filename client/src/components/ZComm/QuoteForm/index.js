@@ -61,20 +61,16 @@ const QuoteForm = () => {
                     <Header as="h3" className="zcomm-quote-form-title">Contact Information</Header>
                 </div>
                 <div className="zcomm-quote-form-col">
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
+                    <input type="text" id="name" name="name" placeholder="Name" required />
                 </div>
                 <div className="zcomm-quote-form-col">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
+                    <input type="email" id="email" name="email" placeholder="Email" required />
                 </div>
                 <div className="zcomm-quote-form-col">
-                    <label htmlFor="company">Company:</label>
-                    <input type="text" id="company" name="company" required />
+                    <input type="text" id="company" name="company" placeholder="Company" required />
                 </div>
                 <div className="zcomm-quote-form-col">
-                    <label htmlFor="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required />
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required />
                 </div>
                 <div className="zcomm-quote-form-col">
                     <Header as="h3" className="zcomm-quote-form-title">Services</Header>
@@ -107,13 +103,65 @@ const QuoteForm = () => {
                     </select>
                 </div>
                 <div className="zcomm-quote-form-col">
-                    <input name="website" placeholder="Website (if any)" />
+                    <input id="website" name="website" placeholder="Website (if any)" />
+                </div>
+                {service === "fulfillment" || service === "both" ? (
+                    <>
+                        <div className="zcomm-quote-form-col">
+                            <Header as="h3" className="zcomm-quote-form-title" id="zcomm-quote-fulfillment-details">Fulfillment Details</Header>
+                        </div>
+                        <div className="zcomm-quote-form-col">
+                            <input id="zcomm-quote-sku-count" name="sku-count" type="number" placeholder="Estimated number of SKUs" className="input" />
+                        </div>
+                        <div className="zcomm-quote-form-col">
+                            <select id="zcomm-quote-order-volume" name="order-volume" className="input">
+                                <option selected disabled value="">Monthly Order Volume</option>
+                                <option value="0-50">0–50</option>
+                                <option value="51-200">51–200</option>
+                                <option value="201-1000">201–1000</option>
+                                <option value="1000+">1000+</option>
+                            </select>
+                        </div>
+                        <div className="zcomm-quote-form-col">
+                            <select id="zcomm-quote-storage" name="storage" className="input">
+                                <option selected disabled value="">Need Storage for Inventory?</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unsure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                    </>
+                ) : null}
+                <div className="zcomm-quote-form-col">
+                    <Header as="h3" className="zcomm-quote-form-title">Timeline & Budget</Header>
                 </div>
                 <div className="zcomm-quote-form-col">
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <select id="zcomm-quote-timeline" name="timeline" className="input">
+                        <option selected disabled value="">When would you like to get started?</option>
+                        <option value="now">Immediately</option>
+                        <option value="1-2 weeks">1–2 Weeks</option>
+                        <option value="1-2 months">1–2 Months</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
                 </div>
-
+                <div className="zcomm-quote-form-col">
+                    <select id="zcomm-quote-budget" name="budget" className="input">
+                        <option selected disabled value="">Estimated Budget</option>
+                        <option value="<2000">Under $2,000</option>
+                        <option value="2000-5000">$2,000–$5,000</option>
+                        <option value="5000-10000">$5,000–$10,000</option>
+                        <option value="10000+">$10,000+</option>
+                    </select>
+                </div>
+                <div className="zcomm-quote-form-col">
+                    <Header as="h3" className="zcomm-quote-form-title">Additional Details</Header>
+                </div>
+                <div className="zcomm-quote-form-col">
+                    <textarea id="message" name="message" placeholder="Please let us know if there's anything else we should know" required></textarea>
+                </div>
+                <div className="zcomm-quote-form-col">
+                    <input name="referral" placeholder="How did you hear about us?" className="input" />
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </div>

@@ -36,6 +36,7 @@
 }
 .zcomm-quote-form-col {
   counter-increment: col-num;
+  grid-column: span 12;
 }
 
 .zcomm-quote-form-col:nth-child(2),
@@ -46,16 +47,12 @@
 }
 
 .zcomm-quote-form-col:nth-child(7),
-.zcomm-quote-form-col:nth-child(10) {
+.zcomm-quote-form-col:nth-child(10),
+.zcomm-quote-form-col:has(#zcomm-quote-order-volume),
+.zcomm-quote-form-col:has(#zcomm-quote-storage),
+.zcomm-quote-form-col:has(#zcomm-quote-timeline),
+.zcomm-quote-form-col:has(#zcomm-quote-budget) {
     grid-column: span 4;
-}
-
-.zcomm-quote-form-col:nth-child(1),
-.zcomm-quote-form-col:nth-child(6),
-.zcomm-quote-form-col:nth-child(8),
-.zcomm-quote-form-col:nth-child(9),
-.zcomm-quote-form-col:nth-child(11) {
-    grid-column: span 12;
 }
 
 .zcomm-quote-form-title {
@@ -82,9 +79,10 @@
 }
 
 .zcomm-quote-form-col input,
-.zcomm-quote-form-col textarea {
+.zcomm-quote-form-col textarea,
+#website {
     width: 100%;
-    padding: 3%;
+    padding: 2%;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
