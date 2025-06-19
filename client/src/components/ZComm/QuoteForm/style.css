@@ -19,24 +19,25 @@
 }
 
 .zcomm-quote-form-col {
-  position: relative;
+    position: relative;
 }
 
 .zcomm-quote-form-col::before {
-  content: "Col #" counter(col-num);
-  top: 0;
-  left: 0;
-  font-size: 0.8rem;
-  color: #888;
+    content: "Col #" counter(col-num);
+    top: 0;
+    left: 0;
+    font-size: 0.8rem;
+    color: #888;
 }
 
 /* Initialize and increment the counter */
 .zcomm-quote-form-row {
-  counter-reset: col-num;
+    counter-reset: col-num;
 }
+
 .zcomm-quote-form-col {
-  counter-increment: col-num;
-  grid-column: span 12;
+    counter-increment: col-num;
+    grid-column: span 12;
 }
 
 .zcomm-quote-form-col:nth-child(2),
@@ -60,7 +61,7 @@
 }
 
 .zcomm-checkbox-label {
-    display: flex!important;
+    display: flex !important;
     align-items: center;
     gap: 12px;
     width: 100% !important;
@@ -108,6 +109,7 @@
     font-size: 16px;
     cursor: pointer;
 }
+
 #zcomm-quote-submit-btn:hover {
     background-color: transparent;
     color: #262261;
