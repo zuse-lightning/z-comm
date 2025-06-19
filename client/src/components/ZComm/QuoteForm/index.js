@@ -162,7 +162,9 @@ const QuoteForm = () => {
                 <div className="zcomm-quote-form-col">
                     <input name="referral" placeholder="How did you hear about us?" className="input" />
                 </div>
-                <button type="submit">Submit</button>
+                <div className="zcomm-quote-form-col">
+                    <button id="zcomm-quote-submit-btn" type="submit">Submit</button>
+                </div>
             </form>
         </div>
     );
