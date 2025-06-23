@@ -13,7 +13,7 @@ const AboutBanner = () => {
                 <motion.div
                     initial={{ opacity: 0}}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <Header as="h1" id="zcomm-about-banner-header">Empowering E-Commerce Success</Header>
                     <Header as="h4" id="zcomm-about-banner-subheader">

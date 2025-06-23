@@ -10,7 +10,8 @@ const AboutMission = () => {
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}>
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.3 }}>
             <Header as="h1" id="zcomm-about-mission-header">Our Mission</Header>
             <Header as="h4" id="zcomm-about-mission-subheader">
                 Z-Comm is a forward-thinking e-commerce solutions company dedicated to helping online
