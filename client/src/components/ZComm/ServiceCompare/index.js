@@ -19,33 +19,33 @@ const ServiceCompare = () => {
                 <Table.Body>
                     <Table.Row>
                         <Table.Cell>Custom Design</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
                         <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
                     </Table.Row>
                     <Table.Row>
                         <Table.Cell>Responsive Layout</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
                         <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
                     </Table.Row>
                     <Table.Row>
                         <Table.Cell>E-Commerce Integration</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
                     </Table.Row>
                     <Table.Row>
                         <Table.Cell>Inventory Management</Table.Cell>
                         <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
                     </Table.Row>
                     <Table.Row>
                         <Table.Cell>Order Processing</Table.Cell>
                         <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
-                        <Table.Cell>✔️</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
+                        <Table.Cell>✅</Table.Cell>
                     </Table.Row>
                 </Table.Body>
             </Table>

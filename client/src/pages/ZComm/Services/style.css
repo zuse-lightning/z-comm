@@ -1,0 +1,16 @@
+#zcomm-services {
+    width: 60%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+#zcomm-services-header {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: #f7931e;
+    margin-bottom: 10%;
+    padding: 4%;
+}
