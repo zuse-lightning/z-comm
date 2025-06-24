@@ -92,7 +92,7 @@ app.use(helmet({
 app.use(routes);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(__dirname, "client/build"));
+  app.use(express.static("client/build"));
   app.get("*", (req, res) => {
     return res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
