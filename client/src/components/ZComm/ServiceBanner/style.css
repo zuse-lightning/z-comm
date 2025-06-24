@@ -1,0 +1,33 @@
+#zcomm-service-banner-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+#zcomm-service-banner-image {
+    object-fit: cover;
+    height: 700px;
+    filter: brightness(50%);
+}
+
+#zcomm-service-banner-header, #zcomm-service-banner-subheader {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+#zcomm-service-banner-header {
+    font-size: 60px;
+    width: 80%;
+    margin: 0 10%;
+}
+
+#zcomm-service-banner-subheader {
+    top: 50%;
+    width: 50%;
+    margin: 0 25%;
+    font-size: 20px;
+}
