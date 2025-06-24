@@ -43,3 +43,21 @@ export const offSoundingsFAQ = [
     { question: "Do you sell gear at the events?", answer: "We often pop up at events like the Off Soundings spring and fall series! Follow us on Instagram or sign up for our newsletter to know where we'll be next." },
     { question: "How can I stay updated on new products?", answer: "Join our email list and follow us on social media to be the first to know about new launches, limited-edition drops, and event specials." }
 ];
+
+export const zcommServiceTable = [
+    ["Custom E-Commerce Store", "✅", "❌", "✅"],
+    ["Product Storage", "❌", "✅", "✅"],
+    ["Order Shipping", "❌", "✅", "✅"],
+    ["Responsive Website Design", "✅", "❌", "✅"],
+    ["Platform Integrations (Shopify, WooCommerce, etc.)", "✅", "❌", "✅"],
+    ["Inventory Management System", "❌", "✅", "✅"],
+    ["Automated Order Tracking", "❌", "✅", "✅"],
+    ["Custom Packaging Options", "❌", "✅", "✅"],
+    ["Ongoing Technical Support", "✅", "❌", "✅"],
+    ["Customer Service Handling", "❌", "✅", "✅"],
+    ["Analytics & Reporting Dashboard", "✅", "❌", "✅"],
+    ["Returns Processing", "❌", "✅", "✅"],
+    ["Marketing Integrations (Email, SMS, etc.)", "✅", "❌", "✅"],
+    ["Dedicated Account Manager", "✅", "✅", "✅"],
+    ["Discounted Service Bundle", "❌", "❌", "✅"]
+];

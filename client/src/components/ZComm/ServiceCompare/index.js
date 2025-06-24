@@ -1,5 +1,6 @@
 import React from "react";
 import { Table } from "semantic-ui-react";
+import { zcommServiceTable } from "../../../assets/generalAssets";
 
 import "./style.css";
 
@@ -17,36 +18,13 @@ const ServiceCompare = () => {
                 </Table.Header>
 
                 <Table.Body>
-                    <Table.Row>
-                        <Table.Cell>Custom Design</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                        <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Cell>Responsive Layout</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                        <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Cell>E-Commerce Integration</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Cell>Inventory Management</Table.Cell>
-                        <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Cell>Order Processing</Table.Cell>
-                        <Table.Cell>❌</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                        <Table.Cell>✅</Table.Cell>
-                    </Table.Row>
+                    {zcommServiceTable.map((row, rowIndex) => (
+                        <Table.Row key={rowIndex}>
+                            {row.map((cell, cellIndex) => (
+                                <Table.Cell key={cellIndex}>{cell}</Table.Cell>
+                            ))}
+                        </Table.Row>
+                    ))}
                 </Table.Body>
             </Table>
         </>
