@@ -1,0 +1,40 @@
+#zcomm-service-webdev-container {
+    background-color: #262261;
+}
+
+#zcomm-service-webdev {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* column-gap: 40px; */
+    /* width: 60%;
+    margin: 0 auto; */
+    /* padding: 4%; */
+}
+
+.zcomm-webdev-col {
+    text-align: center;
+}
+
+#zcomm-service-webdev-header {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: #f7931e;
+    margin: 5%;
+    color: white;
+    font-size: 40px;
+}
+
+#zcomm-service-webdev-subheader {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* .zcomm-webdev-col:nth-child(2) {
+    grid-column: span 2;
+} */
