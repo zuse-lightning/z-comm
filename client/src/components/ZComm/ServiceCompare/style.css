@@ -1,0 +1,32 @@
+#zcomm-service-compare-header {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: #f7931e;
+    margin: 5%;
+}
+
+#zcomm-service-compare-subheader {
+    text-align: center;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+#zcomm-service-table {
+    width: 100%;
+}
+
+.zcomm-service-table-header-cell,
+.zcomm-service-table-cell {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.zcomm-service-table-cell {
+    font-weight: 300;
+}
