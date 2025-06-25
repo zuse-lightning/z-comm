@@ -14,7 +14,6 @@ const ServiceWebDev = () => {
                         src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/web-dev-service.png?v=1750791069"
                         fluid
                         alt="Z-Comm Web Development"
-                        size="huge"
                     />
                 </div>
                 <div className="zcomm-webdev-col">

@@ -13,6 +13,8 @@
 
 .zcomm-webdev-col {
     text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 
 #zcomm-service-webdev-header {
@@ -22,9 +24,10 @@
     text-decoration: underline;
     text-underline-offset: 20px;
     text-decoration-color: #f7931e;
-    margin: 5%;
+    margin: 0 5% 5%;
     color: white;
     font-size: 40px;
+    
 }
 
 #zcomm-service-webdev-subheader {
