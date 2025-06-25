@@ -5,10 +5,6 @@
 #zcomm-service-webdev {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* column-gap: 40px; */
-    /* width: 60%;
-    margin: 0 auto; */
-    /* padding: 4%; */
 }
 
 .zcomm-webdev-col {
@@ -37,7 +33,3 @@
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
 }
-
-/* .zcomm-webdev-col:nth-child(2) {
-    grid-column: span 2;
-} */
