@@ -83,7 +83,8 @@ app.use(helmet({
         "ct-schools-store.myshopify.com",
         "bfb312-ir.myshopify.com",
         "sdks.shopifycdn.com",
-        "ajax.googleapis.com"
+        "ajax.googleapis.com",
+        "js.stripe.com"
       ]
     }
   }

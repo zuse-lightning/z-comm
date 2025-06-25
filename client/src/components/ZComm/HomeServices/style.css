@@ -1,0 +1,35 @@
+#zcomm-home-services-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+#zcomm-home-services-header {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: #f7931e;
+    margin-bottom: 5%;
+}
+
+#zcomm-home-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.zcomm-home-service-card {
+    background-color: #f1f1f1;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 550px;
+}
+
+.zcomm-home-service-card:hover {
+    transform: scale(1.05);
+}

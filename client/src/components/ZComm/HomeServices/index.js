@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, Header } from "semantic-ui-react";
+import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import { zcommHomeServices } from "../../../assets/generalAssets";
 
@@ -18,16 +19,18 @@ const HomeServices = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.3 }}>
-                            <div className="zcomm-home-service-card">
-                                <Image
-                                    className="zcomm-home-service-card-image"
-                                    src={service.image}
-                                    fluid
-                                    alt={`Z-Comm ${service.title} Service`}
-                                />
-                                <Header as="h2" className="zcomm-home-service-card-header">{service.title}</Header>
-                                <Header as="h4" className="zcomm-home-service-card-subheader">{service.description}</Header>
-                            </div>
+                            <HashLink smooth to={service.link} className="zcomm-home-service-card-link">
+                                <div className="zcomm-home-service-card">
+                                    <Image
+                                        className="zcomm-home-service-card-image"
+                                        src={service.image}
+                                        fluid
+                                        alt={`Z-Comm ${service.title} Service`}
+                                    />
+                                    <Header as="h2" className="zcomm-home-service-card-header">{service.title}</Header>
+                                    <Header as="h4" className="zcomm-home-service-card-subheader">{service.description}</Header>
+                                </div>
+                            </HashLink>
                         </motion.div>
                     </div>
                 ))}

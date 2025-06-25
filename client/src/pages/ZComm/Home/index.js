@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import HomeBanner from "../../../components/ZComm/HomeBanner";
 import HomeTrustBadges from "../../../components/ZComm/HomeTrustBadges";
 import HomeAbout from "../../../components/ZComm/HomeAbout";
+import HomeServices from "../../../components/ZComm/HomeServices";
+import GetAQuote from "../../../components/ZComm/GetAQuote";
 import { axiosInstance } from "../../../utils/api";
 
 const Home = (props) => {
@@ -26,6 +28,8 @@ const Home = (props) => {
             <HomeBanner />
             <HomeTrustBadges />
             <HomeAbout />
+            <HomeServices />
+            <GetAQuote />
         </>
     );
 };
