@@ -1,0 +1,36 @@
+#zcomm-service-fulfill-container {
+    background-color: #f7931e;
+}
+
+#zcomm-service-fulfill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.zcomm-fulfill-col {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#zcomm-service-fulfill-header {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: white;
+    margin: 0 5% 5%;
+    color: white;
+    font-size: 40px;
+    
+}
+
+#zcomm-service-fulfill-subheader {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
