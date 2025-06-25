@@ -1,5 +1,5 @@
 #zcomm-quote-form-container {
-    padding: 3%;
+    padding: 3%!important;
     font-family: "Montserrat", sans-serif !important;
 }
 
@@ -32,21 +32,21 @@
     position: relative;
 }
 
-.zcomm-quote-form-col::before {
+/* .zcomm-quote-form-col::before {
     content: "Col #" counter(col-num);
     top: 0;
     left: 0;
     font-size: 0.8rem;
     color: #888;
-}
+} */
 
 /* Initialize and increment the counter */
-.zcomm-quote-form-row {
+/* .zcomm-quote-form-row {
     counter-reset: col-num;
-}
+} */
 
 .zcomm-quote-form-col {
-    counter-increment: col-num;
+    /* counter-increment: col-num; */
     grid-column: span 12;
 }
 
