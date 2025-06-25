@@ -36,7 +36,7 @@ const QuoteForm = () => {
             if (response.ok) {
                 setSubmitted(true);
                 setTimeout(() => {
-                    navigate("/zcomm");
+                    navigate("/");
                 }, 3000);
             } else {
                 throw new Error("Network response was not ok.");
