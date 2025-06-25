@@ -61,3 +61,9 @@ export const zcommServiceTable = [
     ["Dedicated Account Manager", "✅", "✅", "✅"],
     ["Discounted Service Bundle", "❌", "❌", "✅"]
 ];
+
+export const zcommHomeServices = [
+    { title: "Web Development", description: "Custom e-commerce store design and development tailored to your business needs.", image: "https://cdn.shopify.com/s/files/1/0671/9979/5395/files/web-dev-service.png?v=1750791068" },
+    { title: "Product Fulfillment", description: "Comprehensive product storage, order shipping, and inventory management solutions.", image: "https://cdn.shopify.com/s/files/1/0671/9979/5395/files/fulfill-service.png?v=1750791068" },
+    { title: "Both Services", description: "End-to-end solutions combining web development and product fulfillment for a complete e-commerce experience.", image: "https://cdn.shopify.com/s/files/1/0671/9979/5395/files/both-service.png?v=1750791069" }
+];
