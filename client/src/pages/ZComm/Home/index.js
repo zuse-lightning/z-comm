@@ -10,7 +10,7 @@ import { axiosInstance } from "../../../utils/api";
 const Home = (props) => {
 
     const { auth } = props;
-    
+
     useEffect(() => {
         const fetchData = async () => {
             try {
