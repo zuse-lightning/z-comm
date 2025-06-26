@@ -1,0 +1,65 @@
+#zcomm-guarantee-container {
+    padding: 3%;
+}
+
+#zcomm-guarantee {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#zcomm-guarantee-main-header {
+    font-size: 48px;
+    font-weight: 700!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+#zcomm-guarantee-subheader {
+    font-size: 20px;
+    font-weight: 500!important;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.zcomm-guarantee-divider {
+    width: 50%;
+    background-color: #ccc;
+    margin: 0 auto 3%!important;
+}
+
+.zcomm-guarantee-header {
+    text-align: center;
+    font-weight: 700!important;
+    font-family: "Montserrat", sans-serif!important;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: #f7931e;
+    margin-bottom: 5%!important;
+}
+
+#zcomm-guarantee-list {
+    width: 70%;
+    margin: 0 auto 5%;
+    padding: 0;
+    font-size: 20px;
+}
+
+.zcomm-guarantee-list-icon {
+    margin-right: 2%;
+}
+
+.zcomm-guarantee-list-item {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.zcomm-guarantee-text {
+    width: 70%;
+    margin: 0 auto 5%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
