@@ -1,0 +1,23 @@
+#zcomm-privacy-policy-container {
+    padding: 3%;
+}
+
+#zcomm-privacy-policy {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#zcomm-privacy-policy-main-header {
+    font-size: 48px;
+    font-weight: 700!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif!important;
+}
+
+#zcomm-privacy-policy-subheader, #zcomm-privacy-policy-effect-date{
+    font-size: 20px;
+    font-weight: 500!important;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: "Montserrat", sans-serif!important;
+}

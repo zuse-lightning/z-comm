@@ -28,7 +28,7 @@ const ZComm = (props) => {
 
     const { auth } = props;
     const pathname = useLocation().pathname;
-    const noQuotePaths = ["/quote", "/register", "/login", "/forgot", "/reset", "/write", "/edit"];
+    const noQuotePaths = ["/quote", "/register", "/login", "/forgot", "/reset", "/write", "/edit", "/privacy", "/shipping", "/returns", "/terms"];
 
     return (
         <>
