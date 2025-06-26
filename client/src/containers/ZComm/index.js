@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../../pages/ZComm/Home";
 import About from "../../pages/ZComm/About";
 import Services from "../../pages/ZComm/Services";
@@ -21,16 +21,20 @@ import Write from "../../pages/ZComm/Write";
 import Edit from "../../pages/ZComm/Edit";
 import AnnouncementBar from "../../components/ZComm/AnnouncementBar";
 import Navbar from "../../components/ZComm/Navbar";
+import GetAQuote from "../../components/ZComm/GetAQuote";
 import Footer from "../../components/ZComm/Footer";
 
 const ZComm = (props) => {
 
     const { auth } = props;
+    const pathname = useLocation().pathname;
+    const noQuotePaths = ["/quote", "/register", "/login", "/forgot", "/reset", "/write", "/edit"];
 
     return (
         <>
             <AnnouncementBar />
             <Navbar />
+            
             <Routes>
                 <Route exact path="/" element={<Home auth={auth} />} />
                 <Route exact path="/about" element={<About />} />
@@ -52,6 +56,7 @@ const ZComm = (props) => {
                 <Route exact path="/write" element={<Write auth={auth} />} />
                 <Route exact path="/edit/:id" element={<Edit auth={auth} />} />
             </Routes>
+            {noQuotePaths.includes(pathname) ? null : <GetAQuote />}
             <Footer />
         </>
     );

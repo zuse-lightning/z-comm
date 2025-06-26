@@ -12,7 +12,6 @@ const About = () => {
             <AboutMission />
             <AboutOffer />
             <AboutQualities />
-            <GetAQuote />
         </>
     );
 };
