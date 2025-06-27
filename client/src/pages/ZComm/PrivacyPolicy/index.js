@@ -99,7 +99,7 @@ const PrivacyPolicy = () => {
                 <div className="zcomm-privacy-policy-section">
                     <Header className="zcomm-privacy-policy-header" as="h2">5. Your Privacy Rights</Header>
                     <Header className="zcomm-privacy-policy-subheader" as="h3">a. For California Residents (CCPA/CPRA)</Header>
-                    <p className="zcomm-privacy-policy-text">You have the right to:</p>
+                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%"}}>You have the right to:</p>
                     <List className="zcomm-privacy-policy-list" bulleted>
                         <List.Item className="zcomm-privacy-policy-list-item">
                             <strong>Know</strong> what personal data we collect and how we use it
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
                     </List>
                     <p className="zcomm-privacy-policy-text">To exercise your rights, email us at <a href="mailto:privacy@zcomm.store">privacy@zcomm.store</a>. We will verify your identity before responding.</p>
                     <Header className="zcomm-privacy-policy-subheader" as="h3">b. For EU/UK Residents (GDPR)</Header>
-                    <p className="zcomm-privacy-policy-text">You have the right to:</p>
+                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%"}}>You have the right to:</p>
                     <List className="zcomm-privacy-policy-list" bulleted>
                         <List.Item className="zcomm-privacy-policy-list-item"><strong>Access</strong> your data</List.Item>
                         <List.Item className="zcomm-privacy-policy-list-item"><strong>Correct</strong> inaccurate data</List.Item>
