@@ -56,7 +56,8 @@ app.use(helmet({
         "www.formbackend.com",
         "monorail-edge.shopifysvc.com",
         "ct-schools-store.myshopify.com",
-        "bfb312-ir.myshopify.com"
+        "bfb312-ir.myshopify.com",
+        "cdn.shopify.com"
       ],
       "img-src": [
         "'self'",
