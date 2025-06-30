@@ -26,10 +26,12 @@ const Headwear = ({ styleOptions }) => {
             fetchData();
             console.log("using effect");
         }, []);
+
+        console.log(collection);
     
         useEffect(() => {
             if (collection.length > 0) {
-                embedShopifyCollection(collection[0].collection_id, `collection-component-${collection[0].collection_node}`, collection[0].collection_domain, collection[0].collection_token. styleOptions)
+                embedShopifyCollection(collection[0].collection_id, `collection-component-${collection[0].collection_node}`, collection[0].collection_domain, collection[0].collection_token, styleOptions)
             };
         }, [collection]);
     

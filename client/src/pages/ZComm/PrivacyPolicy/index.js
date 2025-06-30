@@ -168,16 +168,15 @@ const PrivacyPolicy = () => {
                 <div className="zcomm-privacy-policy-section">
                     <Header className="zcomm-privacy-policy-header" as="h2">9. International Transfers</Header>
                     <p className="zcomm-privacy-policy-text">
-                        If you’re outside the U.S., your information may be transferred to servers in the U.S. 
-                        We ensure any data transfers comply with legal safeguards such as <strong>Standard Contractual Clauses (SCCs)</strong> 
-                        or your explicit consent.
+                        If you’re outside the U.S., your information may be transferred to servers in the U.S.
+                        We ensure any data transfers comply with legal safeguards such as <strong>Standard Contractual Clauses (SCCs)</strong> or your explicit consent.
                     </p>
                 </div>
                 <Divider className="zcomm-privacy-policy-divider" />
                 <div className="zcomm-privacy-policy-section">
                     <Header className="zcomm-privacy-policy-header" as="h2">10. Children's Privacy</Header>
                     <p className="zcomm-privacy-policy-text">
-                        Our services are not intended for users under 13. We do not knowingly collect information from minors. If we discover data 
+                        Our services are not intended for users under 13. We do not knowingly collect information from minors. If we discover data
                         has been collected from a child, we will delete it promptly.
                     </p>
                 </div>
@@ -185,7 +184,7 @@ const PrivacyPolicy = () => {
                 <div className="zcomm-privacy-policy-section">
                     <Header className="zcomm-privacy-policy-header" as="h2">11. Changes to This Policy</Header>
                     <p className="zcomm-privacy-policy-text">
-                        We may update this Privacy Policy from time to time. Material changes will be announced via website notice or email. 
+                        We may update this Privacy Policy from time to time. Material changes will be announced via website notice or email.
                         The "Effective Date" at the top reflects the latest revision.
                     </p>
                 </div>
