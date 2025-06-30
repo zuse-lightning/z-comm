@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import Navbar from "../../components/AllWeatherHighViz/Navbar";
@@ -18,25 +18,39 @@ import FAQ from "../../pages/AllWeatherHighViz/FAQ";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
 import Footer from "../../components/AllWeatherHighViz/Footer";
 
-import { awhvCollectionOptions } from "../../assets/collectionOptions"
-
 const AllWeatherHighViz = () => {
+
+    const { auth } = useContext(AuthContext);
+    const [options, setOptions] = useState([]);
+
+    useEffect(() => {
+        fetch("https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhvCollection.json?v=1751297880").then((res) => {
+            return res.json();
+        }).then((data) => {
+            setOptions(data);
+        }).catch((err) => {
+            console.error("Error fetching collection options:", err);
+        });
+    }, []);
+
+    
+
     return (
         <>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<Home styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/" element={<Home styleOptions={options} />} />
                 <Route exact path="/our-story" element={<OurStory />} />
-                <Route exact path="/headwear" element={<Headwear styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/jackets" element={<Jackets styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/hoodies" element={<Hoodies styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/new-releases" element={<NewReleases styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/best-sellers" element={<BestSellers styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/concealed-carry" element={<ConcealedCarry styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/shirts" element={<Shirts styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/pants" element={<Pants styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/vests" element={<Vests styleOptions={awhvCollectionOptions} />} />
-                <Route exact path="/accessories" element={<Accessories styleOptions={awhvCollectionOptions} />} />
+                <Route exact path="/headwear" element={<Headwear styleOptions={options} />} />
+                <Route exact path="/jackets" element={<Jackets styleOptions={options} />} />
+                <Route exact path="/hoodies" element={<Hoodies styleOptions={options} />} />
+                <Route exact path="/new-releases" element={<NewReleases styleOptions={options} />} />
+                <Route exact path="/best-sellers" element={<BestSellers styleOptions={options} />} />
+                <Route exact path="/concealed-carry" element={<ConcealedCarry styleOptions={options} />} />
+                <Route exact path="/shirts" element={<Shirts styleOptions={options} />} />
+                <Route exact path="/pants" element={<Pants styleOptions={options} />} />
+                <Route exact path="/vests" element={<Vests styleOptions={options} />} />
+                <Route exact path="/accessories" element={<Accessories styleOptions={options} />} />
                 <Route exact path="/faq" element={<FAQ />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>

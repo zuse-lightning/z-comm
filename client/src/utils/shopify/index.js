@@ -1,6 +1,3 @@
-import { ctSchoolsProductOptions } from "../../assets/productOptions";
-import { awhvCollectionOptions } from "../../assets/collectionOptions";
-
 export const embedShopifyProduct = (productId, productNode, domain, token, options) => {
     const loadScript = () => {
         const script = document.getElementsByTagName("script")[0];
