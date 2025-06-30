@@ -99,7 +99,7 @@ const PrivacyPolicy = () => {
                 <div className="zcomm-privacy-policy-section">
                     <Header className="zcomm-privacy-policy-header" as="h2">5. Your Privacy Rights</Header>
                     <Header className="zcomm-privacy-policy-subheader" as="h3">a. For California Residents (CCPA/CPRA)</Header>
-                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%"}}>You have the right to:</p>
+                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%" }}>You have the right to:</p>
                     <List className="zcomm-privacy-policy-list" bulleted>
                         <List.Item className="zcomm-privacy-policy-list-item">
                             <strong>Know</strong> what personal data we collect and how we use it
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
                     </List>
                     <p className="zcomm-privacy-policy-text">To exercise your rights, email us at <a href="mailto:privacy@zcomm.store">privacy@zcomm.store</a>. We will verify your identity before responding.</p>
                     <Header className="zcomm-privacy-policy-subheader" as="h3">b. For EU/UK Residents (GDPR)</Header>
-                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%"}}>You have the right to:</p>
+                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%" }}>You have the right to:</p>
                     <List className="zcomm-privacy-policy-list" bulleted>
                         <List.Item className="zcomm-privacy-policy-list-item"><strong>Access</strong> your data</List.Item>
                         <List.Item className="zcomm-privacy-policy-list-item"><strong>Correct</strong> inaccurate data</List.Item>
@@ -132,6 +132,73 @@ const PrivacyPolicy = () => {
                         <List.Item className="zcomm-privacy-policy-list-item"><strong>Data portability</strong></List.Item>
                     </List>
                     <p className="zcomm-privacy-policy-text">To submit a request, email privacy@zcomm.store. You also have the right to lodge a complaint with your local supervisory authority.</p>
+                </div>
+                <Divider className="zcomm-privacy-policy-divider" />
+                <div className="zcomm-privacy-policy-section">
+                    <Header className="zcomm-privacy-policy-header" as="h2">6. Data Retention</Header>
+                    <p className="zcomm-privacy-policy-text">
+                        We retain your information only as long as necessary to fulfill services, meet legal requirements,
+                        or resolve disputes. After that, your data is securely deleted or anonymized.
+                    </p>
+                </div>
+                <Divider className="zcomm-privacy-policy-divider" />
+                <div className="zcomm-privacy-policy-section">
+                    <Header className="zcomm-privacy-policy-header" as="h2">7. Security Measures</Header>
+                    <p className="zcomm-privacy-policy-text">We use industry-standard protections including:</p>
+                    <List className="zcomm-privacy-policy-list" bulleted>
+                        <List.Item className="zcomm-privacy-policy-list-item">HTTPS (SSL/TLS encryption)</List.Item>
+                        <List.Item className="zcomm-privacy-policy-list-item">Access controls and authentication</List.Item>
+                        <List.Item className="zcomm-privacy-policy-list-item">Secure storage systems</List.Item>
+                        <List.Item className="zcomm-privacy-policy-list-item">Routine monitoring for vulnerabilities</List.Item>
+                    </List>
+                    <p className="zcomm-privacy-policy-text">However, no online system is completely secure. We encourage users to take their own precautions when submitting personal data online.</p>
+                </div>
+                <Divider className="zcomm-privacy-policy-divider" />
+                <div className="zcomm-privacy-policy-section">
+                    <Header className="zcomm-privacy-policy-header" as="h2">8. Cookies & Tracking</Header>
+                    <p className="zcomm-privacy-policy-text">Z-Comm uses cookies and similar technologies for:</p>
+                    <List className="zcomm-privacy-policy-list" bulleted>
+                        <List.Item className="zcomm-privacy-policy-list-item">Site analytics</List.Item>
+                        <List.Item className="zcomm-privacy-policy-list-item">Session tracking</List.Item>
+                        <List.Item className="zcomm-privacy-policy-list-item">User preferences</List.Item>
+                    </List>
+                    <p className="zcomm-privacy-policy-text">You may opt out or control cookies via your browser settings. For EU/UK users, a cookie consent banner is presented at first visit.</p>
+                </div>
+                <Divider className="zcomm-privacy-policy-divider" />
+                <div className="zcomm-privacy-policy-section">
+                    <Header className="zcomm-privacy-policy-header" as="h2">9. International Transfers</Header>
+                    <p className="zcomm-privacy-policy-text">
+                        If you’re outside the U.S., your information may be transferred to servers in the U.S. 
+                        We ensure any data transfers comply with legal safeguards such as <strong>Standard Contractual Clauses (SCCs)</strong> 
+                        or your explicit consent.
+                    </p>
+                </div>
+                <Divider className="zcomm-privacy-policy-divider" />
+                <div className="zcomm-privacy-policy-section">
+                    <Header className="zcomm-privacy-policy-header" as="h2">10. Children's Privacy</Header>
+                    <p className="zcomm-privacy-policy-text">
+                        Our services are not intended for users under 13. We do not knowingly collect information from minors. If we discover data 
+                        has been collected from a child, we will delete it promptly.
+                    </p>
+                </div>
+                <Divider className="zcomm-privacy-policy-divider" />
+                <div className="zcomm-privacy-policy-section">
+                    <Header className="zcomm-privacy-policy-header" as="h2">11. Changes to This Policy</Header>
+                    <p className="zcomm-privacy-policy-text">
+                        We may update this Privacy Policy from time to time. Material changes will be announced via website notice or email. 
+                        The "Effective Date" at the top reflects the latest revision.
+                    </p>
+                </div>
+                <Divider className="zcomm-privacy-policy-divider" />
+                <div className="zcomm-privacy-policy-section">
+                    <Header className="zcomm-privacy-policy-header" as="h2">12. Contact Us</Header>
+                    <p className="zcomm-privacy-policy-text">
+                        For questions, requests, or concerns about your data or this policy, contact:
+                    </p>
+                    <List className="zcomm-privacy-policy-list" bulleted>
+                        <List.Item className="zcomm-privacy-policy-list-item"><strong>📧 Email</strong> <a href="mailto:privacy@zcomm.store">privacy@zcomm.store</a></List.Item>
+                        <List.Item className="zcomm-privacy-policy-list-item"><strong>🌐 Website</strong> <a href="https://www.zcomm.store" target="_blank" rel="noopener noreferrer">www.zcomm.store</a></List.Item>
+                    </List>
                 </div>
             </div>
         </div>
