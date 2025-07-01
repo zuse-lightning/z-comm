@@ -1,0 +1,64 @@
+#zcomm-terms-container {
+    padding: 3%;
+}
+
+#zcomm-terms {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#zcomm-terms-main-header {
+    font-size: 48px;
+    font-weight: 700!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif!important;
+}
+
+#zcomm-terms-main-subheader, #zcomm-terms-effect-date {
+    font-size: 20px;
+    font-weight: 300!important;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: "Montserrat", sans-serif!important;
+}
+
+.zcomm-terms-section {
+    margin-bottom: 5%!important;
+}
+
+.zcomm-terms-divider {
+    background-color: #ccc;
+    margin: 0 auto 5%!important;
+}
+
+.zcomm-terms-header {
+    font-size: 36px!important;
+    font-weight: 700!important;
+    font-family: "Montserrat", sans-serif!important;
+}
+
+.zcomm-terms-subheader {
+    width: 80%!important;
+    margin: 0 auto 2%!important;
+    font-size: 24px!important;
+    font-weight: 600!important;
+    font-family: "Montserrat", sans-serif!important;
+}
+
+.zcomm-terms-text {
+    font-size: 20px;
+    font-weight: 300!important;
+    font-family: "Montserrat", sans-serif!important;
+    margin-bottom: 20px;
+}
+
+.zcomm-terms-list {
+    width: 70%!important;
+    margin: 0 auto 5%!important;
+    padding: 0!important;
+    font-size: 20px!important;
+}
+
+strong {
+    font-weight: 700!important;
+}
