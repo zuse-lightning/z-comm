@@ -26,15 +26,14 @@ import Footer from "../../components/ZComm/Footer";
 
 const ZComm = (props) => {
 
-    const { auth } = props;
+    const { auth, screenWidth } = props;
     const pathname = useLocation().pathname;
     const noQuotePaths = ["/quote", "/register", "/login", "/forgot", "/reset", "/write", "/edit", "/privacy", "/shipping", "/returns", "/terms"];
 
     return (
         <>
             <AnnouncementBar />
-            <Navbar />
-            
+            <Navbar screenWidth={screenWidth} />
             <Routes>
                 <Route exact path="/" element={<Home auth={auth} />} />
                 <Route exact path="/about" element={<About />} />
