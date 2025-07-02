@@ -24,3 +24,38 @@
     top: 50%;
     font-size: 60px;
 }
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+   #zcomm-home-banner-header1, #zcomm-home-banner-header2 {
+       left: 40%;
+       transform: translate(-50%, -50%);
+   }
+
+    #zcomm-home-banner-header2 {
+         font-size: 40px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-home-banner-header1, #zcomm-home-banner-header2 {
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    #zcomm-home-banner-header2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    #zcomm-home-banner-header1, #zcomm-home-banner-header2 {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #zcomm-home-banner-header2 {
+        font-size: 32px;
+        width: 60%;
+    }
+}
