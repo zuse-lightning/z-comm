@@ -1,8 +1,73 @@
 #zcomm-navbar {
     width: 80%;
-    margin: 0 10%;
+    margin: 0 auto;
+}
+
+.mobile-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    /* adjust as needed */
+}
+
+.mobile-menu-trigger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-right: 32px;
+}
+
+.mobile-menu-bar {
+    width: 48px;
+    height: 6px;
+    margin: 6px 0;
+    background: #222;
+    border-radius: 3px;
+}
+
+#mobile-zcomm-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-zcomm-logo {
+    width: 150px;
+    height: auto;
+    margin-right: 50px;
 }
 
 .ui.secondary.menu a.item:hover {
     background: none !important;
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-navbar {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-navbar {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-navbar {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) {
+    #zcomm-navbar {
+        width: 0;
+        margin: 0;
+    }
 }

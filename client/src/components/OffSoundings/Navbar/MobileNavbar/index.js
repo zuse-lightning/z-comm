@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import "../style.css";
 
 const MobileNavbar = () => {
+    
     const [open, setOpen] = useState(false);
-    console.log(open);
 
     const trigger = (
         <div id="mobile-menu-trigger" onClick={() => setOpen(o => !o)}>
