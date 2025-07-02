@@ -22,3 +22,46 @@
 .zcomm-home-trust-badge-header, .zcomm-home-trust-badge-text {
     font-family: "Montserrat", sans-serif!important;
 }
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-home-trust-badges-container {
+        width: 80%;
+        margin: 0 10%;
+        column-gap: 5%;
+        padding: 3% 0;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-home-trust-badges-container {
+        width: 90%;
+        margin: 0 5%;
+        column-gap: 2%;
+        padding: 4% 0;
+    }
+}
+
+@media (max-width: 991px) {
+    #zcomm-home-trust-badges-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+        margin: 0 auto;
+        row-gap: 20px;
+        padding: 5% 0;
+    }
+
+    .zcomm-home-trust-badge-img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 516px) {
+    #zcomm-home-trust-badges-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .zcomm-home-trust-badge-img {
+        width: 40%;
+    }
+}
