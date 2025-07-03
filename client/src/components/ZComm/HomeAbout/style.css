@@ -54,3 +54,74 @@
     border: solid 2px #f7931e;
     transition: ease 0.5s !important;
 }
+
+@media (max-width: 2249px) and (min-width: 1700px) {
+    #zcomm-home-about {
+        width: 70%;
+        margin: 0 auto;
+        column-gap: 5%;
+        padding: 3% 0;
+    }
+
+    #zcomm-home-about-btn {
+        width: 25%;
+        margin: 5% 37.5%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-home-about {
+        width: 80%;
+        margin: 0 10%;
+        column-gap: 5%;
+        padding: 3% 0;
+    }
+
+    #zcomm-home-about-btn {
+        width: 30%;
+        margin: 5% 35%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-home-about {
+        width: 90%;
+        margin: 0 5%;
+        column-gap: 2%;
+        padding: 4% 0;
+    }
+
+    #zcomm-home-about-btn {
+        width: 40%;
+        margin: 5% 30%;
+    }
+}
+
+@media (max-width: 991px) {
+    #zcomm-home-about {
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+        margin: 0 auto;
+        row-gap: 20px;
+        padding: 5% 0;
+    }
+
+    .zcomm-home-about-col:nth-child(1) {
+        display: none;
+    }
+
+    #zcomm-home-about-btn {
+        width: 60%;
+        margin: 5% 20%;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+    #zcomm-home-about {
+        grid-template-columns: repeat(1, 1fr);
+        width: 60%;
+        margin: 0 auto;
+        row-gap: 20px;
+        padding: 5% 0;
+    }
+}
