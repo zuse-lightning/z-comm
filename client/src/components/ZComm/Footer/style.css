@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
-    margin: 0 20%;
+    margin: 0 auto;
     column-gap: 10%;
     padding: 1% 0;
 }
@@ -21,7 +21,6 @@
 
 .zcomm-footer-list-item {
     color: white!important;
-    
     font-family: "Montserrat", sans-serif!important;
     font-size: 18px;
     margin: 5% 0;
@@ -39,4 +38,73 @@
     color: white!important;
     font-size: 24px;
     margin: 0 5%;
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-footer {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-footer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-footer {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #zcomm-footer-social-icons {
+        width: 20%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 586px) {
+    #zcomm-footer {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #zcomm-footer-social-icons {
+        width: 50%;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .zcomm-footer-social-icon-col {
+        text-align: center;
+    }
+
+    .zcomm-footer-list-item {
+        text-align: center;
+    }
+}
+
+@media (max-width: 585px) {
+    #zcomm-footer {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+        margin-bottom: 10%;
+    }
+
+    #zcomm-footer-social-icons {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .zcomm-footer-social-icon-col {
+        text-align: center;
+    }
+
+    .zcomm-footer-list-item {
+        text-align: center;
+    }
 }
