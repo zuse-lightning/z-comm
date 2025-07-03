@@ -1,6 +1,4 @@
 #zcomm-home-services-container {
-    width: 80%;
-    margin: 0 auto;
     padding: 4%;
 }
 
@@ -18,6 +16,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .zcomm-home-service-card {
@@ -33,4 +33,69 @@
 
 .zcomm-home-service-card:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    .zcomm-home-service-card {
+        height: 480px;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-home-services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .zcomm-home-service-card {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-home-services {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .zcomm-home-service-card {
+        height: 400px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 801px) {
+    #zcomm-home-services {
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .zcomm-home-service-card {
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 516px) {
+    #zcomm-home-services {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .zcomm-home-service-card {
+        height: 500px;
+    }
+}
+
+@media (max-width: 515px) {
+    #zcomm-home-services-container {
+        padding: 10%;
+    }
+
+    #zcomm-home-services {
+        width: 100%;
+        padding: 5%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .zcomm-home-service-card {
+        height: 500px;
+    }
 }

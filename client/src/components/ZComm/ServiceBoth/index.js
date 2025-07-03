@@ -11,7 +11,7 @@ const ServiceBoth = () => {
                 <div className="zcomm-both-col">
                     <Image
                         id="zcomm-service-both-image"
-                        src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/both-service.png?v=1750791069"
+                        src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/both-service.png?v=1751565181"
                         fluid
                         alt="Z-Comm Both Services"
                     />
