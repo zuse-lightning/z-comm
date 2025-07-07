@@ -35,3 +35,36 @@
     border: solid 2px #ffffff;
     transition: ease 0.5s !important;
 }
+
+@media (max-width: 2345px) and (min-width: 1877px) {
+    #zcomm-about-quote-btn {
+        width: 25%;
+        margin: 5% 37.5%;
+    }
+}
+
+@media (max-width: 1876px) and (min-width: 1564px) {
+    #zcomm-about-quote-btn {
+        width: 30%;
+        margin: 5% 35%;
+    }
+}
+
+@media (max-width: 1563px) and (min-width: 1173px) {
+    #zcomm-about-quote-btn {
+        width: 40%;
+        margin: 5% 30%;
+    }
+}
+
+@media (max-width: 1172px) and (min-width: 992px) {
+    #zcomm-about-quote {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #zcomm-about-quote-btn {
+        width: 30%;
+        margin: 5% 25%;
+    }
+}
