@@ -68,3 +68,27 @@
         margin: 5% 25%;
     }
 }
+
+@media (max-width: 991px) and (min-width: 671px) {
+    #zcomm-about-quote {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #zcomm-about-quote-btn {
+        width: 30%;
+        margin: 5% 35%;
+    }
+}
+
+@media (max-width: 670px) {
+    #zcomm-about-quote {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #zcomm-about-quote-btn {
+        width: 50%;
+        margin: 5% 25%;
+    }
+}
