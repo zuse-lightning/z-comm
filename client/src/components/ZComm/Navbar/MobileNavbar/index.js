@@ -8,22 +8,22 @@ const MobileNavbar = () => {
     const [open, setOpen] = useState(false);
 
     const trigger = (
-        <div id="mobile-menu-trigger" onClick={() => setOpen(o => !o)}>
-            <div className="mobile-menu-bar" />
-            <div className="mobile-menu-bar" />
-            <div className="mobile-menu-bar" />
+        <div id="zcomm-mobile-menu-trigger" onClick={() => setOpen(o => !o)}>
+            <div className="zcomm-mobile-menu-bar" />
+            <div className="zcomm-mobile-menu-bar" />
+            <div className="zcomm-mobile-menu-bar" />
         </div>
     );
 
     return (
-        <div className="mobile-navbar-container">
-            <div id="mobile-zcomm-logo-container">
+        <div className="zcomm-mobile-navbar-container">
+            <div id="zcomm-mobile-logo-container">
                 <Image
                     as={Link}
                     to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/" : "/"}
                     draggable="false"
                     size="medium"
-                    id="mobile-zcomm-logo"
+                    id="zcomm-mobile-logo"
                     src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/zcomm-logo-alt.png?v=1732219354"
                 />
             </div>

@@ -3,14 +3,14 @@
     margin: 0 auto;
 }
 
-.mobile-navbar-container {
+.zcomm-mobile-navbar-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90px;
 }
 
-.mobile-menu-trigger {
+.zcomm-mobile-menu-trigger {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     margin-right: 32px;
 }
 
-.mobile-menu-bar {
+.zcomm-mobile-menu-bar {
     width: 48px;
     height: 6px;
     margin: 6px 0;
@@ -27,13 +27,13 @@
     border-radius: 3px;
 }
 
-#mobile-zcomm-logo-container {
+#zcomm-mobile-logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#mobile-zcomm-logo {
+#zcomm-mobile-logo {
     width: 150px;
     height: auto;
     margin-right: 50px;
