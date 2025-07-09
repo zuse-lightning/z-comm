@@ -63,6 +63,10 @@
 }
 
 @media (max-width: 991px) and (min-width: 801px) {
+    #zcomm-home-services-header {
+        margin-bottom: 7.5%;
+    }
+    
     #zcomm-home-services {
         width: 60%;
         grid-template-columns: repeat(1, 1fr);
@@ -74,6 +78,10 @@
 }
 
 @media (max-width: 800px) and (min-width: 516px) {
+    #zcomm-home-services-header {
+        margin-bottom: 7.5%;
+    }
+
     #zcomm-home-services {
         width: 80%;
         grid-template-columns: repeat(1, 1fr);
@@ -89,13 +97,18 @@
         padding: 10%;
     }
 
+    #zcomm-home-services-header {
+        margin-bottom: 7.5%;
+    }
+
     #zcomm-home-services {
         width: 100%;
         padding: 5%;
         grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
     }
 
     .zcomm-home-service-card {
-        height: 500px;
+        height: 400px;
     }
 }
