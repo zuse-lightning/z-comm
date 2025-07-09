@@ -4,14 +4,14 @@
 
 #zcomm-contact-form-header {
     font-size: 48px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     text-align: center;
     font-family: "Montserrat", sans-serif;
 }
 
 #zcomm-contact-form-subheader {
     font-size: 20px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
     text-align: center;
     margin-bottom: 3%;
     font-family: "Montserrat", sans-serif;
@@ -19,7 +19,7 @@
 
 #zcomm-form-field-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)!important;
+    grid-template-columns: repeat(2, 1fr) !important;
     column-gap: 20px;
     row-gap: 30px;
     width: 50%;
@@ -32,7 +32,8 @@
     grid-column: 1 / span 2;
 }
 
-#zcomm-name-input, #zcomm-email-input {
+#zcomm-name-input,
+#zcomm-email-input {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -45,7 +46,8 @@
 }
 
 #zcomm-phone-input,
-#zcomm-service-select, #zcomm-message-input {
+#zcomm-service-select,
+#zcomm-message-input {
     width: 80%;
     margin: 0 10%;
     padding: 10px;
@@ -71,6 +73,7 @@
     font-size: 16px;
     cursor: pointer;
 }
+
 #zcomm-submit-btn:hover {
     background-color: transparent;
     color: #262261;
@@ -88,5 +91,53 @@
     #zcomm-form-field-container {
         width: 70%;
         margin: 0 15%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-form-field-container {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 991px) {
+    #zcomm-contact-form-container {
+        padding: 5%;
+    }
+
+    #zcomm-form-field-container {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .zcomm-form-field-col:nth-child(1),
+    .zcomm-form-field-col:nth-child(2) {
+        grid-column: 1 / span 2;
+    }
+
+    #zcomm-name-input,
+    #zcomm-email-input {
+        margin: 0 10%;
+    }
+
+    #zcomm-name-input {
+        margin: 0 10%;
+    }
+
+    #zcomm-submit-btn {
+        width: 20%;
+        margin: 2% 40%;
+    }
+}
+
+@media (max-width: 516px) {
+    #zcomm-form-field-container {
+        width: 100%;
+        margin: 5% 0%;
+    }
+    #zcomm-submit-btn {
+        width: 40%;
+        margin: 2% 30%;
     }
 }
