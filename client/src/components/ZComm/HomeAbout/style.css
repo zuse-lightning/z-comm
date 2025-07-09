@@ -116,12 +116,57 @@
     }
 }
 
-@media (max-width: 800px) and (min-width: 600px) {
+@media (max-width: 800px) and (min-width: 684px) {
     #zcomm-home-about {
         grid-template-columns: repeat(1, 1fr);
         width: 60%;
         margin: 0 auto;
         row-gap: 20px;
         padding: 5% 0;
+    }
+}
+
+@media (max-width: 683px) and (min-width: 517px) {
+    #zcomm-home-about {
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        margin: 0 auto;
+        row-gap: 20px;
+        padding: 5% 0;
+    }
+
+    #zcomm-home-about-btn {
+        width: 50%;
+        margin: 5% 25%;
+    }
+}
+
+@media (max-width: 516px) {
+    #zcomm-home-about {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        margin: 0 auto;
+        row-gap: 20px;
+        padding: 5% 0;
+    }
+
+    #zcomm-home-about-subheader {
+        font-size: 16px;
+    }
+
+    #zcomm-home-about-btn {
+        width: 50%;
+        margin: 10% 25% 5%;
+    }
+}
+
+@media (max-width: 358px) {
+    #zcomm-home-about-subheader {
+        font-size: 14px;
+    }
+
+    #zcomm-home-about-btn {
+        width: 60%;
+        margin: 10% 20% 5%;
     }
 }
