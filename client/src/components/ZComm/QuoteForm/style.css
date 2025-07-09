@@ -205,4 +205,9 @@
     .zcomm-quote-form-col {
         grid-column: span 12!important;
     }
+
+    #zcomm-quote-submit-btn {
+        width: 40%;
+        margin: 5% 30%;
+    }
 }
