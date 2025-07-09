@@ -59,6 +59,8 @@
     #zcomm-home-trust-badges-container {
         width: 80%;
         margin: 0 auto;
+        row-gap: 50px;
+        padding: 10% 0;
     }
 
     .zcomm-home-trust-badge-img {
