@@ -39,3 +39,50 @@
     font-weight: 500!important;
     font-family: "Montserrat", sans-serif!important;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-faq-accordion {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-faq-accordion {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-faq-accordion {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 427px) {
+    #zcomm-faq-accordion {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 426px) {
+    #zcomm-faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #zcomm-faq-accordion-header {
+        font-size: 32px;
+    }
+
+    .zcomm-faq-accordion-title {
+        font-size: 18px!important;
+    }
+
+    .zcomm-faq-accordion-text {
+        font-size: 14px!important;
+    }
+}
