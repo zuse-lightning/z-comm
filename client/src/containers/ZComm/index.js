@@ -32,7 +32,7 @@ const ZComm = (props) => {
 
     return (
         <>
-            <AnnouncementBar />
+            {screenWidth > 516 ? <AnnouncementBar screenWidth={screenWidth} /> : null}
             <Navbar screenWidth={screenWidth} />
             <Routes>
                 <Route exact path="/" element={<Home auth={auth} />} />

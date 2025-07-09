@@ -7,8 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
-    /* adjust as needed */
+    height: 90px;
 }
 
 .mobile-menu-trigger {
@@ -44,16 +43,9 @@
     background: none !important;
 }
 
-@media (max-width: 2053px) and (min-width: 1700px) {
-    #zcomm-navbar {
-        width: 40%;
-        margin: 0 auto;
-    }
-}
-
 @media (max-width: 1699px) and (min-width: 1200px) {
     #zcomm-navbar {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
     }
 }
