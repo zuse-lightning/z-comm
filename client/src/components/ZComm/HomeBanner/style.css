@@ -47,7 +47,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 685px) {
     #zcomm-home-banner-header1, #zcomm-home-banner-header2 {
         left: 50%;
         transform: translate(-50%, -50%);
@@ -57,5 +57,29 @@
     #zcomm-home-banner-header2 {
         font-size: 32px;
         width: 60%;
+    }
+}
+
+@media (max-width: 684px) {
+    #zcomm-home-banner-header1, #zcomm-home-banner-header2 {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #zcomm-home-banner-header1 {
+        width: 100%;
+    }
+
+    #zcomm-home-banner-header2 {
+        font-size: 24px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 385px) {
+    #zcomm-home-banner-header2 {
+        font-size: 20px;
+        width: 100%;
     }
 }
