@@ -9,14 +9,14 @@
 
 #zcomm-guarantee-main-header {
     font-size: 48px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     text-align: center;
     font-family: "Montserrat", sans-serif;
 }
 
 #zcomm-guarantee-subheader {
     font-size: 20px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
     text-align: center;
     margin-bottom: 3%;
     font-family: "Montserrat", sans-serif;
@@ -25,17 +25,17 @@
 .zcomm-guarantee-divider {
     width: 50%;
     background-color: #ccc;
-    margin: 0 auto 3%!important;
+    margin: 0 auto 3% !important;
 }
 
 .zcomm-guarantee-header {
     text-align: center;
-    font-weight: 700!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-weight: 700 !important;
+    font-family: "Montserrat", sans-serif !important;
     text-decoration: underline;
     text-underline-offset: 20px;
     text-decoration-color: #f7931e;
-    margin-bottom: 5%!important;
+    margin-bottom: 5% !important;
 }
 
 #zcomm-guarantee-list {
@@ -62,4 +62,91 @@
     font-size: 20px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-guarantee {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1700px) and (min-width: 1200px) {
+    #zcomm-guarantee {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    #zcomm-guarantee {
+        width: 80%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #zcomm-guarantee {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #zcomm-guarantee-container {
+        padding: 5%;
+    }
+
+    #zcomm-guarantee {
+        width: 100%;
+    }
+
+    #zcomm-guarantee-main-header {
+        font-size: 36px !important;
+    }
+
+    #zcomm-guarantee-subheader {
+        font-size: 18px !important;
+    }
+
+    .zcomm-guarantee-divider {
+        margin: 15% auto !important;
+    }
+
+    .zcomm-guarantee-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .zcomm-guarantee-header {
+        margin-bottom: 10% !important;
+        font-size: 20px !important;
+    }
+
+    .zcomm-guarantee-text,
+    #zcomm-guarantee-list {
+        width: 90%;
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    #zcomm-guarantee-main-header {
+        font-size: 28px !important;
+    }
+
+    #zcomm-guarantee-subheader {
+        font-size: 16px !important;
+    }
+
+    .zcomm-guarantee-header {
+        margin-bottom: 10% !important;
+        font-size: 16px !important;
+    }
+
+    .zcomm-guarantee-list-item {
+        margin-bottom: 15px;
+        font-size: 12px !important;
+    }
+
+    .zcomm-guarantee-text {
+        font-size: 12px !important;
+    }
 }
