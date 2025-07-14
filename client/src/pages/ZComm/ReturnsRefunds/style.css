@@ -9,56 +9,188 @@
 
 #zcomm-return-refund-main-header {
     font-size: 48px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     text-align: center;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: "Montserrat", sans-serif !important;
 }
 
-#zcomm-return-refund-main-subheader, #zcomm-return-refund-effect-date {
+#zcomm-return-refund-main-subheader,
+#zcomm-return-refund-effect-date {
     font-size: 20px;
-    font-weight: 300!important;
+    font-weight: 300 !important;
     text-align: center;
     margin-bottom: 3%;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .zcomm-return-refund-section {
-    margin-bottom: 5%!important;
+    margin-bottom: 5% !important;
 }
 
 .zcomm-return-refund-divider {
     background-color: #ccc;
-    margin: 0 auto 5%!important;
+    margin: 0 auto 5% !important;
 }
 
 .zcomm-return-refund-header {
-    font-size: 36px!important;
-    font-weight: 700!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .zcomm-return-refund-subheader {
-    width: 80%!important;
-    margin: 0 auto 2%!important;
-    font-size: 24px!important;
-    font-weight: 600!important;
-    font-family: "Montserrat", sans-serif!important;
+    width: 80% !important;
+    margin: 0 auto 2% !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .zcomm-return-refund-text {
     font-size: 20px;
-    font-weight: 300!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-weight: 300 !important;
+    font-family: "Montserrat", sans-serif !important;
     margin-bottom: 20px;
 }
 
 .zcomm-return-refund-list {
-    width: 70%!important;
-    margin: 0 auto 5%!important;
-    padding: 0!important;
-    font-size: 20px!important;
+    width: 70% !important;
+    margin: 0 auto 5% !important;
+    padding: 0 !important;
+    font-size: 20px !important;
 }
 
 strong {
-    font-weight: 700!important;
+    font-weight: 700 !important;
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-return-refund {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-return-refund {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-return-refund {
+        width: 80%;
+    }
+
+    #zcomm-return-refund-main-header {
+        font-size: 42px !important;
+    }
+
+    #zcomm-return-refund-main-subheader,
+    #zcomm-return-refund-effect-date {
+        font-size: 18px !important;
+    }
+
+    .zcomm-return-refund-header {
+        font-size: 32px !important;
+    }
+
+    .zcomm-return-refund-subheader {
+        width: 85% !important;
+        font-size: 22px !important;
+    }
+
+    .zcomm-return-refund-text {
+        font-size: 18px !important;
+    }
+
+    .zcomm-return-refund-list {
+        width: 75% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-return-refund-list li {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #zcomm-return-refund {
+        width: 90%;
+    }
+
+    #zcomm-return-refund-main-header {
+        font-size: 40px !important;
+    }
+
+    #zcomm-return-refund-main-subheader,
+    #zcomm-return-refund-effect-date {
+        font-size: 16px !important;
+    }
+
+    .zcomm-return-refund-header {
+        font-size: 30px !important;
+    }
+
+    .zcomm-return-refund-subheader {
+        width: 90% !important;
+        font-size: 20px !important;
+    }
+
+    .zcomm-return-refund-text {
+        font-size: 18px !important;
+    }
+
+    .zcomm-return-refund-list {
+        width: 60% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-return-refund-list li {
+        margin-bottom: 10px !important;
+    }
+
+    .zcomm-return-refund-divider {
+        margin: 10% auto !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #zcomm-return-refund-container {
+        padding: 5%;
+    }
+
+    #zcomm-return-refund {
+        width: 100%;
+    }
+
+    #zcomm-return-refund-main-header {
+        font-size: 36px !important;
+    }
+
+    #zcomm-return-refund-main-subheader,
+    #zcomm-return-refund-effect-date {
+        font-size: 16px !important;
+    }
+
+    .zcomm-return-refund-header {
+        font-size: 24px !important;
+    }
+
+    .zcomm-return-refund-subheader {
+        width: 90% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-return-refund-text {
+        font-size: 16px !important;
+    }
+
+    .zcomm-return-refund-list {
+        width: 60% !important;
+        font-size: 16px !important;
+    }
+
+    .zcomm-return-refund-list li {
+        margin-bottom: 8px !important;
+    }
 }

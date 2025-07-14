@@ -41,25 +41,25 @@ const ReturnsRefunds = () => {
                     <p className="zcomm-return-refund-text">
                         If your order is being fulfilled through our print-on-demand, warehousing, or product distribution services, the following return and refund guidelines apply:
                     </p>
-                    <Header className="zcomm-privacy-policy-subheader" as="h3">a. Damaged or Defective Items</Header>
-                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%" }}>
+                    <Header className="zcomm-return-refund-subheader" as="h3">a. Damaged or Defective Items</Header>
+                    <p className="zcomm-return-refund-text" style={{ width: "80%", margin: "0 auto 2%" }}>
                         We will replace or refund any items that arrive damaged, misprinted, or otherwise defective. Please notify us within <strong>7 days of delivery</strong> with:
                     </p>
-                    <List className="zcomm-privacy-policy-list" bulleted>
-                        <List.Item className="zcomm-privacy-policy-list-item">A photo of the damaged item</List.Item>
-                        <List.Item className="zcomm-privacy-policy-list-item">Your order number</List.Item>
-                        <List.Item className="zcomm-privacy-policy-list-item">A brief description of the issue</List.Item>
+                    <List className="zcomm-return-refund-list" bulleted>
+                        <List.Item className="zcomm-return-refund-list-item">A photo of the damaged item</List.Item>
+                        <List.Item className="zcomm-return-refund-list-item">Your order number</List.Item>
+                        <List.Item className="zcomm-return-refund-list-item">A brief description of the issue</List.Item>
                     </List>
-                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%" }}>
+                    <p className="zcomm-return-refund-text" style={{ width: "80%", margin: "0 auto 2%" }}>
                         Approved replacements will be shipped at no additional cost.
                     </p>
-                    <Header className="zcomm-privacy-policy-subheader" as="h3">b. Wrong Item Received</Header>
-                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%" }}>
+                    <Header className="zcomm-return-refund-subheader" as="h3">b. Wrong Item Received</Header>
+                    <p className="zcomm-return-refund-text" style={{ width: "80%", margin: "0 auto 2%" }}>
                         If you receive the wrong product, we’ll make it right—either by shipping the correct item or issuing a full refund.
                         Contact us within <strong>7 days of delivery</strong>.
                     </p>
-                    <Header className="zcomm-privacy-policy-subheader" as="h3">c. Internet or Network Activity</Header>
-                    <p className="zcomm-privacy-policy-text" style={{ width: "80%", margin: "0 auto 2%" }}>
+                    <Header className="zcomm-return-refund-subheader" as="h3">c. Internet or Network Activity</Header>
+                    <p className="zcomm-return-refund-text" style={{ width: "80%", margin: "0 auto 2%" }}>
                         As our products are often made-to-order or personalized, <strong>we do not accept returns for size issues, preference changes, or mistaken orders.</strong> Please double-check sizing charts and product previews before confirming your order.
                     </p>
                 </div>
@@ -114,13 +114,13 @@ const ReturnsRefunds = () => {
                 </div>
                 <Divider className="zcomm-return-refund-divider" />
                 <div className="zcomm-return-refund-section">
-                    <Header className="zcomm-privacy-policy-header" as="h2">8 Contact Us</Header>
-                    <p className="zcomm-privacy-policy-text">
+                    <Header className="zcomm-return-refund-header" as="h2">8 Contact Us</Header>
+                    <p className="zcomm-return-refund-text">
                         If you have any questions about your order, service agreement, or eligibility for a return or refund, reach out to us:
                     </p>
-                    <List className="zcomm-privacy-policy-list">
-                        <List.Item className="zcomm-privacy-policy-list-item"><strong>📧 Email:</strong> <a href="mailto:privacy@zcomm.store">privacy@zcomm.store</a></List.Item>
-                        <List.Item className="zcomm-privacy-policy-list-item"><strong>🌐 Website:</strong> <a href="https://www.zcomm.store" target="_blank" rel="noopener noreferrer">www.zcomm.store</a></List.Item>
+                    <List className="zcomm-return-refund-list">
+                        <List.Item className="zcomm-return-refund-list-item"><strong>📧 Email:</strong> <a href="mailto:privacy@zcomm.store">privacy@zcomm.store</a></List.Item>
+                        <List.Item className="zcomm-return-refund-list-item"><strong>🌐 Website:</strong> <a href="https://www.zcomm.store" target="_blank" rel="noopener noreferrer">www.zcomm.store</a></List.Item>
                     </List>
                     <p className="zcomm-return-refund-text">We’re here to help ensure you receive the quality and results you expect from Z-Comm.</p>
                 </div>
