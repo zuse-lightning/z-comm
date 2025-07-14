@@ -194,9 +194,9 @@ const PrivacyPolicy = () => {
                     <p className="zcomm-privacy-policy-text">
                         For questions, requests, or concerns about your data or this policy, contact:
                     </p>
-                    <List className="zcomm-privacy-policy-list" bulleted>
-                        <List.Item className="zcomm-privacy-policy-list-item"><strong>📧 Email</strong> <a href="mailto:privacy@zcomm.store">privacy@zcomm.store</a></List.Item>
-                        <List.Item className="zcomm-privacy-policy-list-item"><strong>🌐 Website</strong> <a href="https://www.zcomm.store" target="_blank" rel="noopener noreferrer">www.zcomm.store</a></List.Item>
+                    <List className="zcomm-privacy-policy-list">
+                        <List.Item className="zcomm-privacy-policy-list-item"><strong>📧 Email:</strong> <a href="mailto:privacy@zcomm.store">privacy@zcomm.store</a></List.Item>
+                        <List.Item className="zcomm-privacy-policy-list-item"><strong>🌐 Website:</strong> <a href="https://www.zcomm.store" target="_blank" rel="noopener noreferrer">www.zcomm.store</a></List.Item>
                     </List>
                 </div>
             </div>

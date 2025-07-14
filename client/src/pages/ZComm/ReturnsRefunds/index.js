@@ -114,7 +114,7 @@ const ReturnsRefunds = () => {
                 </div>
                 <Divider className="zcomm-return-refund-divider" />
                 <div className="zcomm-return-refund-section">
-                    <Header className="zcomm-return-refund-header" as="h2">8 Contact Us</Header>
+                    <Header className="zcomm-return-refund-header" as="h2">8. Contact Us</Header>
                     <p className="zcomm-return-refund-text">
                         If you have any questions about your order, service agreement, or eligibility for a return or refund, reach out to us:
                     </p>

@@ -62,3 +62,134 @@
 strong {
     font-weight: 700!important;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-shipping {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-shipping {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-shipping {
+        width: 80%;
+    }
+
+    #zcomm-shipping-main-header {
+        font-size: 42px !important;
+    }
+
+    #zcomm-shipping-main-subheader,
+    #zcomm-shipping-effect-date {
+        font-size: 18px !important;
+    }
+
+    .zcomm-shipping-header {
+        font-size: 32px !important;
+    }
+
+    .zcomm-shipping-subheader {
+        width: 85% !important;
+        font-size: 22px !important;
+    }
+
+    .zcomm-shipping-text {
+        font-size: 18px !important;
+    }
+
+    .zcomm-shipping-list {
+        width: 75% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-shipping-list li {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #zcomm-shipping {
+        width: 90%;
+    }
+
+    #zcomm-shipping-main-header {
+        font-size: 40px !important;
+    }
+
+    #zcomm-shipping-main-subheader,
+    #zcomm-shipping-effect-date {
+        font-size: 16px !important;
+    }
+
+    .zcomm-shipping-header {
+        font-size: 30px !important;
+    }
+
+    .zcomm-shipping-subheader {
+        width: 90% !important;
+        font-size: 20px !important;
+    }
+
+    .zcomm-shipping-text {
+        font-size: 18px !important;
+    }
+
+    .zcomm-shipping-list {
+        width: 60% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-shipping-list li {
+        margin-bottom: 10px !important;
+    }
+
+    .zcomm-shipping-divider {
+        margin: 10% auto !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #zcomm-shipping-container {
+        padding: 5%;
+    }
+
+    #zcomm-shipping {
+        width: 100%;
+    }
+
+    #zcomm-shipping-main-header {
+        font-size: 36px !important;
+    }
+
+    #zcomm-shipping-main-subheader,
+    #zcomm-shipping-effect-date {
+        font-size: 16px !important;
+    }
+
+    .zcomm-shipping-header {
+        font-size: 24px !important;
+    }
+
+    .zcomm-shipping-subheader {
+        width: 90% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-shipping-text {
+        font-size: 16px !important;
+    }
+
+    .zcomm-shipping-list {
+        width: 60% !important;
+        font-size: 16px !important;
+    }
+
+    .zcomm-shipping-list li {
+        margin-bottom: 8px !important;
+    }
+}
