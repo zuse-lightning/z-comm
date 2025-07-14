@@ -62,3 +62,134 @@
 strong {
     font-weight: 700!important;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-terms {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-terms {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-terms {
+        width: 80%;
+    }
+
+    #zcomm-terms-main-header {
+        font-size: 42px !important;
+    }
+
+    #zcomm-terms-main-subheader,
+    #zcomm-terms-effect-date {
+        font-size: 18px !important;
+    }
+
+    .zcomm-terms-header {
+        font-size: 32px !important;
+    }
+
+    .zcomm-terms-subheader {
+        width: 85% !important;
+        font-size: 22px !important;
+    }
+
+    .zcomm-terms-text {
+        font-size: 18px !important;
+    }
+
+    .zcomm-terms-list {
+        width: 75% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-terms-list li {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #zcomm-terms {
+        width: 90%;
+    }
+
+    #zcomm-terms-main-header {
+        font-size: 40px !important;
+    }
+
+    #zcomm-terms-main-subheader,
+    #zcomm-terms-effect-date {
+        font-size: 16px !important;
+    }
+
+    .zcomm-terms-header {
+        font-size: 30px !important;
+    }
+
+    .zcomm-terms-subheader {
+        width: 90% !important;
+        font-size: 20px !important;
+    }
+
+    .zcomm-terms-text {
+        font-size: 18px !important;
+    }
+
+    .zcomm-terms-list {
+        width: 60% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-terms-list li {
+        margin-bottom: 10px !important;
+    }
+
+    .zcomm-terms-divider {
+        margin: 10% auto !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #zcomm-terms-container {
+        padding: 5%;
+    }
+
+    #zcomm-terms {
+        width: 100%;
+    }
+
+    #zcomm-terms-main-header {
+        font-size: 36px !important;
+    }
+
+    #zcomm-terms-main-subheader,
+    #zcomm-terms-effect-date {
+        font-size: 16px !important;
+    }
+
+    .zcomm-terms-header {
+        font-size: 24px !important;
+    }
+
+    .zcomm-terms-subheader {
+        width: 90% !important;
+        font-size: 18px !important;
+    }
+
+    .zcomm-terms-text {
+        font-size: 16px !important;
+    }
+
+    .zcomm-terms-list {
+        width: 60% !important;
+        font-size: 16px !important;
+    }
+
+    .zcomm-terms-list li {
+        margin-bottom: 8px !important;
+    }
+}
