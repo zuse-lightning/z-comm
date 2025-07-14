@@ -40,3 +40,24 @@
     margin: 0 47.5%;
     background-color: #f7931e;
 }
+
+@media (max-width: 2317px) and (min-width: 2054px) {
+    #zcomm-about-contact-btn {
+        width: 6%;
+        margin: 0 47%;
+    }
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-about-contact-btn {
+        width: 7%;
+        margin: 0 46.5%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-about-contact-btn {
+        width: 10%;
+        margin: 1% 45%;
+    }
+}
