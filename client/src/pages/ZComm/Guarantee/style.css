@@ -128,6 +128,10 @@
 }
 
 @media (max-width: 320px) {
+    #zcomm-guarantee-container {
+        padding: 3% 5% 10%;
+    }
+
     #zcomm-guarantee-main-header {
         font-size: 28px !important;
     }
