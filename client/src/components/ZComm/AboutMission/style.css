@@ -1,6 +1,6 @@
 #zcomm-about-mission-container {
     width: 30%;
-    margin: 0 35%;
+    margin: 0 auto;
     padding: 4%;
 }
 
@@ -17,4 +17,33 @@
 #zcomm-about-mission-subheader {
     text-align: center;
     font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 1800px) and (min-width: 1200px) {
+    #zcomm-about-mission-container {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-about-mission-container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #zcomm-about-mission-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    #zcomm-about-mission-container {
+        width: 90%;
+        padding: 10%;
+    }
+
+    #zcomm-about-mission-header {
+        margin-bottom: 15%;
+    }
 }
