@@ -88,7 +88,7 @@
     }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 801px) {
     #zcomm-about-banner-header {
         font-size: 40px;
         width: 90%;
@@ -108,7 +108,27 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) and (min-width: 560px) {
+    #zcomm-about-banner-header {
+        font-size: 35px;
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    #zcomm-about-banner-subheader {
+        top: 45%;
+        width: 80%;
+        margin: 2% 10%;
+        font-size: 15px;
+    }
+    
+    #zcomm-about-contact-btn {
+        width: 20%;
+        margin: 3% 40%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 560px) {
     #zcomm-about-banner-header {
         font-size: 30px;
         width: 90%;
@@ -125,5 +145,25 @@
     #zcomm-about-contact-btn {
         width: 25%;
         margin: 3% 37.5%;
+    }
+}
+
+@media (max-width: 559px) {
+    #zcomm-about-banner-header {
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #zcomm-about-banner-subheader {
+        top: 45%;
+        width: 80%;
+        margin: 2% 10%;
+        font-size: 12px;
+    }
+    
+    #zcomm-about-contact-btn {
+        width: 40%;
+        margin: 3% 30%;
     }
 }
