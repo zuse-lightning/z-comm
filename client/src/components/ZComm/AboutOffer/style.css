@@ -7,25 +7,101 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
-    margin: 0 20%;
+    margin: 0 auto;
     column-gap: 10%;
     padding: 1% 0;
 }
 
 .zcomm-about-offer-img {
-    width: 30%!important;
-    margin: 0 35%!important;
+    width: 30% !important;
+    margin: 0 35% !important;
 }
 
-.zcomm-about-offer-header, .zcomm-about-offer-subheader {
-    color: white!important;
+.zcomm-about-offer-header,
+.zcomm-about-offer-subheader {
+    color: white !important;
     font-weight: 700;
     text-align: center;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: "Montserrat", sans-serif !important;
 }
 
-/* .zcomm-about-offer-subheader {
-    color: white;
-    font-weight: 700;
-    text-align: center;
-} */
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #zcomm-about-offers {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-about-offers {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-about-offers {
+        width: 90%;
+    }
+
+    .zcomm-about-offer-img {
+        width: 50% !important;
+        margin: 0 auto !important;
+    }
+
+    .zcomm-about-offer-header {
+        font-size: 18px !important;
+    }
+
+    .zcomm-about-offer-subheader {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #zcomm-about-offers-container {
+        padding: 4%;
+    }
+
+    #zcomm-about-offers {
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 60px;
+    }
+
+    .zcomm-about-offer-img {
+        width: 40% !important;
+        margin: 0 auto !important;
+    }
+
+    .zcomm-about-offer-header {
+        font-size: 18px !important;
+    }
+
+    .zcomm-about-offer-subheader {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #zcomm-about-offers-container {
+        padding: 10%;
+    }
+
+    #zcomm-about-offers {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 60px;
+    }
+
+    .zcomm-about-offer-img {
+        width: 30% !important;
+        margin: 0 auto !important;
+    }
+
+    .zcomm-about-offer-header {
+        font-size: 18px !important;
+    }
+
+    .zcomm-about-offer-subheader {
+        font-size: 12px !important;
+    }
+}
