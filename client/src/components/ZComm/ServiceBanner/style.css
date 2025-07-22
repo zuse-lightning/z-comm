@@ -10,7 +10,8 @@
     filter: brightness(50%);
 }
 
-#zcomm-service-banner-header, #zcomm-service-banner-subheader {
+#zcomm-service-banner-header,
+#zcomm-service-banner-subheader {
     position: absolute;
     top: 35%;
     text-align: center;
@@ -30,4 +31,82 @@
     width: 50%;
     margin: 0 25%;
     font-size: 20px;
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-service-banner-header {
+        font-size: 54px;
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-service-banner-header {
+        font-size: 44px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #zcomm-service-banner-subheader {
+        width: 50%;
+        margin: 0 25%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 801px) {
+    #zcomm-service-banner-header {
+        font-size: 36px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #zcomm-service-banner-subheader {
+        width: 60%;
+        margin: 0 20%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 560px) {
+    #zcomm-service-banner-header {
+        font-size: 36px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #zcomm-service-banner-subheader {
+        width: 70%;
+        margin: 0 15%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 559px) {
+    #zcomm-service-banner-header {
+        font-size: 30px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #zcomm-service-banner-subheader {
+        width: 80%;
+        margin: 0 10%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 321px) {
+    #zcomm-service-banner-header {
+        font-size: 24px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #zcomm-service-banner-subheader {
+        width: 90%;
+        margin: 0 5%;
+        font-size: 12px;
+    }
 }
