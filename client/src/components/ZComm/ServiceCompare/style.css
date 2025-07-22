@@ -5,7 +5,7 @@
     text-decoration: underline;
     text-underline-offset: 20px;
     text-decoration-color: #f7931e;
-    margin: 5%;
+    margin: 5% 0 3%;
 }
 
 #zcomm-service-compare-subheader {
@@ -17,16 +17,118 @@
     margin-bottom: 5%;
 }
 
+#zcomm-service-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
 #zcomm-service-table {
     width: 100%;
+    min-width: 600px;
+    display: table !important;
+}
+
+#zcomm-service-table.ui.table thead,
+#zcomm-service-table.ui.table tbody,
+#zcomm-service-table.ui.table tr {
+    display: table-header-group !important;
+}
+
+#zcomm-service-table.ui.table tbody {
+    display: table-row-group !important;
+}
+
+#zcomm-service-table.ui.table tr {
+    display: table-row !important;
+}
+
+#zcomm-service-table.ui.table td,
+#zcomm-service-table.ui.table th {
+    display: table-cell !important;
 }
 
 .zcomm-service-table-header-cell,
 .zcomm-service-table-cell {
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
+    white-space: nowrap;
+    padding: 8px 12px;
+    min-width: 120px;
 }
 
 .zcomm-service-table-cell {
     font-weight: 300;
+}
+
+@media (max-width: 1199px) and (min-width: 801px) {
+    #zcomm-service-compare-header {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    #zcomm-service-compare-header {
+        margin: 6% 0 8%;
+    }
+
+    #zcomm-service-compare-subheader {
+        width: 90%;
+        font-size: 18px;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    #zcomm-service-table-wrapper {
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        overflow-x: scroll;
+    }
+    
+    #zcomm-service-table {
+        min-width: 700px;
+        display: table !important;
+    }
+    
+    #zcomm-service-table.ui.table thead,
+    #zcomm-service-table.ui.table tbody,
+    #zcomm-service-table.ui.table tr,
+    #zcomm-service-table.ui.table td,
+    #zcomm-service-table.ui.table th {
+        display: table-cell !important;
+    }
+    
+    #zcomm-service-table.ui.table thead {
+        display: table-header-group !important;
+    }
+    
+    #zcomm-service-table.ui.table tbody {
+        display: table-row-group !important;
+    }
+    
+    #zcomm-service-table.ui.table tr {
+        display: table-row !important;
+    }
+    
+    .zcomm-service-table-header-cell,
+    .zcomm-service-table-cell {
+        padding: 6px 10px;
+        font-size: 14px;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 366px) {
+    #zcomm-service-compare-header {
+        font-size: 20px;
+        margin: 10% 0;
+    }
+
+    #zcomm-service-compare-subheader {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 15%;
+    }
 }
