@@ -104,3 +104,13 @@
         margin: 5% 25%;
     }
 }
+
+@media (max-width: 361px) {
+    #zcomm-about-quote-header {
+        font-size: 20px;
+    }
+
+    #zcomm-about-quote-subheader {
+        font-size: 12px;
+    }
+}
