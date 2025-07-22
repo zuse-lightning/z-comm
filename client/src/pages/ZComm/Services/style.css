@@ -13,3 +13,48 @@
     text-decoration-color: #f7931e;
     margin-bottom: 5%;
 }
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #zcomm-services {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #zcomm-services {
+        width: 95%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 560px){
+    #zcomm-services {
+        width: 90%;
+    }
+
+    #zcomm-services-header {
+        font-size: 32px;
+        margin: 3% 0 10%;
+    }
+}
+
+@media (max-width: 559px) and (min-width: 366px) {
+    #zcomm-services {
+        width: 100%;
+    }
+
+    #zcomm-services-header {
+        font-size: 28px;
+        margin: 5% 0 15%;
+    }
+}
+
+@media (max-width: 365px) {
+    #zcomm-services {
+        width: 100%;
+    }
+
+    #zcomm-services-header {
+        font-size: 24px;
+        margin: 5% 0 15%;
+    }
+}
