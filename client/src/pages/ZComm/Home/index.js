@@ -28,10 +28,10 @@ const Home = (props) => {
             <SEO
                 favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/web_icon-01.png?v=1753278435"
                 title="Z-Comm - Host Your Store With Us!"
-                description="Official Off Soundings apparel store—premium boating gear inspired by coastal racing tradition. Shop shirts, outerwear, headwear, and accessories proudly associated with the Off Soundings Club."
-                keywords="Off Soundings apparel, boating apparel, sailing gear, boat club merchandise, shirts, outerwear, headwear, accessories, Off Soundings Club"
+                description="Z-Comm helps e-commerce brands thrive with expert web development and reliable product fulfillment services. Custom-built stores, automation, and more."
+                keywords="e-commerce web development, product fulfillment services, Shopify and WooCommerce development, custom e-commerce websites, online store design and setup, e-commerce automation, dropshipping fulfillment solutions, website optimization for online stores, e-commerce branding and design, Z-Comm e-commerce services"
                 type="website"
-                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/off-soundings-home.png?v=1750093143"
+                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/zcomm-home.png?v=1753282473"
                 url={window.location.href}
             />
             <HomeBanner />
