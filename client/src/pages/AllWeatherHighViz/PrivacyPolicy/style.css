@@ -1,0 +1,31 @@
+#awhv-privacy-policy-container {
+    padding: 4%;
+}
+
+#awhv-privacy-policy {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#awhv-privacy-policy-main-header {
+    font-size: 48px;
+    font-weight: 700!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3%;
+}
+
+#awhv-privacy-policy-main-subheader {
+    font-size: 16px;
+    font-weight: 300!important;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 2%;
+}
+
+.awhv-privacy-policy-divider {
+    width: 50%;
+    margin: 5% auto!important;
+    height: 1px;
+    background-color: #ccc;
+}
