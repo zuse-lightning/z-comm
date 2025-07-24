@@ -16,6 +16,8 @@ import Vests from "../../pages/AllWeatherHighViz/Vests";
 import Accessories from "../../pages/AllWeatherHighViz/Accessories";
 import FAQ from "../../pages/AllWeatherHighViz/FAQ";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
+import PrivacyPolicy from "../../pages/AllWeatherHighViz/PrivacyPolicy";
+import TermsOfService from "../../pages/AllWeatherHighViz/TermsOfService";
 import Footer from "../../components/AllWeatherHighViz/Footer";
 
 const AllWeatherHighViz = () => {
@@ -53,6 +55,8 @@ const AllWeatherHighViz = () => {
                 <Route exact path="/accessories" element={<Accessories styleOptions={options} />} />
                 <Route exact path="/faq" element={<FAQ />} />
                 <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/privacy" element={<PrivacyPolicy />} />
+                <Route exact path="/terms" element={<TermsOfService />} />
             </Routes>
             <Footer />
         </>
