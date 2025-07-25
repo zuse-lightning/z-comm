@@ -9,16 +9,14 @@
 }
 
 #awhv-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    width: 30%;
     margin: 20px auto;
     padding: 0;
-}
-
-.awhv-footer-col {
-    text-align: center;
 }
 
 .awhv-footer-link {
@@ -28,7 +26,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     display: block;
-    margin: 10% 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -40,4 +38,44 @@
     width: 20%;
     margin: 0 auto;
     text-align: center;
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-footer-logo {
+        width: 23.5%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-footer-logo {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-footer-logo {
+        width: 40%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #awhv-footer-logo {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    #awhv-footer-logo {
+        width: 60%;
+    }
+
+    .awhv-footer-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 361px) {
+    .awhv-footer-link {
+        font-size: 12px;
+    }
 }
