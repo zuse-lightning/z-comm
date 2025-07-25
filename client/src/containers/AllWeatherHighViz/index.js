@@ -20,10 +20,11 @@ import PrivacyPolicy from "../../pages/AllWeatherHighViz/PrivacyPolicy";
 import TermsOfService from "../../pages/AllWeatherHighViz/TermsOfService";
 import Footer from "../../components/AllWeatherHighViz/Footer";
 
-const AllWeatherHighViz = () => {
+const AllWeatherHighViz = (props) => {
 
     const { auth } = useContext(AuthContext);
     const [options, setOptions] = useState([]);
+    const { screenWidth } = props;
 
     useEffect(() => {
         fetch("https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhvCollection.json?v=1751297880").then((res) => {
@@ -39,7 +40,7 @@ const AllWeatherHighViz = () => {
 
     return (
         <>
-            <Navbar />
+            <Navbar screenWidth={screenWidth} />
             <Routes>
                 <Route exact path="/" element={<Home styleOptions={options} />} />
                 <Route exact path="/our-story" element={<OurStory />} />

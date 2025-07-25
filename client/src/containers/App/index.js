@@ -40,7 +40,7 @@ const App = () => {
     return (
         <>
             {(window.location.href.includes("www.zcomm.store")) ? <ZComm auth={auth} screenWidth={width} /> : null}
-            {(window.location.href.includes("www.allweatherhiviz.com") || window.location.href.includes("localhost")) ? <AllWeaherHighViz /> : null}
+            {(window.location.href.includes("www.allweatherhiviz.com") || window.location.href.includes("localhost")) ? <AllWeaherHighViz auth={auth} screenWidth={width} /> : null}
             {(window.location.href.includes("www.dxnheadwear.com")) ? <DXNHeadwear auth={auth} /> : null}
             {(window.location.href.includes("www.fishlifeusa.com")) ? <FishLifeUSA auth={auth} /> : null}
             {(window.location.href.includes("www.pbrcorpshop.com")) ? <PBRCorp auth={auth} /> : null}
