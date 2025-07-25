@@ -24,7 +24,7 @@ const MobileNavbar = () => {
                     draggable="false"
                     size="medium"
                     id="awhv-mobile-logo"
-                    src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/zcomm-logo-alt.png?v=1732219354"
+                    src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/Web_Logo_blk_orange.png?v=1732219631"
                 />
             </div>
             <Dropdown
@@ -40,26 +40,74 @@ const MobileNavbar = () => {
                     <Dropdown.Item
                         as={Link}
                         onClick={() => setOpen(false)}
-                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/about" : "/about"}>
-                        About
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/our-story" : "/our-story"}>
+                        Our Story
                     </Dropdown.Item>
                     <Dropdown.Item
                         as={Link}
                         onClick={() => setOpen(false)}
-                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/services" : "/services"}>
-                        Services
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/new-releases" : "/new-releases"}>
+                        New Releases
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/best-sellers" : "/best-sellers"}>
+                        Best Sellers
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/concealed-carry" : "/concealed-carry"}>
+                        Concealed Carry
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/shirts" : "/shirts"}>
+                        Shirts
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/jackets" : "/jackets"}>
+                        Jackets
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/hoodies" : "/hoodies"}>
+                        Hoodies
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/headwear" : "/headwear"}>
+                        Headwear
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/vests" : "/vests"}>
+                        Vests
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/pants" : "/pants"}>
+                        Pants
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/accessories" : "/accessories"}>
+                        Accessories
                     </Dropdown.Item>
                     <Dropdown.Item
                         as={Link}
                         onClick={() => setOpen(false)}
                         to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/faq" : "/faq"}>
                         Help
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                        as={Link}
-                        onClick={() => setOpen(false)}
-                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/quote" : "/quote"}>
-                        Get A Quote
                     </Dropdown.Item>
                     <Dropdown.Item
                         as={Link}

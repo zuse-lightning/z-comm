@@ -2,10 +2,13 @@ import React from "react";
 import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+    const { screenWidth } = props;
+
     return (
         <>
-            <DesktopNavbar />
+            {screenWidth < 992 ? <MobileNavbar /> : <DesktopNavbar />}
         </>
     );
 };

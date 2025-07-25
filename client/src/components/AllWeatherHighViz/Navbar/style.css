@@ -1,8 +1,65 @@
 #awhv-navbar {
     width: 30%;
-    margin: 0 35%;
+    margin: 0 auto;
+}
+
+.awhv-mobile-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+.awhv-mobile-menu-trigger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-right: 32px;
+}
+
+.awhv-mobile-menu-bar {
+    width: 48px;
+    height: 6px;
+    margin: 6px 0;
+    background: #222;
+    border-radius: 3px;
+}
+
+#awhv-mobile-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#awhv-mobile-logo {
+    width: 150px;
+    height: auto;
+    margin-right: 50px;
 }
 
 .ui.secondary.menu a.item:hover {
     background: none !important;
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-navbar {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-navbar {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) {
+    #awhv-navbar {
+        width: 0;
+        margin: 0;
+    }
 }
