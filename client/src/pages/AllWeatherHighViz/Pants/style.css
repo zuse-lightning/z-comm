@@ -11,3 +11,41 @@
     font-weight: 800;
     text-align: center;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-pants-container {
+        width: 70%;
+        
+    }
+    #awhv-pants-header {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-pants-container {
+        width: 80%;
+    }
+    #awhv-pants-header {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-pants-container {
+        width: 90%;
+    }
+    #awhv-pants-header {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 991px) {
+    #awhv-pants-container {
+        width: 100%;
+        padding: 10%;
+    }
+    #awhv-pants-header {
+        font-size: 28px;
+    }
+}
