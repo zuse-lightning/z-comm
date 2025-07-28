@@ -1,6 +1,7 @@
 import React from "react";
 import { Header, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import { SEO } from "../../../components/SEO";
 
 import "./style.css";
 
@@ -8,6 +9,15 @@ import "./style.css";
 const OurStory = () => {
     return (
         <>
+            <SEO
+                favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-01.png?v=1753723852"
+                title="About Us - All Weather High Viz – Built for Hard Work & Working-Class Values"
+                description="Discover All Weather High Viz’s roots and mission. We build rugged, ANSI-compliant high‑visibility workwear for the hard-working and working-class community."
+                keywords="All Weather High Viz, our story, working class workwear brand, high-visibility apparel brand story, construction gear company story, rugged workwear heritage, American hi‑vis brand"
+                type="website"
+                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-our-story.png?v=1753724839"
+                url={window.location.href}
+            />
             <div id="awhv-our-story-container">
                 <Header as="h1" className="awhv-our-story-header">Our Story</Header>
                 <p className="awhv-our-story-text">
