@@ -26,3 +26,117 @@
     box-shadow: #000 4px 4px 16px!important;
     margin: 5% 46.25%!important;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    .awhv-home-collections-header {
+        font-size: 36px!important;
+    }
+
+    .awhv-home-collections-container {
+        width: 70%;
+    }
+
+    .awhv-home-iframe {
+        height: 450px!important;
+    }
+
+    .awhv-home-collections-button {
+        width: 10%!important;
+        margin: 5% 45%!important;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    .awhv-home-collections-header {
+        font-size: 32px!important;
+    }
+
+    .awhv-home-collections-container {
+        width: 80%;
+    }
+
+    .awhv-home-iframe {
+        height: 400px!important;
+    }
+
+    .awhv-home-collections-button {
+        width: 12%!important;
+        margin: 5% 44%!important;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .awhv-home-collections-header {
+        font-size: 28px!important;
+    }
+
+    .awhv-home-collections-container {
+        width: 90%;
+    }
+
+    .awhv-home-iframe {
+        height: 350px!important;
+    }
+
+    .awhv-home-collections-button {
+        width: 15%!important;
+        margin: 5% 42.5%!important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .awhv-home-collections-header {
+        font-size: 24px!important;
+    }
+
+    .awhv-home-collections-container {
+        width: 95%;
+    }
+
+    .awhv-home-iframe {
+        height: 300px!important;
+    }
+
+    .awhv-home-collections-button {
+        width: 20%!important;
+        margin: 5% 40%!important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 413px) {
+    .awhv-home-collections-header {
+        font-size: 32px!important;
+    }
+
+    .awhv-home-collections-container {
+        width: 100%;
+    }
+
+    .awhv-home-iframe {
+        height: 250px!important;
+    }
+
+    .awhv-home-collections-button {
+        width: 25%!important;
+        margin: 20% 37.5%!important;
+    }
+}
+
+@media (max-width: 412px) {
+    .awhv-home-collections-header {
+        font-size: 28px!important;
+    }
+
+    .awhv-home-collections-container {
+        width: 100%;
+    }
+
+    .awhv-home-iframe {
+        height: 200px!important;
+    }
+
+    .awhv-home-collections-button {
+        width: 30%!important;
+        margin: 20% 35%!important;
+    }
+}
