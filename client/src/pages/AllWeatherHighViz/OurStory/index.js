@@ -22,7 +22,7 @@ const OurStory = () => {
                 <p className="awhv-our-story-text">
                     Headquarters located in Branford, Connecticut. All Weather High Viz employs more than 100 associates worldwide.
                 </p>
-                <Header as="h1" className="awhv-our-story-header">Follow Us On Social Media</Header>
+                <Header as="h1" className="awhv-our-story-header" id="awhv-social-media-header">Follow Us On Social Media</Header>
                 <div id="awhv-social-media">
                     <div className="awhv-social-media-col">
                         <Link to="https://www.facebook.com/AllWeatherHighViz" target="_blank">

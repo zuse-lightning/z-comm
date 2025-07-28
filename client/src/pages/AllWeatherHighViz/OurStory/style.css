@@ -36,3 +36,96 @@
 .awhv-social-media-icon {
     color: black!important;
 }
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-our-story-container {
+        width: 60%;
+    }
+
+    .awhv-our-story-header {
+        font-size: 32px!important;
+    }
+
+    .awhv-our-story-text {
+        font-size: 18px!important;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-our-story-container {
+        width: 70%;
+    }
+
+    .awhv-our-story-header {
+        font-size: 28px!important;
+    }
+
+    .awhv-our-story-text {
+        font-size: 16px!important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #awhv-our-story-container {
+        width: 80%;
+    }
+
+    .awhv-our-story-header {
+        font-size: 24px!important;
+    }
+
+    .awhv-our-story-text {
+        font-size: 14px!important;
+    }
+}
+
+@media (max-width: 834px) and (min-width: 768px) {
+    #awhv-social-media {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    #awhv-our-story-container {
+        width: 90%;
+    }
+
+    .awhv-our-story-header {
+        font-size: 20px!important;
+    }
+
+    .awhv-our-story-text {
+        font-size: 12px!important;
+    }
+
+    #awhv-social-media {
+        width: 80%;
+        padding: 0;
+        gap: 0;
+    }
+}
+
+@media (max-width: 374px) {
+    #awhv-our-story-container {
+        width: 90%;
+    }
+
+    .awhv-our-story-header {
+        font-size: 20px!important;
+        margin: 10% 0!important;
+    }
+
+    .awhv-our-story-text {
+        font-size: 10px!important;
+    }
+
+    .awhv-our-story-text:last-child {
+        margin-bottom: 40%!important;
+    }
+
+    #awhv-social-media {
+        width: 100%;
+        padding: 0;
+        gap: 0;
+    }
+}
