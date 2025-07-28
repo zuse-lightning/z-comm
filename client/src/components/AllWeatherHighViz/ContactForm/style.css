@@ -109,7 +109,7 @@
 
 @media (max-width: 600px) {
     #awhv-contact-form-container {
-        padding: 10% 3%;
+        padding: 12% 3%;
     }
 
     #awhv-form-field-container {
@@ -119,6 +119,10 @@
 }
 
 @media (max-width: 400px) {
+    #awhv-contact-form-container {
+        padding: 10% 3%;
+    }
+
     #awhv-contact-form-header {
         font-size: 36px;
     }
