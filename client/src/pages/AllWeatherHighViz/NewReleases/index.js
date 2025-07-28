@@ -36,8 +36,8 @@ const NewReleases = ({ styleOptions }) => {
         return (
             <>
                 {collection.length > 0 ?
-                    <div id="awhv-best-sellers-container">
-                        <Header as="h1" id="awhv-best-sellers-header">{collection[0].collection_name}</Header>
+                    <div id="awhv-new-releases-container">
+                        <Header as="h1" id="awhv-new-releases-header">{collection[0].collection_name}</Header>
                         <div id={`collection-component-${collection[0].collection_node}`}></div>
                     </div> : null}
             </>

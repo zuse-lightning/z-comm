@@ -36,8 +36,8 @@ const Accessories = ({ styleOptions }) => {
     return (
         <>
             {collection.length > 0 ?
-                <div id="awhv-headwear-container">
-                    <Header as="h1" id="awhv-headwear-header">{collection[0].collection_name}</Header>
+                <div id="awhv-accessories-container">
+                    <Header as="h1" id="awhv-accessories-header">{collection[0].collection_name}</Header>
                     <div id={`collection-component-${collection[0].collection_node}`}></div>
                 </div> : null}
         </>

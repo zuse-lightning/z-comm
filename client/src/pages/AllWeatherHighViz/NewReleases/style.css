@@ -11,3 +11,41 @@
     font-weight: 800;
     text-align: center;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-new-releases-container {
+        width: 70%;
+        
+    }
+    #awhv-new-releases-header {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-new-releases-container {
+        width: 80%;
+    }
+    #awhv-new-releases-header {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-new-releases-container {
+        width: 90%;
+    }
+    #awhv-new-releases-header {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 991px) {
+    #awhv-new-releases-container {
+        width: 100%;
+        padding: 10%;
+    }
+    #awhv-new-releases-header {
+        font-size: 28px;
+    }
+}
