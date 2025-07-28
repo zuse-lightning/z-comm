@@ -36,6 +36,15 @@ const ConcealedCarry = ({ styleOptions }) => {
 
     return (
         <>
+            <SEO
+                favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-01.png?v=1753723852"
+                title="Concealed Carry Collection - All Weather High Viz – Discreet Hi‑Vis Gear"
+                description="Shop the Concealed Carry Collection at All Weather High Viz—high‑visibility workwear with hidden carry access, built tough for working-class professionals."
+                keywords="All Weather High Viz concealed carry gear, hi‑vis concealed carry apparel, safety wear with CCW pockets, ANSI visibility conceal carry, rugged concealed carry workwear"
+                type="website"
+                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-concealed-carry.png?v=1753729039"
+                url={window.location.href}
+            />
             {collection.length > 0 ?
                 <div id="awhv-concealed-carry-container">
                     <Header as="h1" id="awhv-concealed-carry-header">{collection[0].collection_name}</Header>

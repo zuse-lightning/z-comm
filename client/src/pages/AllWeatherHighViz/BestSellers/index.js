@@ -35,6 +35,15 @@ const BestSellers = ({ styleOptions }) => {
 
     return (
         <>
+            <SEO
+                favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-01.png?v=1753723852"
+                title="Best Sellers - All Weather High Viz – Popular Hi‑Vis Workwear & Safety Gear"
+                description="Explore the most-loved ANSI-compliant high-visibility workwear from All Weather High Viz. Shop best-selling jackets, vests, hoodies & gear trusted by working crews."
+                keywords="All Weather High Viz best sellers, top-rated hi‑vis gear, popular safety vests, best-selling hi‑vis jackets, working-class safety apparel, ANSI workwear favorites"
+                type="website"
+                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-best-sellers.png?v=1753724837"
+                url={window.location.href}
+            />
             {collection.length > 0 ?
                 <div id="awhv-best-sellers-container">
                     <Header as="h1" id="awhv-best-sellers-header">{collection[0].collection_name}</Header>
