@@ -39,3 +39,72 @@
     font-weight: 500!important;
     font-family: "Montserrat", sans-serif!important;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-faq-accordion {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-faq-accordion {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-faq-accordion {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 801px) {
+    #awhv-faq-accordion-container {
+        padding: 6%;
+    }
+    #awhv-faq-accordion {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #awhv-faq-accordion-container {
+        padding: 6%;
+    }
+    #awhv-faq-accordion {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #awhv-faq-accordion-header {
+        font-size: 36px;
+    }
+    #awhv-faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 400px) {
+    #awhv-faq-accordion-header {
+        font-size: 28px;
+    }
+    #awhv-faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 300px) {
+    #awhv-faq-accordion-header {
+        font-size: 24px;
+    }
+    #awhv-faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
