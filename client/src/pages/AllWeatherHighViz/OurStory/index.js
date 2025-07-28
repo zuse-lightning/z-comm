@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import { SEO } from "../../../components/SEO";
+import SEO from "../../../components/SEO";
 
 import "./style.css";
 
