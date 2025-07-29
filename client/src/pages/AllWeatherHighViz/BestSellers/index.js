@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Header } from "semantic-ui-react";
 import { axiosInstance } from "../../../utils/api";
 import { embedShopifyCollection } from "../../../utils/shopify";
+import SEO from "../../../components/SEO";
 
 import "./style.css";
 
