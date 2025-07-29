@@ -59,3 +59,123 @@
     margin-top: 1%;
     line-height: 1.6!important;
 }
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-terms-service {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-terms-service {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-terms-service {
+        width: 70%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #awhv-terms-service-container {
+        padding: 8%;
+    }
+
+    #awhv-terms-service {
+        width: 80%;
+    }
+
+    #awhv-terms-service-main-header {
+        font-size: 36px;
+    }
+
+    #awhv-terms-service-main-subheader {
+        font-size: 14px;
+    }
+
+    .awhv-terms-service-header {
+        font-size: 20px !important;
+    }
+
+    .awhv-terms-service-subheader {
+        font-size: 14px !important;
+    }
+
+    .awhv-terms-service-text {
+        font-size: 14px !important;
+    }
+
+    .awhv-terms-service-list {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #awhv-terms-service-container {
+        padding: 12%;
+    }
+
+    #awhv-terms-service {
+        width: 90%;
+    }
+
+    #awhv-terms-service-main-header {
+        font-size: 28px;
+    }
+
+    #awhv-terms-service-main-subheader {
+        font-size: 12px;
+    }
+
+    .awhv-terms-service-header {
+        font-size: 18px !important;
+    }
+
+    .awhv-terms-service-subheader {
+        font-size: 12px !important;
+    }
+
+    .awhv-terms-service-text {
+        font-size: 12px !important;
+    }
+
+    .awhv-terms-service-list {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 361px) {
+    #awhv-terms-service-container {
+        padding: 16%;
+    }
+
+    #awhv-terms-service {
+        width: 95%;
+    }
+
+    #awhv-terms-service-main-header {
+        font-size: 24px;
+    }
+
+    #awhv-terms-service-main-subheader {
+        font-size: 10px;
+    }
+
+    .awhv-terms-service-header {
+        font-size: 16px !important;
+    }
+
+    .awhv-terms-service-subheader {
+        font-size: 10px !important;
+    }
+
+    .awhv-terms-service-text {
+        font-size: 10px !important;
+    }
+
+    .awhv-terms-service-list {
+        font-size: 10px !important;
+    }
+}

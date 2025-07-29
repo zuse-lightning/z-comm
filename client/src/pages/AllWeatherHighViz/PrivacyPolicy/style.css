@@ -9,7 +9,7 @@
 
 #awhv-privacy-policy-main-header {
     font-size: 48px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 3%;
@@ -17,7 +17,7 @@
 
 #awhv-privacy-policy-main-subheader {
     font-size: 16px;
-    font-weight: 300!important;
+    font-weight: 300 !important;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 2%;
@@ -25,37 +25,157 @@
 
 .awhv-privacy-policy-divider {
     width: 50%;
-    margin: 5% auto!important;
+    margin: 5% auto !important;
     height: 1px;
     background-color: #ccc;
 }
 
 .awhv-privacy-policy-header {
-    font-size: 24px!important;
-    font-weight: 700!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    font-family: "Montserrat", sans-serif !important;
     margin-top: 3%;
 }
 
 .awhv-privacy-policy-subheader {
-    font-size: 16px!important;
-    font-weight: 300!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-family: "Montserrat", sans-serif !important;
     margin-top: 1%;
 }
 
 .awhv-privacy-policy-text {
-    font-size: 16px!important;
-    font-weight: 300!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-family: "Montserrat", sans-serif !important;
     margin-top: 1%;
     line-height: 1.6;
 }
 
 .awhv-privacy-policy-list {
-    font-size: 16px!important;
-    font-weight: 300!important;
-    font-family: "Montserrat", sans-serif!important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-family: "Montserrat", sans-serif !important;
     margin-top: 1%;
-    line-height: 1.6!important;
+    line-height: 1.6 !important;
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-privacy-policy {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    #awhv-privacy-policy {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #awhv-privacy-policy {
+        width: 70%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #awhv-privacy-policy-container {
+        padding: 8%;
+    }
+
+    #awhv-privacy-policy {
+        width: 80%;
+    }
+
+    #awhv-privacy-policy-main-header {
+        font-size: 36px;
+    }
+
+    #awhv-privacy-policy-main-subheader {
+        font-size: 14px;
+    }
+
+    .awhv-privacy-policy-header {
+        font-size: 20px !important;
+    }
+
+    .awhv-privacy-policy-subheader {
+        font-size: 14px !important;
+    }
+
+    .awhv-privacy-policy-text {
+        font-size: 14px !important;
+    }
+
+    .awhv-privacy-policy-list {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #awhv-privacy-policy-container {
+        padding: 12%;
+    }
+
+    #awhv-privacy-policy {
+        width: 90%;
+    }
+
+    #awhv-privacy-policy-main-header {
+        font-size: 28px;
+    }
+
+    #awhv-privacy-policy-main-subheader {
+        font-size: 12px;
+    }
+
+    .awhv-privacy-policy-header {
+        font-size: 18px !important;
+    }
+
+    .awhv-privacy-policy-subheader {
+        font-size: 12px !important;
+    }
+
+    .awhv-privacy-policy-text {
+        font-size: 12px !important;
+    }
+
+    .awhv-privacy-policy-list {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 361px) {
+    #awhv-privacy-policy-container {
+        padding: 16%;
+    }
+
+    #awhv-privacy-policy {
+        width: 95%;
+    }
+
+    #awhv-privacy-policy-main-header {
+        font-size: 24px;
+    }
+
+    #awhv-privacy-policy-main-subheader {
+        font-size: 10px;
+    }
+
+    .awhv-privacy-policy-header {
+        font-size: 16px !important;
+    }
+
+    .awhv-privacy-policy-subheader {
+        font-size: 10px !important;
+    }
+
+    .awhv-privacy-policy-text {
+        font-size: 10px !important;
+    }
+
+    .awhv-privacy-policy-list {
+        font-size: 10px !important;
+    }
 }
