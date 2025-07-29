@@ -7,6 +7,15 @@ import "./style.css";
 const TermsOfService = () => {
     return (
         <>
+            <SEO
+                favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-01.png?v=1753723852"
+                title="Terms of Service - All Weather High Viz – E‑Commerce & Order Policies"
+                description="Review the terms of service for All Weather High Viz, covering site usage, order policies, responsibilities, and your rights as a customer."
+                keywords="All Weather High Viz terms of service, e-commerce terms, purchase agreement, order policies, user agreement, customer responsibilities, safety gear store policies, terms and conditions"
+                type="website"
+                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-terms.png?v=1753807094"
+                url={window.location.href}
+            />
             <div id="awhv-terms-service-container">
                 <div id="awhv-terms-service">
                     <Header id="awhv-terms-service-main-header" as="h1">Terms of Service</Header>
@@ -88,7 +97,7 @@ const TermsOfService = () => {
                     <Divider className="awhv-terms-service-divider" />
                     <Header className="awhv-terms-service-header" as="h2">8. Intellectual Property</Header>
                     <p className="awhv-terms-service-text">
-                        All content on our site—including logos, photos, designs, and copy—is owned by or licensed to All Weather High Viz. 
+                        All content on our site—including logos, photos, designs, and copy—is owned by or licensed to All Weather High Viz.
                         You may not reproduce or distribute any materials without our written consent.
                     </p>
                     <Divider className="awhv-terms-service-divider" />

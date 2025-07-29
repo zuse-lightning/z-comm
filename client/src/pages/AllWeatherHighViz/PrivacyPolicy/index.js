@@ -7,6 +7,15 @@ import "./style.css";
 const PrivacyPolicy = () => {
     return (
         <>
+            <SEO
+                favIcon="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-01.png?v=1753723852"
+                title="Privacy Policy - All Weather High Viz – Your Data, Protected"
+                description="Learn how All Weather High Viz collects, uses, and protects your personal information. Our privacy policy reflects our commitment to transparency and security."
+                keywords="All Weather High Viz privacy policy, data protection, customer data, secure e-commerce, privacy compliance, user information policy, online privacy statement, working class customer privacy"
+                type="website"
+                image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-privacy.png?v=1753807094"
+                url={window.location.href}
+            />
             <div id="awhv-privacy-policy-container">
                 <div id="awhv-privacy-policy">
                     <Header id="awhv-privacy-policy-main-header" as="h1">Privacy Policy</Header>
@@ -14,8 +23,8 @@ const PrivacyPolicy = () => {
                         <strong>Effective Date:</strong> 07/24/2025
                     </Header>
                     <Header id="awhv-privacy-policy-main-subheader" as="h4">
-                        At <strong>All Weather High Viz</strong>, your privacy matters. We believe in doing honest work and treating our customers with the same respect and transparency we stand for in the field. 
-                        Whether you’re ordering a high-visibility jacket for the job site or browsing our site for the next addition to your work gear, we’re committed to keeping your personal information 
+                        At <strong>All Weather High Viz</strong>, your privacy matters. We believe in doing honest work and treating our customers with the same respect and transparency we stand for in the field.
+                        Whether you’re ordering a high-visibility jacket for the job site or browsing our site for the next addition to your work gear, we’re committed to keeping your personal information
                         safe and secure.
                     </Header>
                     <Divider className="awhv-privacy-policy-divider" />
@@ -127,7 +136,7 @@ const PrivacyPolicy = () => {
                     <Divider className="awhv-privacy-policy-divider" />
                     <Header className="awhv-privacy-policy-header" as="h2">6. Data Security</Header>
                     <p className="awhv-privacy-policy-text">
-                        We protect your personal data using encryption, secure connections (SSL), and trusted platforms. 
+                        We protect your personal data using encryption, secure connections (SSL), and trusted platforms.
                         While no method is 100% foolproof, we take every step to secure your information like we would protect our own tools.
                     </p>
                     <Divider className="awhv-privacy-policy-divider" />
