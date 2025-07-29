@@ -4,7 +4,7 @@
 
 #awhv-trust-badges-main-header {
     font-size: 40px;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: "Montserrat", sans-serif !important;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5%;
@@ -24,17 +24,110 @@
 }
 
 .awhv-trust-badge-header {
-    font-size: 32px!important;
-    font-family: "Montserrat", sans-serif!important;
-    font-weight: 700!important;
+    font-size: 32px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700 !important;
     text-align: center;
     margin-top: 10px;
 }
 
 .awhv-trust-badge-description {
-    font-size: 24px!important;
-    font-family: "Montserrat", sans-serif!important;
-    font-weight: 400!important;
+    font-size: 24px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
     text-align: center;
     margin-top: 5px;
+}
+
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-trust-badges {
+        width: 80%;
+    }
+
+    #awhv-trust-badges-main-header {
+        font-size: 36px !important;
+    }
+
+    .awhv-trust-badge-header {
+        font-size: 30px !important;
+    }
+
+    .awhv-trust-badge-description {
+        font-size: 22px !important;
+    }
+
+}
+
+@media (max-width: 1699px) and (min-width: 1200px) {
+    .awhv-trust-badge-image {
+        width: 70%;
+    }
+
+    #awhv-trust-badges-main-header {
+        font-size: 32px !important;
+    }
+
+    #awhv-trust-badges {
+        width: 90%;
+    }
+
+    .awhv-trust-badge-header {
+        font-size: 28px !important;
+    }
+
+    .awhv-trust-badge-description {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .awhv-trust-badge-image {
+        width: 70%;
+    }
+
+    #awhv-trust-badges-main-header {
+        font-size: 28px !important;
+    }
+
+    #awhv-trust-badges {
+        width: 100%;
+    }
+
+    .awhv-trust-badge-header {
+        font-size: 28px !important;
+    }
+
+    .awhv-trust-badge-description {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    #awhv-trust-badges-container {
+        padding: 10% 5%;
+    }
+
+    #awhv-trust-badges {
+        width: 100%;
+        padding: 5%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 100px;
+    }
+
+    .awhv-trust-badge-image {
+        width: 60%;
+    }
+
+    #awhv-trust-badges-main-header {
+        font-size: 24px !important;
+        margin-bottom: 1%;
+    }
+
+    .awhv-trust-badge-header {
+        font-size: 24px !important;
+    }
+
+    .awhv-trust-badge-description {
+        font-size: 18px !important;
+    }
 }
