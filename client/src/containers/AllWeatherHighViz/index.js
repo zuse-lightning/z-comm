@@ -38,7 +38,7 @@ const AllWeatherHighViz = (props) => {
         });
     }, []);
 
-    const noBadgePaths = ["/our-story", "/faq", "/contact", "/privacy", "/terms"];
+    const noBadgePaths = ["/privacy", "/terms"];
 
     return (
         <>
