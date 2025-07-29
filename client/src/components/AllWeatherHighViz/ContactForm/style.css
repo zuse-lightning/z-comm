@@ -50,8 +50,8 @@
 }
 
 #awhv-submit-btn {
-    width: 10%;
-    margin: 2% 45%;
+    width: 8%;
+    margin: 2% 46%;
     padding: 10px;
     background-color: #ff8e00;
     color: white;
@@ -74,10 +74,22 @@
     font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 2053px) and (min-width: 1700px) {
+    #awhv-submit-btn {
+        width: 7.5%;
+        margin: 2% 46.25%;
+    }
+}
+
 @media (max-width: 1699px) and (min-width: 1200px) {
     #awhv-form-field-container {
         width: 60%;
         margin: 0 20%;
+    }
+
+    #awhv-submit-btn {
+        width: 10%;
+        margin: 2% 45%;
     }
 }
 
@@ -98,6 +110,10 @@
         width: 80%;
         margin: 0 10%;
     }
+    #awhv-submit-btn {
+        width: 20%;
+        margin: 2% 40%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -107,8 +123,8 @@
     }
 
     #awhv-submit-btn {
-        width: 30%;
-        margin: 2% 35%;
+        width: 20%;
+        margin: 2% 40%;
     }
 }
 
@@ -120,6 +136,11 @@
     #awhv-form-field-container {
         width: 100%;
         margin: 0;
+    }
+
+    #awhv-submit-btn {
+        width: 30%;
+        margin: 5% 35%;
     }
 }
 
@@ -137,7 +158,7 @@
     }
 
     #awhv-submit-btn {
-        width: 50%;
-        margin: 2% 25%;
+        width: 40%;
+        margin: 2% 30%;
     }
 }
