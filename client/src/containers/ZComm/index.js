@@ -46,14 +46,14 @@ const ZComm = (props) => {
                 <Route exact path="/terms" element={<TermsOfService />} />
                 <Route exact path="/quote" element={<Quote />} />
                 <Route exact path="/contact" element={<Contact />} />
-                <Route exact path="/register" element={<Register auth={auth} />} />
+                {/* <Route exact path="/register" element={<Register auth={auth} />} />
                 <Route exact path="/login" element={<Login auth={auth} />} />
                 <Route exact path="/forgot" element={<ForgotPassword auth={auth} />} />
                 <Route exact path="/reset/:id/:token" element={<ResetPassword auth={auth} />} />
                 <Route exact path="/reviews" element={<Reviews auth={auth} />} />
                 <Route exact path="/review/:id" element={<Review auth={auth} />} />
                 <Route exact path="/write" element={<Write auth={auth} />} />
-                <Route exact path="/edit/:id" element={<Edit auth={auth} />} />
+                <Route exact path="/edit/:id" element={<Edit auth={auth} />} /> */}
             </Routes>
             {noQuotePaths.includes(pathname) ? null : <GetAQuote />}
             <Footer />

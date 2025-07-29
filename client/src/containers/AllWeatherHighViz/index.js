@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import Navbar from "../../components/AllWeatherHighViz/Navbar";
 import Home from "../../pages/AllWeatherHighViz/Home";
@@ -18,6 +18,7 @@ import FAQ from "../../pages/AllWeatherHighViz/FAQ";
 import Contact from "../../pages/AllWeatherHighViz/Contact";
 import PrivacyPolicy from "../../pages/AllWeatherHighViz/PrivacyPolicy";
 import TermsOfService from "../../pages/AllWeatherHighViz/TermsOfService";
+import TrustBadges from "../../components/AllWeatherHighViz/TrustBadges";
 import Footer from "../../components/AllWeatherHighViz/Footer";
 
 const AllWeatherHighViz = (props) => {
@@ -25,6 +26,7 @@ const AllWeatherHighViz = (props) => {
     const { auth } = useContext(AuthContext);
     const [options, setOptions] = useState([]);
     const { screenWidth } = props;
+    const pathname = useLocation().pathname;
 
     useEffect(() => {
         fetch("https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhvCollection.json?v=1751297880").then((res) => {
@@ -36,7 +38,7 @@ const AllWeatherHighViz = (props) => {
         });
     }, []);
 
-    
+    const noBadgePaths = ["/our-story", "/faq", "/contact", "/privacy", "/terms"];
 
     return (
         <>
@@ -59,6 +61,7 @@ const AllWeatherHighViz = (props) => {
                 <Route exact path="/privacy" element={<PrivacyPolicy />} />
                 <Route exact path="/terms" element={<TermsOfService />} />
             </Routes>
+            {noBadgePaths.includes(pathname) ? null : <TrustBadges />}
             <Footer />
         </>
     );
