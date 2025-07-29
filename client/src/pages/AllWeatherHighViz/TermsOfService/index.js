@@ -34,7 +34,7 @@ const TermsOfService = () => {
                     <Divider className="awhv-terms-service-divider" />
                     <Header className="awhv-terms-service-header" as="h2">2. Who We Serve</Header>
                     <p className="awhv-terms-service-text">
-                        We sell and ship our products to customers within the United States. You must be at least 18 years old—or have permission from a parent or guardian—to place an order.
+                        We sell and ship our products to customers within the United States. You must be at least 18 years old — or have permission from a parent or guardian — to place an order.
                     </p>
                     <Divider className="awhv-terms-service-divider" />
                     <Header className="awhv-terms-service-header" as="h2">3. Products & Availability</Header>
