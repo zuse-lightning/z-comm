@@ -34,6 +34,7 @@
 @media (max-width: 800px) {
     #off-sound-headwear-container {
         width: 100%;
+        padding: 10%;
     }
 
     #off-sound-headwear-header {
@@ -42,9 +43,5 @@
 
     #off-sound-headwear-header {
         margin-bottom: 10%;
-    }
-
-    #off-sound-headwear-container {
-        padding: 5%;
     }
 }

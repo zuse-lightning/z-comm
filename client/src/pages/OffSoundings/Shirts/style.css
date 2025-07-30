@@ -34,6 +34,7 @@
 @media (max-width: 800px) {
     #off-sound-shirts-container {
         width: 100%;
+        padding: 10%;
     }
 
     #off-sound-shirts-header {
@@ -42,9 +43,5 @@
 
     #off-sound-shirts-header {
         margin-bottom: 10%;
-    }
-
-    #off-sound-shirts-container {
-        padding: 5%;
     }
 }

@@ -34,6 +34,7 @@
 @media (max-width: 800px) {
     #off-sound-outerwear-container {
         width: 100%;
+        padding: 10%;
     }
 
     #off-sound-outerwear-header {
@@ -42,9 +43,5 @@
 
     #off-sound-outerwear-header {
         margin-bottom: 10%;
-    }
-
-    #off-sound-outerwear-container {
-        padding: 5%;
     }
 }
