@@ -142,6 +142,14 @@
         padding: 10% 3%;
     }
 
+    #off-sound-contact-form-header {
+        font-size: 36px;
+    }
+
+    #off-sound-contact-form-subheader {
+        font-size: 16px;
+    }
+
     #off-sound-form-field-container {
         width: 100%;
         margin: 0;
