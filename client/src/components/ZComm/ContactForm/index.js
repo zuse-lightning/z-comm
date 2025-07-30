@@ -14,34 +14,64 @@ const ContactForm = () => {
     const navigate = useNavigate();
     const FORM_ENDPOINT = "https://www.formbackend.com/f/1ff3b1b967ef8484";
 
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+
+    //     const zcommContactForm = document.getElementById("zcomm-contact-form");
+    //     const formData = new FormData(zcommContactForm);
+    //     const formEntries = Object.fromEntries(formData.entries());
+    //     formEntries.date = moment().format("YYYY-MM-DD HH:mm:ss");
+
+    //     try {
+    //         console.log("Form data:", formEntries);
+    //         const res = await axiosInstance.post("/contact", formEntries, {
+    //             headers: {
+    //                 "Access-Control-Allow-Origin": "*",
+    //                 "Access-Control-Allow-Credentials": true,
+    //                 "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+    //                 "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+    //             }
+    //         });
+    //         console.log(res.data);
+    //         if (res.status === 200) {
+    //             setSubmitted(true);
+    //         } else {
+    //             console.error("Error submitting form:", res.data);
+    //         }
+    //     } catch (err) {
+    //         console.log(err);
+    //         // e.target.submit();
+    //     }
+    // };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const zcommContactForm = document.getElementById("zcomm-contact-form");
-        const formData = new FormData(zcommContactForm);
-        const formEntries = Object.fromEntries(formData.entries());
-        formEntries.date = moment().format("YYYY-MM-DD HH:mm:ss");
+        const contactForm = document.getElementById("zcomm-contact-form");
+        const formData = new FormData(contactForm);
 
-        try {
-            console.log("Form data:", formEntries);
-            const res = await axiosInstance.post("/contact", formEntries, {
-                headers: {
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Credentials": true,
-                    "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
-                    "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
-                }
-            });
-            console.log(res.data);
-            if (res.status === 200) {
+        const response = await fetch(FORM_ENDPOINT, {
+            method: "POST",
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": true,
+                "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+                "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+            },
+            body: formData
+        }).then(response => {
+            if (response.ok) {
                 setSubmitted(true);
+                setTimeout(() => {
+                    navigate("/");
+                }, 3000);
             } else {
-                console.error("Error submitting form:", res.data);
+                throw new Error("Network response was not ok.");
             }
-        } catch (err) {
-            console.log(err);
-            // e.target.submit();
-        }
+        }).catch(error => {
+            console.error("There was a problem with the fetch operation:", error);
+            alert("There was an error submitting your quote request. Please try again later.");
+        });
     };
 
     useEffect(() => {
@@ -71,7 +101,8 @@ const ContactForm = () => {
             <form
                 id="zcomm-contact-form"
                 onSubmit={handleSubmit}
-                action="http://localhost:3001/api/contact"
+                action={FORM_ENDPOINT}
+                method="POST"
             >
                 <div id="zcomm-form-field-container">
                     <div className="zcomm-form-field-col">
