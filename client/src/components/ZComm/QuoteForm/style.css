@@ -117,14 +117,6 @@
         margin: 0 auto;
     }
 
-    #zcomm-quote-form-header {
-        font-size: 36px;
-    }
-
-    #zcomm-quote-form-subheader {
-        font-size: 14px;
-    }
-
     .zcomm-quote-form-col:nth-child(7),
     .zcomm-quote-form-col:nth-child(10),
     .zcomm-quote-form-col:has(#zcomm-quote-order-volume),
@@ -141,14 +133,6 @@
         margin: 0 auto;
     }
 
-    #zcomm-quote-form-header {
-        font-size: 32px;
-    }
-
-    #zcomm-quote-form-subheader {
-        font-size: 12px;
-    }
-
     .zcomm-quote-form-col:nth-child(7),
     .zcomm-quote-form-col:nth-child(10),
     .zcomm-quote-form-col:has(#zcomm-quote-order-volume),
@@ -163,14 +147,6 @@
     #zcomm-quote-form {
         width: 90%;
         margin: 0 auto;
-    }
-
-    #zcomm-quote-form-header {
-        font-size: 28px;
-    }
-
-    #zcomm-quote-form-subheader {
-        font-size: 12px;
     }
 
     .zcomm-quote-form-col:nth-child(7),
