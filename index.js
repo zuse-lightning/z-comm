@@ -17,6 +17,7 @@ const allowedOrigins = [
   "https://www.dxnheadwear.com",
   "https://www.fishlifeusa.com",
   "https://www.pbrcorpshop.com",
+  "https://www.offsoundings.store",
   "http://localhost:3000",
   "http://localhost:3001",
   "https://z-comm-7cc9724e1fa7.herokuapp.com"
