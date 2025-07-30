@@ -55,6 +55,7 @@ app.use(helmet({
         "www.fishlifeusa.com",
         "www.pbrcorpshop.com",
         "www.formbackend.com",
+        "www.offsoundings.store",
         "monorail-edge.shopifysvc.com",
         "ct-schools-store.myshopify.com",
         "bfb312-ir.myshopify.com",
@@ -77,7 +78,8 @@ app.use(helmet({
         "www.dxnheadwear.com",
         "www.fishlifeusa.com",
         "www.pbrcorpshop.com",
-        "www.formbackend.com"
+        "www.formbackend.com",
+        "www.offsoundings.store"
       ],
       "script-src": [
         "'self'",
