@@ -26,7 +26,6 @@ const DesktopNavbar = () => {
                 <Dropdown.Menu>
                     <Dropdown.Item as={Link} to="https://www.allweatherhiviz.com/">All Weather High Viz</Dropdown.Item> 
                     <Dropdown.Item as={Link} to="https://www.offsoundings.store/">Off Soundings</Dropdown.Item>
-                    <Dropdown.Item as={Link} to="https://www.shorelineveterans.store/">Shoreline Veterans</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             <Menu.Item

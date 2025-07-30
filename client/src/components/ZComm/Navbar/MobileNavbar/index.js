@@ -67,6 +67,18 @@ const MobileNavbar = () => {
                         to={process.env.NODE_ENV === "production" ? "https://www.zcomm.store/contact" : "/contact"}>
                         Contact
                     </Dropdown.Item>
+                    {/* <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.allweatherhiviz.com/" : "/"}>
+                        All Weather High Viz
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        as={Link}
+                        onClick={() => setOpen(false)}
+                        to={process.env.NODE_ENV === "production" ? "https://www.offsoundings.store/" : "/"}>
+                        Off Soundings
+                    </Dropdown.Item> */}
                 </Dropdown.Menu>
             </Dropdown>
         </div>
