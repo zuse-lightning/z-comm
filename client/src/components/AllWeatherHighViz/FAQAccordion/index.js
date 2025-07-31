@@ -14,8 +14,6 @@ const FAQAccordion = () => {
         setActiveIndex(newIndex);
     };
 
-    console.log(activeIndex);
-
     return (
         <div id="awhv-faq-accordion-container">
             <Header as="h1" id="awhv-faq-accordion-header">Frequently Asked Questions</Header>

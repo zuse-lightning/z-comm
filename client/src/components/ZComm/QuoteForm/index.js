@@ -13,7 +13,6 @@ const QuoteForm = () => {
 
     const handleServiceChange = (e) => {
         const { value } = e.target;
-        console.log("Service selected:", value);
         setService(value);
     };
 

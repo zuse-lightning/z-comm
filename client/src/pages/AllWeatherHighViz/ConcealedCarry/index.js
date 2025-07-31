@@ -19,14 +19,12 @@ const ConcealedCarry = ({ styleOptions }) => {
                         store: "All Weather High Viz"
                     }
                 });
-                console.log("Collection data:", res.data);
                 setCollection(res.data);
             } catch (err) {
                 console.error("Error fetching data:", err);
             }
         };
         fetchData();
-        console.log("using effect");
     }, []);
 
     useEffect(() => {

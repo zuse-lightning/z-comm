@@ -38,8 +38,6 @@ module.exports = {
                     hash
                 ];
 
-                console.log(values);
-
                 db.query(setUserData, [values], (err) => {
                     if (err) return res.json(err);
                     return res.status(200).json("User registered");
@@ -48,7 +46,6 @@ module.exports = {
         });
     },
     login: (req, res) => {
-        console.log("Trying to login");
         db.query(getUserByEmail, [req.body.email], (err, data) => {
             if (err) return res.json(err);
             if (data.length === 0) return res.status(404).json("User not found");
@@ -62,7 +59,6 @@ module.exports = {
             res.cookie("access_token", token, {
                 httpOnly: true
             }).status(200).json(other);
-            console.log(token);
         });
     },
     logout: (req, res) => {
@@ -75,28 +71,18 @@ module.exports = {
         try {
             db.query(getUserById, [req.params.id], (err, data) => {
                 if (err) return res.json(err);
-                console.log(req.body);
                 const { id, token } = req.params;
-                console.log(data);
                 if (id !== data[0].user_id) return res.status(403).json("Invalid user ID");
-                console.log("validated user ID");
                 if (req.body.newPassword !== req.body.confirmPassword) return res.status(400).json("Passwords do not match");
                 if (!req.body.newPassword || !req.body.confirmPassword) return res.status(400).json("Password is required");
 
                 jwt.verify(token, process.env.SECRET, (err) => {
                     if (err) return res.status(403).json("Invalid token");
                     
-                    console.log(req.body.newPassword);
                     const salt = bcrypt.genSaltSync(10);
                     const hash = bcrypt.hashSync(req.body.newPassword, salt);
 
-                    console.log("hashed out password");
-
-                    console.log(hash, data[0].id);
-                    console.log("successfully set values");
-
                     db.query(resetUserPassword, [hash, data[0].id], (err) => {
-                        console.log("resetting password");
                         if (err) return res.json(err);
                         return res.status(200).json("Password reset");
                     });
@@ -111,7 +97,6 @@ module.exports = {
             db.query(getUserByEmail, [req.body.email], (err, data) => {
                 if (err) return res.json(err);
                 if (data.length === 0) return res.status(404).json("User not found");
-                console.log(data[0].user_id);
                 const token = jwt.sign({ id: data[0].user_id }, process.env.SECRET, { expiresIn: "1h" });
 
                 const values = [

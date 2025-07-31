@@ -1,7 +1,5 @@
 import axios from "axios";
 
-console.log(process.env.NODE_ENV);
-
 let productionURL;
 
 if (window.location.href.includes("www.zcomm.store")) {
@@ -18,10 +16,7 @@ if (window.location.href.includes("www.zcomm.store")) {
     productionURL = process.env.REACT_APP_OFF_SOUNDINGS_API_URL;
 }
 
-console.log(productionURL);
-
 const baseURL = process.env.NODE_ENV === "production" ? productionURL : "http://localhost:3001/api/";
-console.log(`Base URL: ${baseURL}`);
 
 export const axiosInstance = axios.create({
     baseURL: baseURL,

@@ -8,7 +8,6 @@ import "./style.css";
 
 const Headwear = ({ styleOptions }) => {
     const [collection, setCollection] = useState([]);
-    console.log("Style Options:", styleOptions);
     useEffect(() => {
         const fetchData = async () => {
             try {

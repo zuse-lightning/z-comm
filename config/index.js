@@ -7,9 +7,4 @@ const db = mysql.createConnection({
     database: process.env.NODE_ENV === "production" ? process.env.PROD_DB_NAME : process.env.DEV_DB_NAME
 });
 
-console.log(
-    db.config.host,
-    db.config.user
-);
-
 module.exports = db;

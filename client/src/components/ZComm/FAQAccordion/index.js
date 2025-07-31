@@ -14,8 +14,6 @@ const FAQAccordion = () => {
         setActiveIndex(newIndex);
     };
 
-    console.log(activeIndex);
-
     return (
         <div id="zcomm-faq-accordion-container">
             <Header as="h1" id="zcomm-faq-accordion-header">Frequently Asked Questions</Header>

@@ -11,17 +11,17 @@ const Home = (props) => {
 
     const { auth } = props;
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await axiosInstance.get("/auth/test");
-                console.log(res.data);
-            } catch (err) {
-                console.log(err);
-            };
-        };
-        fetchData();
-    }, []);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const res = await axiosInstance.get("/auth/test");
+    //             console.log(res.data);
+    //         } catch (err) {
+    //             console.log(err);
+    //         };
+    //     };
+    //     fetchData();
+    // }, []);
 
     return (
         <>

@@ -5,7 +5,6 @@ export const embedShopifyProduct = (productId, productNode, domain, token, optio
     };
 
     const ShopifyBuyInit = () => {
-        console.log("ShopifyBuyInit");
         var client = window.ShopifyBuy.buildClient({
             domain: domain,
             storefrontAccessToken: token,
@@ -21,7 +20,6 @@ export const embedShopifyProduct = (productId, productNode, domain, token, optio
     };
 
     if (window.ShopifyBuy) {
-        console.log("ShopifyBuy exists");
         if (window.ShopifyBuy.UI) {
             ShopifyBuyInit(productId, domain, token);
         } else {
@@ -39,7 +37,6 @@ export const embedShopifyCollection = (collectionId, collectionNode, domain, tok
     };
 
     const ShopifyBuyInit = () => {
-        console.log("ShopifyBuyInit");
         var client = window.ShopifyBuy.buildClient({
             domain: domain,
             storefrontAccessToken: token,
@@ -55,7 +52,6 @@ export const embedShopifyCollection = (collectionId, collectionNode, domain, tok
     };
 
     if (window.ShopifyBuy) {
-        console.log("ShopifyBuy exists");
         if (window.ShopifyBuy.UI) {
             ShopifyBuyInit(collectionId, domain, token);
         } else {

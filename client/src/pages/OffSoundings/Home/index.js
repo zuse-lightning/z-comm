@@ -19,14 +19,12 @@ const Home = ({ styleOptions }) => {
                         store: "Off Soundings"
                     }
                 });
-                console.log("Collection data:", res.data);
                 setCollection(res.data);
             } catch (err) {
                 console.error("Error fetching data:", err);
             }
         };
         fetchData();
-        console.log("using effect");
     }, []);
 
     useEffect(() => {

@@ -18,7 +18,6 @@ const HomeCollections = ({ styleOptions }) => {
                         store: "All Weather High Viz"
                     }
                 });
-                console.log("Collection data:", res.data);
                 setCollections(res.data);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -32,7 +31,6 @@ const HomeCollections = ({ styleOptions }) => {
             collections.forEach((collection) => {
                 if (["Concealed Carry Collection", "Accessories", "Headwear", "Best Sellers", "New Releases"].includes(collection.collection_name) && collection.collection_store === "All Weather High Viz") {
                     embedShopifyCollection(collection.collection_id, `collection-component-${collection.collection_node}`, collection.collection_domain, collection.collection_token, styleOptions);
-                    console.log(collection.collection_store);
                 }
             });
             const collectionContainer = document.getElementsByClassName("awhv-home-collections-container");
