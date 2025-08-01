@@ -44,7 +44,7 @@ const AllWeatherHighViz = (props) => {
         <>
             <Navbar screenWidth={screenWidth} />
             <Routes>
-                <Route exact path="/" element={<Home styleOptions={options} />} />
+                <Route exact path="/" element={<Home screenWidth={screenWidth} styleOptions={options} />} />
                 <Route exact path="/our-story" element={<OurStory />} />
                 <Route exact path="/headwear" element={<Headwear styleOptions={options} />} />
                 <Route exact path="/jackets" element={<Jackets styleOptions={options} />} />

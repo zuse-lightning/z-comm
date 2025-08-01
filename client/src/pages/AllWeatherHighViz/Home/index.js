@@ -3,7 +3,9 @@ import { Image } from "semantic-ui-react";
 import HomeCollections from "../../../components/AllWeatherHighViz/HomeCollections";
 import SEO from "../../../components/SEO";
 
-const Home = ({ styleOptions }) => {
+const Home = ({ styleOptions, screenWidth }) => {
+
+    const awhvBanner = (screenWidth > 991 ? "https://cdn.shopify.com/s/files/1/0671/9979/5395/files/free-msytery-items03-1648557869218.webp?v=1732028101" : "https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-mobile-background.png?v=1754069245")
     return (
         <>
             <SEO
@@ -15,7 +17,7 @@ const Home = ({ styleOptions }) => {
                 image="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/awhv-home.png?v=1753724660"
                 url={window.location.href}
             />
-            <Image src="https://cdn.shopify.com/s/files/1/0671/9979/5395/files/free-msytery-items03-1648557869218.webp?v=1732028101" alt="Main home banner for All Weather High Viz" />
+            <Image src={awhvBanner} alt="Main home banner for All Weather High Viz" />
             <HomeCollections styleOptions={styleOptions} />
         </>
     );
